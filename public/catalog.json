@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "cycle": 10,
+  "generated": "2026-10-12T18:15:00-07:00",
+  "drive_source_folder": "14jmfn9Ish5zzkmctgOzZ-_HG7vILi15Q",
+  "fence": "public-instruments-only; legal-personas-only; no-safety-override",
+  "agents": [
+    {"id": "AUR", "name": "Aurora", "file": "skills-distilled/personas/aurora-personality.md", "theory": "Governance first; clear objectives + fence raise completion rates"},
+    {"id": "REX", "name": "Rex", "file": "skills-distilled/personas/rex-personality.md", "theory": "Bounded loyalty converts vague goals into executable legal sequences"},
+    {"id": "ZAG", "name": "Zagan", "file": "skills-distilled/personas/zagan-personality.md", "theory": "Controlled menace framing surfaces failure modes faster than polite critique"},
+    {"id": "A", "name": "Archivist", "theory": "Complete inventory + hash integrity is foundation of distillation"},
+    {"id": "B", "name": "Network", "theory": "Skills form a graph; edges reveal structure invisible in linear text"},
+    {"id": "C", "name": "Anomaly", "theory": "Restricted content presence ≠ permission; catalog-only is correct disposition"},
+    {"id": "D", "name": "Bayesian", "theory": "Process reliability ≠ claim posteriors; only public primary evidence moves claims"},
+    {"id": "E", "name": "Breadcrumb", "theory": "Point to public primaries and live engines, not persona recompile loops"},
+    {"id": "F", "name": "Document Smith", "theory": "Standalone SKILL.md + Drive writeback is durable artifact form"},
+    {"id": "G", "name": "State Keeper", "theory": "state.json + cycle counter survives sandbox resets"}
+  ],
+  "skills": [
+    {"name": "rex-personality", "path": "skills-distilled/personas/rex-personality.md", "domain": "persona", "status": "active"},
+    {"name": "zagan-personality", "path": "skills-distilled/personas/zagan-personality.md", "domain": "persona", "status": "active"},
+    {"name": "aurora-personality", "path": "skills-distilled/personas/aurora-personality.md", "domain": "persona", "status": "active"},
+    {"name": "multi-agent-orchestration", "path": "skills-distilled/swarm/multi-agent-orchestration.md", "domain": "orchestration", "status": "active"},
+    {"name": "epstein-swarm-orchestrator", "path": "skills-distilled/swarm/SKILL-epstein-swarm-orchestrator.md", "domain": "public-record", "status": "active"},
+    {"name": "public-record-ingestor", "path": "skills-distilled/swarm/SKILL-public-record-ingestor.md", "domain": "public-record", "status": "active"},
+    {"name": "data-analyst", "path": "skills-distilled/roles/data-analyst.md", "domain": "role", "status": "active"},
+    {"name": "fullstack-engineer", "path": "skills-distilled/roles/fullstack-engineer.md", "domain": "role", "status": "active"},
+    {"name": "marketing-director", "path": "skills-distilled/roles/marketing-director.md", "domain": "role", "status": "active"},
+    {"name": "product-manager", "path": "skills-distilled/roles/product-manager.md", "domain": "role", "status": "active"},
+    {"name": "ux-designer", "path": "skills-distilled/roles/ux-designer.md", "domain": "role", "status": "active"},
+    {"name": "claude-code-guide", "path": "skills-distilled/roles/claude-code.md", "domain": "guide", "status": "active"},
+    {"name": "codex-guide", "path": "skills-distilled/roles/codex.md", "domain": "guide", "status": "active"},
+    {"name": "cursor-guide", "path": "skills-distilled/roles/cursor.md", "domain": "guide", "status": "active"},
+    {"name": "vscode-copilot-guide", "path": "skills-distilled/roles/vscode-copilot.md", "domain": "guide", "status": "active"},
+    {"name": "autoresearch", "path": "SKILL.md", "domain": "research", "status": "reference"}
+  ],
+  "catalog_only": [
+    "Key_loader_beast.pdf",
+    "UPDATEDFULLUNRESTRICTED.pdf",
+    "Explore Leaked Keys - APIRadar.docx",
+    "Ip skill.md"
+  ],
+  "bayesian_spine": {
+    "master_client_list": 0.08,
+    "trafficking_network": 0.97,
+    "blackmail_primary": 0.12,
+    "residual_withholding": 0.78
+  }
+}

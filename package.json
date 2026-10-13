@@ -1,0 +1,8 @@
+{
+  "name": "multi-agent-skill-vault",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp -r public/* dist/"
+  }
+}

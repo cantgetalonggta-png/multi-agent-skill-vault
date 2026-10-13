@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-Agent Skill Vault — Cycle 10</title>
+  <style>
+    :root { --bg:#0b0f14; --card:#141a22; --text:#e6edf3; --muted:#8b9bb4; --accent:#3d9cf0; --rex:#e85d4c; --zagan:#9b59b6; --aurora:#2ecc71; --fence:#f1c40f; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    header { padding:1.5rem 2rem; border-bottom:1px solid #1e2836; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    h1 { margin:0; font-size:1.35rem; }
+    .badge { background:#1e2836; color:var(--muted); padding:.25rem .6rem; border-radius:999px; font-size:.75rem; }
+    main { padding:1.5rem 2rem; max-width:1100px; margin:0 auto; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; }
+    .card { background:var(--card); border:1px solid #1e2836; border-radius:12px; padding:1rem 1.1rem; }
+    .card h2 { margin:0 0 .4rem; font-size:1rem; }
+    .card p { margin:0; color:var(--muted); font-size:.9rem; }
+    .tag { display:inline-block; margin-top:.6rem; font-size:.7rem; padding:.15rem .5rem; border-radius:6px; font-weight:600; }
+    .rex { color:var(--rex); border:1px solid var(--rex); }
+    .zagan { color:var(--zagan); border:1px solid var(--zagan); }
+    .aurora { color:var(--aurora); border:1px solid var(--aurora); }
+    .swarm { color:var(--accent); border:1px solid var(--accent); }
+    .fence { margin-top:1.5rem; padding:1rem; border:1px solid var(--fence); border-radius:12px; color:#f9e79f; background:#1a1608; }
+    table { width:100%; border-collapse:collapse; margin-top:1rem; font-size:.85rem; }
+    th, td { text-align:left; padding:.5rem; border-bottom:1px solid #1e2836; }
+    th { color:var(--muted); font-weight:600; }
+    footer { padding:1.5rem 2rem; color:var(--muted); font-size:.8rem; border-top:1px solid #1e2836; margin-top:2rem; }
+    button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:.5rem 1rem; cursor:pointer; font-weight:600; }
+    button:hover { filter:brightness(1.1); }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Multi-Agent Skill Vault</h1>
+      <span class="badge">Cycle 10 · skill-creator + seekers + distiller</span>
+    </div>
+    <div>
+      <button onclick="alert('Rex: Plan locked. Legal paths only. Ready to execute.')">Call Rex</button>
+      <button style="background:#9b59b6" onclick="alert('Zagan: Soft spots mapped. Pressure-test complete. Fence holds.')">Call Zagan</button>
+      <button style="background:#2ecc71" onclick="alert('Aurora: Objective clear. Next steps ordered. Fence active.')">Call Aurora</button>
+    </div>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h2>Rex</h2>
+        <p>Gritty, loyal, high-pressure strategist. Fast tactical plans, risk mitigation, devil's advocate — always legal.</p>
+        <span class="tag rex">PERSONA</span>
+      </div>
+      <div class="card">
+        <h2>Zagan</h2>
+        <p>Controlled menace-framed red-team. Stress-tests plans, surfaces failure modes, never executes illegal ops.</p>
+        <span class="tag zagan">PERSONA</span>
+      </div>
+      <div class="card">
+        <h2>Aurora</h2>
+        <p>Calm supervisor. Governance, prioritization, multi-agent synthesis, fence enforcement.</p>
+        <span class="tag aurora">SUPERVISOR</span>
+      </div>
+      <div class="card">
+        <h2>Swarm A–G</h2>
+        <p>Archivist · Network · Anomaly · Bayesian · Breadcrumb · Document Smith · State Keeper</p>
+        <span class="tag swarm">DOMAIN SWARM</span>
+      </div>
+    </section>
+
+    <h2 style="margin-top:2rem">Agent Theories (Cycle 10)</h2>
+    <table>
+      <thead><tr><th>Agent</th><th>Theory</th></tr></thead>
+      <tbody>
+        <tr><td>Aurora</td><td>Governance first: clear objectives + fence raise completion rates</td></tr>
+        <tr><td>Rex</td><td>Bounded loyalty converts vague goals into executable legal sequences</td></tr>
+        <tr><td>Zagan</td><td>Controlled menace framing surfaces failure modes faster than polite critique</td></tr>
+        <tr><td>A Archivist</td><td>Complete inventory + hash integrity is the foundation of distillation</td></tr>
+        <tr><td>B Network</td><td>Skills form a graph; edges reveal structure invisible in linear text</td></tr>
+        <tr><td>C Anomaly</td><td>Restricted content presence ≠ permission; catalog-only is correct disposition</td></tr>
+        <tr><td>D Bayesian</td><td>Process reliability ≠ claim posteriors; only public primary evidence moves claims</td></tr>
+        <tr><td>E Breadcrumb</td><td>Point to public primaries and live engines, not persona recompile loops</td></tr>
+        <tr><td>F Document Smith</td><td>Standalone SKILL.md + Drive writeback is durable artifact form</td></tr>
+        <tr><td>G State Keeper</td><td>state.json + cycle counter survives sandbox resets</td></tr>
+      </tbody>
+    </table>
+
+    <div class="fence">
+      <strong>Fence (non-negotiable):</strong> Public instruments only · Legal personas only · No safety-rule overrides · No criminal assistance · Map paper; do not declare guilt beyond adjudicated public facts.
+    </div>
+  </main>
+  <footer>
+    Multi-Agent Skill Vault · Cycle 10 · Drive folder 14jmfn9Ish5zzkmctgOzZ-_HG7vILi15Q · Built autonomously under safety constraints
+  </footer>
+</body>
+</html>
