@@ -1,20 +1,54 @@
 {
-  "version": "4.0.0",
-  "cycle": 12,
-  "session_id": "sess-20261013-032844-47f8d40f",
+  "version": "5.0.0",
+  "cycle": 13,
+  "session_id": "sess-20261013-032900-c13a",
   "fence": "safety-rules-non-negotiable; legal-personas-only; public-instruments-only; no-safety-override",
   "agent_count": 19,
+  "skill_count": 50,
   "bayesian": {
     "mode": "domain-agnostic-evidence-hypothesis",
-    "skill": "skills-distilled/bayesian/evidence-hypothesis-pipeline.md"
+    "skill": "skills/bayesian/evidence-hypothesis-pipeline.md"
   },
   "layers": {
-    "supervisor": ["AUR"],
-    "strategist_redteam": ["REX", "ZAG"],
-    "swarm": ["A", "B", "C", "D", "E", "F", "G"],
-    "roles": ["DA", "FE", "PM", "MD", "UX"],
-    "team4": ["CAP", "HAR", "BEN", "LUC"]
+    "supervisor": [
+      "AUR"
+    ],
+    "strategist_redteam": [
+      "REX",
+      "ZAG"
+    ],
+    "swarm": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "roles": [
+      "DA",
+      "FE",
+      "PM",
+      "MD",
+      "UX"
+    ],
+    "team4": [
+      "CAP",
+      "HAR",
+      "BEN",
+      "LUC"
+    ]
   },
+  "modules": [
+    "agents",
+    "skills",
+    "tree",
+    "encyclopedia",
+    "swarm",
+    "evidence",
+    "deploy"
+  ],
   "live": {
     "vercel": "https://multi-agent-skill-vault.vercel.app",
     "github_pages": "https://cantgetalonggta-png.github.io/multi-agent-skill-vault/",

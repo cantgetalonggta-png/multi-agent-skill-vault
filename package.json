@@ -1,8 +1,11 @@
 {
   "name": "multi-agent-skill-vault",
-  "version": "2.0.0",
+  "version": "5.0.0",
   "private": true,
+  "description": "Cycle 13 Multi-Agent Skill Vault — 19 agents, 50 distilled skills, multi-module OS dashboard",
   "scripts": {
-    "build": "mkdir -p dist && cp -r public/* dist/"
+    "build": "mkdir -p dist && cp -r public/* dist/",
+    "start": "npx --yes serve public -l 3000",
+    "verify": "node -e \"const fs=require('fs'); const a=JSON.parse(fs.readFileSync('public/agents.json')); const s=JSON.parse(fs.readFileSync('public/skills-catalog.json')); if(Object.keys(a).length<19) process.exit(1); if((s.skills||[]).length<50) process.exit(1); console.log('verify ok', Object.keys(a).length, s.skills.length);\""
   }
 }

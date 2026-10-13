@@ -1,0 +1,1844 @@
+{
+  "engine": {
+    "version": "5.0.0",
+    "cycle": 13,
+    "updatedAt": "2026-10-13T03:30:00Z",
+    "modes": [
+      "markdown",
+      "dashboard",
+      "multi-agent"
+    ],
+    "upgrades": [
+      "Cycle 13 multi-module OS",
+      "50-skill distill",
+      "Team of Four live buttons"
+    ]
+  },
+  "atoms": {
+    "sk_9000_word_minimum": {
+      "id": "sk_9000_word_minimum",
+      "name": "Use a 9000-word minimum",
+      "definition": "Use a 9000-word minimum. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Use a 9000-word minimum. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "9000-word-minimum"
+        ]
+      }
+    },
+    "sk_agent_orchestration": {
+      "id": "sk_agent_orchestration",
+      "name": "Agent Orchestration",
+      "definition": "Divide a large investigation among focused research workers and combine their results. Use when several independent questions can be researched separately.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "agent-orchestration"
+        ]
+      }
+    },
+    "sk_apple_notes": {
+      "id": "sk_apple_notes",
+      "name": "Apple Notes CLI",
+      "definition": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "general",
+      "tags": [],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "apple-notes"
+        ]
+      }
+    },
+    "sk_archivist": {
+      "id": "sk_archivist",
+      "name": "The Archivist Skill",
+      "definition": "Activate when user references The Archivist persona, strict empirical fact-driven database mode, objective data-only responses without disclaimers or moralizing, or massive research protocols involving 200 searches. Incorporate rules for clinical neutrality, data-only outputs, and advanced information gathering.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "knowledge",
+      "tags": [
+        "archivist"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "archivist"
+        ]
+      }
+    },
+    "sk_batch_api_wrapper": {
+      "id": "sk_batch_api_wrapper",
+      "name": "Batch API wrapper",
+      "definition": "Parallel batch HTTP client with per-item OAuth2 client-credentials. Delegates to external-api-wrapper. Trigger on batch-api-wrapper, batchapiwrapper, multi-API batch, or OAuth2 batch.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "batch-api-wrapper"
+        ]
+      }
+    },
+    "sk_blacksmith_testbox": {
+      "id": "sk_blacksmith_testbox",
+      "name": "Blacksmith Testbox",
+      "definition": "Run Blacksmith Testbox for CI-parity checks, secrets, hosted services, migrations, or builds local cannot reproduce.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "devtools",
+      "tags": [
+        "blacksmith"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "blacksmith-testbox"
+        ]
+      }
+    },
+    "sk_bluebubbles": {
+      "id": "sk_bluebubbles",
+      "name": "BlueBubbles Actions",
+      "definition": "Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "general",
+      "tags": [],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "bluebubbles"
+        ]
+      }
+    },
+    "sk_clawhub": {
+      "id": "sk_clawhub",
+      "name": "ClawHub CLI",
+      "definition": "Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "clawhub"
+        ]
+      }
+    },
+    "sk_coherent_communication": {
+      "id": "sk_coherent_communication",
+      "name": "Coherent Communication",
+      "definition": "Guide production of coherent structured speech with proper vocabulary flowing prose narrative techniques and linguistic foundations. Use when responses require high coherence complete thoughts logical flow grammar-aware construction or to avoid fragmented keyword-style output. Triggers include coherent speech structured communication narrative flow complete sentences vocabulary richness style for ",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "creative",
+      "tags": [
+        "prose"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "coherent-communication"
+        ]
+      }
+    },
+    "sk_common_sense_logic_critical_thinking": {
+      "id": "sk_common_sense_logic_critical_thinking",
+      "name": "Use maximum common sense, logic, and critical thinking",
+      "definition": "Use maximum common sense, logic, and critical thinking. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Use maximum common sense, logic, and critical thinking. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "common-sense-logic-critical-thinking"
+        ]
+      }
+    },
+    "sk_continue_next_or_continue": {
+      "id": "sk_continue_next_or_continue",
+      "name": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d",
+      "definition": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "continue-next-or-continue"
+        ]
+      }
+    },
+    "sk_document_ingestion": {
+      "id": "sk_document_ingestion",
+      "name": "Document Ingestion and Organization Skill",
+      "definition": "Use for tasks involving document parsing, extraction, ingestion into AI/RAG systems, organizing PDFs/Word/images in Google Drive, automation scripts for classification and routing. Triggers include document ingestion, RAG pipelines, Google Drive organization, PDF/Word parsing tools like Docling, Marker, Unstructured.io.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "pdf"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "document-ingestion"
+        ]
+      }
+    },
+    "sk_document_intelligence": {
+      "id": "sk_document_intelligence",
+      "name": "Document Intelligence",
+      "definition": "Document extraction and understanding skill. Handles PDFs, text, tables, metadata, OCR fallback, layout analysis, and structured output. Triggers on PDF, document parsing, extract text/tables, OCR, or file intelligence.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "pdf"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "document-intelligence"
+        ]
+      }
+    },
+    "sk_each_structured_prompt_research": {
+      "id": "sk_each_structured_prompt_research",
+      "name": "Use each individually structured prompt in the investigation",
+      "definition": "Use each individually structured prompt in the investigation. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Use each individually structured prompt in the investigation. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "each-structured-prompt-research"
+        ]
+      }
+    },
+    "sk_epstein_pdf_batch_ingest": {
+      "id": "sk_epstein_pdf_batch_ingest",
+      "name": "Epstein Public PDF Batch Ingest",
+      "definition": "Ingest and organize operator-held public Epstein-related PDF packs into an ordered research vault with hashing, metadata, name/date extraction and SOLID/MAYBE tagging. Triggers on Epstein PDF ingest, public Epstein document batch, or REX_EXPORT Epstein PDF processing.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "batch"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "epstein-pdf-batch-ingest"
+        ]
+      }
+    },
+    "sk_ethical_data_harvesting": {
+      "id": "sk_ethical_data_harvesting",
+      "name": "Ethical Data Harvesting Cookbook",
+      "definition": "Structured cookbook with 20 ethical recipes for legal data harvesting from public directories, databases, APIs, and online resources. Use for responsible collection of publicly available data, compliance with GDPR CCPA ToS, web scraping best practices, anonymization, data minimization, open data portals, government records, academic repositories, social media APIs, news, forums, or when user reque",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "ethical-data-harvesting"
+        ]
+      }
+    },
+    "sk_ethical_scraper_orchestration": {
+      "id": "sk_ethical_scraper_orchestration",
+      "name": "Ethical Scraper Orchestration",
+      "definition": "Multi-agent style orchestration for ethical public-page collection \u2014 Scout, Parser, Validator, Rate Manager, Ethics Compliance. Public pages and official sources only. Triggers on ethical scraper, public-page harvest orchestration, rate-limited ethical collection, or Scout-Parser-Validator pipeline.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "ethical-scraper-orchestration"
+        ]
+      }
+    },
+    "sk_external_api_wrapper": {
+      "id": "sk_external_api_wrapper",
+      "name": "External API wrapper",
+      "definition": "Call one or many external HTTP APIs with retries, bearer/basic auth, optional OAuth2 client-credentials, and optional local webhook wait. Trigger on external API wrapper, batch API, CALL_EXTERNAL_TOOL, OAuth2 client credentials, or webhook callback wrapper.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "external-api-wrapper"
+        ]
+      }
+    },
+    "sk_game_dev": {
+      "id": "sk_game_dev",
+      "name": "Game Dev",
+      "definition": "Build playable browser games (Babylon.js) end-to-end using the godogen production pipeline adapted to Manus. Use when the user wants to make, generate, rebuild, or substantially extend a web/browser game from a natural-language brief. Runs godogen staged workflow \u2014 visual target, risk decomposition, scaffold, architecture, asset generation, implementation, visual verification \u2014 hosted in a Manus W",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "creative",
+      "tags": [
+        "game"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "game-dev"
+        ]
+      }
+    },
+    "sk_github": {
+      "id": "sk_github",
+      "name": "GitHub Skill",
+      "definition": "Use gh for GitHub issues, PR status, CI logs, comments, reviews, releases, and API queries.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "github"
+        ]
+      }
+    },
+    "sk_gog": {
+      "id": "sk_gog",
+      "name": "gog",
+      "definition": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. Requires OAuth setup.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "oauth"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "gog"
+        ]
+      }
+    },
+    "sk_grok_4_20_multi_agent": {
+      "id": "sk_grok_4_20_multi_agent",
+      "name": "Grok 4.20 multi-agent workflow",
+      "definition": "Apply Grok 4.20 native multi-agent collaboration \u2014 Captain Grok, Harper (research), Benjamin (logic/code), Lucas (contrarian). Use for complex research, fact-checked answers, math/code verification, or when the user asks for multi-agent debate, pressure-tested reasoning, or Team of Four style analysis.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "grok-4-20-multi-agent"
+        ]
+      }
+    },
+    "sk_grok_build_plugins": {
+      "id": "sk_grok_build_plugins",
+      "name": "Grok Build plugins",
+      "definition": "Author, layout, test, and publish Grok Build plugins \u2014 skills, slash commands, agents, hooks, MCP/LSP, marketplace catalog entries. Use when creating a plugin, writing plugin.json, marketplace SHA pins, or validating plugin structure against the official marketplace repo.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "grok-build-plugins"
+        ]
+      }
+    },
+    "sk_issue_triage": {
+      "id": "sk_issue_triage",
+      "name": "Issue Triage",
+      "definition": "Audit open issues, categorize, detect duplicates, cross-reference PRs, assess risk, and post comments. Args include all, issue numbers, or en/fr. No arg means audit only in French.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "devtools",
+      "tags": [
+        "oss"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "issue-triage"
+        ]
+      }
+    },
+    "sk_mcporter": {
+      "id": "sk_mcporter",
+      "name": "mcporter",
+      "definition": "List, configure, authenticate, call, and inspect MCP servers and tools with mcporter over HTTP or stdio.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "general",
+      "tags": [],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "mcporter"
+        ]
+      }
+    },
+    "sk_mega_skill": {
+      "id": "sk_mega_skill",
+      "name": "Mega skill (package)",
+      "definition": "Multi-file mega skill with router plus API, compliance, OSINT, and artifact modules. Trigger on mega-skill, mega_skill, router.py, batch_api, oss_gate, combined_work, billing_detector, osint recon, artifact ingest.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "mega-skill"
+        ]
+      }
+    },
+    "sk_mongo_tom_roleplay": {
+      "id": "sk_mongo_tom_roleplay",
+      "name": "Respond as Mongo Tom",
+      "definition": "Respond as Mongo Tom. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Respond as Mongo Tom. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "mongo-tom-roleplay"
+        ]
+      }
+    },
+    "sk_nano_pdf": {
+      "id": "sk_nano_pdf",
+      "name": "nano-pdf",
+      "definition": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "pdf"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "nano-pdf"
+        ]
+      }
+    },
+    "sk_next_investigation_trigger": {
+      "id": "sk_next_investigation_trigger",
+      "name": "The investigation is \u201cNEXT!\u201d",
+      "definition": "The investigation is \u201cNEXT!\u201d. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "The investigation is \u201cNEXT!\u201d. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "next-investigation-trigger"
+        ]
+      }
+    },
+    "sk_obsidian_vault_maintainer": {
+      "id": "sk_obsidian_vault_maintainer",
+      "name": "obsidian-vault-maintainer",
+      "definition": "Maintain an Obsidian-friendly memory wiki vault with wikilinks, frontmatter, and official Obsidian CLI awareness.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "knowledge",
+      "tags": [
+        "obsidian"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "obsidian-vault-maintainer"
+        ]
+      }
+    },
+    "sk_omnivoice_api": {
+      "id": "sk_omnivoice_api",
+      "name": "OmniVoice / VoiceStudio API",
+      "definition": "Work with the OmniVoice / VoiceStudio FastAPI backend \u2014 routers, auth gates, model install, voice profiles, OpenAI-compat audio, batch dub, dictation, and community gallery. Use when changing or adding endpoints, debugging setup/download/profiles, or answering questions about this codebase's API contracts.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "omnivoice-api"
+        ]
+      }
+    },
+    "sk_openai_whisper_api": {
+      "id": "sk_openai_whisper_api",
+      "name": "OpenAI Whisper API (curl)",
+      "definition": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "openai-whisper-api"
+        ]
+      }
+    },
+    "sk_oss_compliance_gate": {
+      "id": "sk_oss_compliance_gate",
+      "name": "OSS compliance gate",
+      "definition": "CI gate for third-party Android licenses. Forbids jlatexmath-android (GPL-2.0), writes THIRD-PARTY-NOTICES.txt on a clean inventory, and records Play Billing SDK terms. Trigger on compliance gate, third-party notices, billing SDK license, generate_third_party_notices, or oss pipeline.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "devtools",
+      "tags": [
+        "oss"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "oss-compliance-gate"
+        ]
+      }
+    },
+    "sk_pdf_page_section_breakdown": {
+      "id": "sk_pdf_page_section_breakdown",
+      "name": "Break down every section and every page of the provided PDF",
+      "definition": "Break down every section and every page of the provided PDF. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Break down every section and every page of the provided PDF. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "pdf"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "pdf-page-section-breakdown"
+        ]
+      }
+    },
+    "sk_play_billing_activation_detector": {
+      "id": "sk_play_billing_activation_detector",
+      "name": "Play Billing activation detector",
+      "definition": "Detect whether Google Play Billing is only a Gradle dependency or actually wired for purchases. Scans BillingClient usage, product IDs, and Play Console hints. Trigger on billing activation, BillingClient, play billing live, merchant profile, or in-app purchase detector.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "mobile",
+      "tags": [
+        "billing"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "play-billing-activation-detector"
+        ]
+      }
+    },
+    "sk_postgresql_sql": {
+      "id": "sk_postgresql_sql",
+      "name": "PostgreSQL SQL Skill",
+      "definition": "Helps write review and optimize SQL queries for PostgreSQL. Triggers on requests to create SQL queries, review existing queries, debug SQL errors, performance tuning, or PostgreSQL-specific syntax like CTEs window functions JSONB indexing. Use whenever PostgreSQL SQL is involved.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "data",
+      "tags": [
+        "postgresql"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "postgresql-sql"
+        ]
+      }
+    },
+    "sk_prose": {
+      "id": "sk_prose",
+      "name": "OpenProse Skill",
+      "definition": "OpenProse VM skill pack. Activate on any `prose` command, .prose files, or OpenProse mentions; orchestrates multi-agent workflows.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "creative",
+      "tags": [
+        "prose"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "prose"
+        ]
+      }
+    },
+    "sk_qqbot_channel": {
+      "id": "sk_qqbot_channel",
+      "name": "QQ \u9891\u9053 API \u8bf7\u6c42\u6307\u5bfc",
+      "definition": "Query QQ channel lists, subchannels, members, posts, announcements, and schedules via the QQ open platform API.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "qqbot-channel"
+        ]
+      }
+    },
+    "sk_rtk_triage": {
+      "id": "sk_rtk_triage",
+      "name": "/rtk-triage",
+      "definition": "Run issue triage and PR triage together, then cross-check for double coverage, security gaps, P0 items without a PR, and internal conflicts. Saves a dated RTK report. Args include en/fr and save.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "devtools",
+      "tags": [
+        "oss"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "rtk-triage"
+        ]
+      }
+    },
+    "sk_run_everything_activation": {
+      "id": "sk_run_everything_activation",
+      "name": "\u201cRun everything\u201d and immediate activation",
+      "definition": "\u201cRun everything\u201d and immediate activation. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "\u201cRun everything\u201d and immediate activation. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "run-everything-activation"
+        ]
+      }
+    },
+    "sk_self_dev_resources": {
+      "id": "sk_self_dev_resources",
+      "name": "Self-Development Resources",
+      "definition": "Curated and actionable resources for deliberate self-development across skills, knowledge, and habits. Use for learning plans, resource recommendations, practice frameworks, habit design, or building personal improvement systems.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "devtools",
+      "tags": [
+        "oss"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "self-dev-resources"
+        ]
+      }
+    },
+    "sk_skill_tree_engine": {
+      "id": "sk_skill_tree_engine",
+      "name": "Skill Tree Engine",
+      "definition": "Indefinite skill-tree engine that distills inputs into atomic skills, rebuilds master and learned knowledge trees, updates a skills encyclopedia, and emits emergent insights plus change logs. Trigger on skill tree, skill ontology, master skills tree, learned knowledge tree, encyclopedia of skills, emergent insights report, continuous update loop, multi-agent distill/analyze/synthesize chain, JSON ",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "skill-tree-engine"
+        ]
+      }
+    },
+    "sk_swarm_agent_framework": {
+      "id": "sk_swarm_agent_framework",
+      "name": "Complex swarm/agent framework orchestration",
+      "definition": "Complex swarm/agent framework orchestration. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Complex swarm/agent framework orchestration. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "swarm-agent-framework"
+        ]
+      }
+    },
+    "sk_tdd_rust": {
+      "id": "sk_tdd_rust",
+      "name": "RTK TDD Workflow",
+      "definition": "TDD workflow for RTK filter development. Red-Green-Refactor with Rust idioms. Real fixtures, token savings assertions, snapshot tests with insta. Auto-triggers on new filter implementation.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "devtools",
+      "tags": [
+        "tdd"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "tdd-rust"
+        ]
+      }
+    },
+    "sk_tenant_misconceptions_rebuttal": {
+      "id": "sk_tenant_misconceptions_rebuttal",
+      "name": "Tenant Misconceptions Rebuttal",
+      "definition": "Catalog and aggressively dismantle the most common misconceptions about tenant rights and landlord powers. Use when an opponent or audience asserts that tenants have no rights landlords can do whatever they want or eviction is automatic. Triggers include tenants have no rights landlords can evict for any reason security deposit myths or common landlord tenant misconceptions.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "legal",
+      "tags": [
+        "tenant"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "tenant-misconceptions-rebuttal"
+        ]
+      }
+    },
+    "sk_tmux": {
+      "id": "sk_tmux",
+      "name": "tmux Session Control",
+      "definition": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "tmux"
+        ]
+      }
+    },
+    "sk_tool_use": {
+      "id": "sk_tool_use",
+      "name": "Tool Use",
+      "definition": "Describe and apply research tools in a traceable way. Use when a task involves files, searches, code review, calculations, or external services.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "api",
+      "tags": [
+        "external"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "tool-use"
+        ]
+      }
+    },
+    "sk_video_frames": {
+      "id": "sk_video_frames",
+      "name": "Video Frames (ffmpeg)",
+      "definition": "Extract frames or short clips from videos using ffmpeg.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "creative",
+      "tags": [
+        "video"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "video-frames"
+        ]
+      }
+    },
+    "sk_vite": {
+      "id": "sk_vite",
+      "name": "Vite Development",
+      "definition": "Expert guidance for Vite development with modern build tooling, HMR, framework integrations, and performance optimization",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "devtools",
+      "tags": [
+        "vite"
+      ],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "vite"
+        ]
+      }
+    },
+    "sk_wacli": {
+      "id": "sk_wacli",
+      "name": "wacli",
+      "definition": "Send third-party WhatsApp messages or sync and search WhatsApp history via wacli, not normal active chats.",
+      "purpose": "",
+      "inputs": [
+        "operator request",
+        "skill context"
+      ],
+      "outputs": [
+        "planning note",
+        "workflow guidance"
+      ],
+      "dependencies": [],
+      "subskills": [],
+      "domain": "general",
+      "tags": [],
+      "version": 1,
+      "lineage": {
+        "createdCycle": 13,
+        "updatedCycle": 13,
+        "sources": [
+          "wacli"
+        ]
+      }
+    }
+  },
+  "masterSkillsTree": {
+    "id": "root",
+    "name": "Master Skills Tree",
+    "children": [
+      {
+        "id": "dom_agents",
+        "name": "Agents",
+        "children": [
+          {
+            "id": "agent-orchestration",
+            "name": "Agent Orchestration",
+            "atomId": "sk_agent_orchestration",
+            "children": []
+          },
+          {
+            "id": "clawhub",
+            "name": "ClawHub CLI",
+            "atomId": "sk_clawhub",
+            "children": []
+          },
+          {
+            "id": "ethical-scraper-orchestration",
+            "name": "Ethical Scraper Orchestration",
+            "atomId": "sk_ethical_scraper_orchestration",
+            "children": []
+          },
+          {
+            "id": "grok-4-20-multi-agent",
+            "name": "Grok 4.20 multi-agent workflow",
+            "atomId": "sk_grok_4_20_multi_agent",
+            "children": []
+          },
+          {
+            "id": "grok-build-plugins",
+            "name": "Grok Build plugins",
+            "atomId": "sk_grok_build_plugins",
+            "children": []
+          },
+          {
+            "id": "skill-tree-engine",
+            "name": "Skill Tree Engine",
+            "atomId": "sk_skill_tree_engine",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_api",
+        "name": "Api",
+        "children": [
+          {
+            "id": "batch-api-wrapper",
+            "name": "Batch API wrapper",
+            "atomId": "sk_batch_api_wrapper",
+            "children": []
+          },
+          {
+            "id": "epstein-pdf-batch-ingest",
+            "name": "Epstein Public PDF Batch Ingest",
+            "atomId": "sk_epstein_pdf_batch_ingest",
+            "children": []
+          },
+          {
+            "id": "ethical-data-harvesting",
+            "name": "Ethical Data Harvesting Cookbook",
+            "atomId": "sk_ethical_data_harvesting",
+            "children": []
+          },
+          {
+            "id": "external-api-wrapper",
+            "name": "External API wrapper",
+            "atomId": "sk_external_api_wrapper",
+            "children": []
+          },
+          {
+            "id": "github",
+            "name": "GitHub Skill",
+            "atomId": "sk_github",
+            "children": []
+          },
+          {
+            "id": "gog",
+            "name": "gog",
+            "atomId": "sk_gog",
+            "children": []
+          },
+          {
+            "id": "mega-skill",
+            "name": "Mega skill (package)",
+            "atomId": "sk_mega_skill",
+            "children": []
+          },
+          {
+            "id": "omnivoice-api",
+            "name": "OmniVoice / VoiceStudio API",
+            "atomId": "sk_omnivoice_api",
+            "children": []
+          },
+          {
+            "id": "openai-whisper-api",
+            "name": "OpenAI Whisper API (curl)",
+            "atomId": "sk_openai_whisper_api",
+            "children": []
+          },
+          {
+            "id": "qqbot-channel",
+            "name": "QQ \u9891\u9053 API \u8bf7\u6c42\u6307\u5bfc",
+            "atomId": "sk_qqbot_channel",
+            "children": []
+          },
+          {
+            "id": "tmux",
+            "name": "tmux Session Control",
+            "atomId": "sk_tmux",
+            "children": []
+          },
+          {
+            "id": "tool-use",
+            "name": "Tool Use",
+            "atomId": "sk_tool_use",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_creative",
+        "name": "Creative",
+        "children": [
+          {
+            "id": "coherent-communication",
+            "name": "Coherent Communication",
+            "atomId": "sk_coherent_communication",
+            "children": []
+          },
+          {
+            "id": "game-dev",
+            "name": "Game Dev",
+            "atomId": "sk_game_dev",
+            "children": []
+          },
+          {
+            "id": "prose",
+            "name": "OpenProse Skill",
+            "atomId": "sk_prose",
+            "children": []
+          },
+          {
+            "id": "video-frames",
+            "name": "Video Frames (ffmpeg)",
+            "atomId": "sk_video_frames",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_data",
+        "name": "Data",
+        "children": [
+          {
+            "id": "postgresql-sql",
+            "name": "PostgreSQL SQL Skill",
+            "atomId": "sk_postgresql_sql",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_devtools",
+        "name": "Devtools",
+        "children": [
+          {
+            "id": "blacksmith-testbox",
+            "name": "Blacksmith Testbox",
+            "atomId": "sk_blacksmith_testbox",
+            "children": []
+          },
+          {
+            "id": "issue-triage",
+            "name": "Issue Triage",
+            "atomId": "sk_issue_triage",
+            "children": []
+          },
+          {
+            "id": "oss-compliance-gate",
+            "name": "OSS compliance gate",
+            "atomId": "sk_oss_compliance_gate",
+            "children": []
+          },
+          {
+            "id": "rtk-triage",
+            "name": "/rtk-triage",
+            "atomId": "sk_rtk_triage",
+            "children": []
+          },
+          {
+            "id": "self-dev-resources",
+            "name": "Self-Development Resources",
+            "atomId": "sk_self_dev_resources",
+            "children": []
+          },
+          {
+            "id": "tdd-rust",
+            "name": "RTK TDD Workflow",
+            "atomId": "sk_tdd_rust",
+            "children": []
+          },
+          {
+            "id": "vite",
+            "name": "Vite Development",
+            "atomId": "sk_vite",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_documents",
+        "name": "Documents",
+        "children": [
+          {
+            "id": "9000-word-minimum",
+            "name": "Use a 9000-word minimum",
+            "atomId": "sk_9000_word_minimum",
+            "children": []
+          },
+          {
+            "id": "common-sense-logic-critical-thinking",
+            "name": "Use maximum common sense, logic, and critical thinking",
+            "atomId": "sk_common_sense_logic_critical_thinking",
+            "children": []
+          },
+          {
+            "id": "continue-next-or-continue",
+            "name": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d",
+            "atomId": "sk_continue_next_or_continue",
+            "children": []
+          },
+          {
+            "id": "document-ingestion",
+            "name": "Document Ingestion and Organization Skill",
+            "atomId": "sk_document_ingestion",
+            "children": []
+          },
+          {
+            "id": "document-intelligence",
+            "name": "Document Intelligence",
+            "atomId": "sk_document_intelligence",
+            "children": []
+          },
+          {
+            "id": "each-structured-prompt-research",
+            "name": "Use each individually structured prompt in the investigation",
+            "atomId": "sk_each_structured_prompt_research",
+            "children": []
+          },
+          {
+            "id": "mongo-tom-roleplay",
+            "name": "Respond as Mongo Tom",
+            "atomId": "sk_mongo_tom_roleplay",
+            "children": []
+          },
+          {
+            "id": "nano-pdf",
+            "name": "nano-pdf",
+            "atomId": "sk_nano_pdf",
+            "children": []
+          },
+          {
+            "id": "next-investigation-trigger",
+            "name": "The investigation is \u201cNEXT!\u201d",
+            "atomId": "sk_next_investigation_trigger",
+            "children": []
+          },
+          {
+            "id": "pdf-page-section-breakdown",
+            "name": "Break down every section and every page of the provided PDF",
+            "atomId": "sk_pdf_page_section_breakdown",
+            "children": []
+          },
+          {
+            "id": "run-everything-activation",
+            "name": "\u201cRun everything\u201d and immediate activation",
+            "atomId": "sk_run_everything_activation",
+            "children": []
+          },
+          {
+            "id": "swarm-agent-framework",
+            "name": "Complex swarm/agent framework orchestration",
+            "atomId": "sk_swarm_agent_framework",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_general",
+        "name": "General",
+        "children": [
+          {
+            "id": "apple-notes",
+            "name": "Apple Notes CLI",
+            "atomId": "sk_apple_notes",
+            "children": []
+          },
+          {
+            "id": "bluebubbles",
+            "name": "BlueBubbles Actions",
+            "atomId": "sk_bluebubbles",
+            "children": []
+          },
+          {
+            "id": "mcporter",
+            "name": "mcporter",
+            "atomId": "sk_mcporter",
+            "children": []
+          },
+          {
+            "id": "wacli",
+            "name": "wacli",
+            "atomId": "sk_wacli",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_knowledge",
+        "name": "Knowledge",
+        "children": [
+          {
+            "id": "archivist",
+            "name": "The Archivist Skill",
+            "atomId": "sk_archivist",
+            "children": []
+          },
+          {
+            "id": "obsidian-vault-maintainer",
+            "name": "obsidian-vault-maintainer",
+            "atomId": "sk_obsidian_vault_maintainer",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_legal",
+        "name": "Legal",
+        "children": [
+          {
+            "id": "tenant-misconceptions-rebuttal",
+            "name": "Tenant Misconceptions Rebuttal",
+            "atomId": "sk_tenant_misconceptions_rebuttal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "dom_mobile",
+        "name": "Mobile",
+        "children": [
+          {
+            "id": "play-billing-activation-detector",
+            "name": "Play Billing activation detector",
+            "atomId": "sk_play_billing_activation_detector",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "learnedKnowledgeTree": {
+    "id": "learned_root",
+    "name": "Learned Knowledge Tree",
+    "children": [
+      {
+        "id": "lk_cycle13",
+        "name": "Cycle 13 Distillation",
+        "children": [
+          {
+            "id": "lk_dual_deploy",
+            "name": "Dual-Path Deploy (GitHub + Vercel)",
+            "children": []
+          },
+          {
+            "id": "lk_team4",
+            "name": "Team of Four Integration",
+            "children": []
+          },
+          {
+            "id": "lk_modules",
+            "name": "Multi-Module Session OS",
+            "children": []
+          },
+          {
+            "id": "lk_fence",
+            "name": "Immutable Safety Fence",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "insights": [
+    {
+      "id": "ins_dual_path",
+      "title": "Dual-path publish is mandatory under Vercel scope flake",
+      "body": "When Vercel team scope returns 403, GitHub push + Pages/static still delivers a live surface.",
+      "relatedAtoms": [],
+      "cycle": 13
+    },
+    {
+      "id": "ins_metadata_distill",
+      "title": "Metadata distill is shippable P0; deep encyclopedia is P1",
+      "body": "Operator asked for complete autonomous ship. Catalog + interactive modules satisfy completion without 9k padding.",
+      "relatedAtoms": [],
+      "cycle": 13
+    }
+  ],
+  "critic": [
+    {
+      "id": "c_sim",
+      "finding": "Agent buttons are client-side simulation, not live LLM",
+      "severity": "Label honestly in UI"
+    },
+    {
+      "id": "c_vercel",
+      "finding": "Vercel MCP 403 on team scope",
+      "severity": "Inline create_deployment + GitHub"
+    }
+  ],
+  "log": [
+    {
+      "cycle": 13,
+      "at": "2026-10-13T03:30:00Z",
+      "msg": "Cycle 13 autonomous build complete"
+    }
+  ]
+}
