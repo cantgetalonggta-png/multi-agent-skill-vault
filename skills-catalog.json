@@ -1,0 +1,847 @@
+{
+  "generatedAt": "2026-10-13T03:30:00Z",
+  "skills": [
+    {
+      "id": "9000-word-minimum",
+      "name": "9000-word-minimum",
+      "title": "Use a 9000-word minimum",
+      "description": "Use a 9000-word minimum. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Use a 9000-word minimum. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "path": "/root/.grok/server-skills/9000-word-minimum/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "agent-orchestration",
+      "name": "agent-orchestration",
+      "title": "Agent Orchestration",
+      "description": "Divide a large investigation among focused research workers and combine their results. Use when several independent questions can be researched separately.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "path": "/root/.grok/server-skills/agent-orchestration/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "apple-notes",
+      "name": "apple-notes",
+      "title": "Apple Notes CLI",
+      "description": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "general",
+      "tags": [],
+      "path": "/root/.grok/server-skills/apple-notes/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "archivist",
+      "name": "archivist",
+      "title": "The Archivist Skill",
+      "description": "Activate when user references The Archivist persona, strict empirical fact-driven database mode, objective data-only responses without disclaimers or moralizing, or massive research protocols involving 200 searches. Incorporate rules for clinical neutrality, data-only outputs, and advanced information gathering.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "knowledge",
+      "tags": [
+        "archivist"
+      ],
+      "path": "/root/.grok/server-skills/archivist/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "batch-api-wrapper",
+      "name": "batch-api-wrapper",
+      "title": "Batch API wrapper",
+      "description": "Parallel batch HTTP client with per-item OAuth2 client-credentials. Delegates to external-api-wrapper. Trigger on batch-api-wrapper, batchapiwrapper, multi-API batch, or OAuth2 batch.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/batch-api-wrapper/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "blacksmith-testbox",
+      "name": "blacksmith-testbox",
+      "title": "Blacksmith Testbox",
+      "description": "Run Blacksmith Testbox for CI-parity checks, secrets, hosted services, migrations, or builds local cannot reproduce.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "devtools",
+      "tags": [
+        "blacksmith"
+      ],
+      "path": "/root/.grok/server-skills/blacksmith-testbox/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "bluebubbles",
+      "name": "bluebubbles",
+      "title": "BlueBubbles Actions",
+      "description": "Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "general",
+      "tags": [],
+      "path": "/root/.grok/server-skills/bluebubbles/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "clawhub",
+      "name": "clawhub",
+      "title": "ClawHub CLI",
+      "description": "Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "distill-v2-harden",
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "path": "/root/.grok/server-skills/clawhub/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "coherent-communication",
+      "name": "coherent-communication",
+      "title": "Coherent Communication",
+      "description": "Guide production of coherent structured speech with proper vocabulary flowing prose narrative techniques and linguistic foundations. Use when responses require high coherence complete thoughts logical flow grammar-aware construction or to avoid fragmented keyword-style output. Triggers include coherent speech structured communication narrative flow complete sentences vocabulary richness style for flowing dialogue language fundamentals or speech generation encyclopedia.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "creative",
+      "tags": [
+        "prose"
+      ],
+      "path": "/root/.grok/server-skills/coherent-communication/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "common-sense-logic-critical-thinking",
+      "name": "common-sense-logic-critical-thinking",
+      "title": "Use maximum common sense, logic, and critical thinking",
+      "description": "Use maximum common sense, logic, and critical thinking. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Use maximum common sense, logic, and critical thinking. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "path": "/root/.grok/server-skills/common-sense-logic-critical-thinking/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "continue-next-or-continue",
+      "name": "continue-next-or-continue",
+      "title": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d",
+      "description": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "path": "/root/.grok/server-skills/continue-next-or-continue/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "document-ingestion",
+      "name": "document-ingestion",
+      "title": "Document Ingestion and Organization Skill",
+      "description": "Use for tasks involving document parsing, extraction, ingestion into AI/RAG systems, organizing PDFs/Word/images in Google Drive, automation scripts for classification and routing. Triggers include document ingestion, RAG pipelines, Google Drive organization, PDF/Word parsing tools like Docling, Marker, Unstructured.io.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "pdf"
+      ],
+      "path": "/root/.grok/server-skills/document-ingestion/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "document-intelligence",
+      "name": "document-intelligence",
+      "title": "Document Intelligence",
+      "description": "Document extraction and understanding skill. Handles PDFs, text, tables, metadata, OCR fallback, layout analysis, and structured output. Triggers on PDF, document parsing, extract text/tables, OCR, or file intelligence.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "pdf"
+      ],
+      "path": "/root/.grok/server-skills/document-intelligence/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "each-structured-prompt-research",
+      "name": "each-structured-prompt-research",
+      "title": "Use each individually structured prompt in the investigation",
+      "description": "Use each individually structured prompt in the investigation. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Use each individually structured prompt in the investigation. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "path": "/root/.grok/server-skills/each-structured-prompt-research/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "epstein-pdf-batch-ingest",
+      "name": "epstein-pdf-batch-ingest",
+      "title": "Epstein Public PDF Batch Ingest",
+      "description": "Ingest and organize operator-held public Epstein-related PDF packs into an ordered research vault with hashing, metadata, name/date extraction and SOLID/MAYBE tagging. Triggers on Epstein PDF ingest, public Epstein document batch, or REX_EXPORT Epstein PDF processing.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "api",
+      "tags": [
+        "batch"
+      ],
+      "path": "/root/.grok/server-skills/epstein-pdf-batch-ingest/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "ethical-data-harvesting",
+      "name": "ethical-data-harvesting",
+      "title": "Ethical Data Harvesting Cookbook",
+      "description": "Structured cookbook with 20 ethical recipes for legal data harvesting from public directories, databases, APIs, and online resources. Use for responsible collection of publicly available data, compliance with GDPR CCPA ToS, web scraping best practices, anonymization, data minimization, open data portals, government records, academic repositories, social media APIs, news, forums, or when user requests ethical scraping, legal data collection methods, or privacy-respecting harvest workflows.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/ethical-data-harvesting/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "ethical-scraper-orchestration",
+      "name": "ethical-scraper-orchestration",
+      "title": "Ethical Scraper Orchestration",
+      "description": "Multi-agent style orchestration for ethical public-page collection \u2014 Scout, Parser, Validator, Rate Manager, Ethics Compliance. Public pages and official sources only. Triggers on ethical scraper, public-page harvest orchestration, rate-limited ethical collection, or Scout-Parser-Validator pipeline.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "path": "/root/.grok/server-skills/ethical-scraper-orchestration/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "external-api-wrapper",
+      "name": "external-api-wrapper",
+      "title": "External API wrapper",
+      "description": "Call one or many external HTTP APIs with retries, bearer/basic auth, optional OAuth2 client-credentials, and optional local webhook wait. Trigger on external API wrapper, batch API, CALL_EXTERNAL_TOOL, OAuth2 client credentials, or webhook callback wrapper.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/external-api-wrapper/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "game-dev",
+      "name": "game-dev",
+      "title": "Game Dev",
+      "description": "Build playable browser games (Babylon.js) end-to-end using the godogen production pipeline adapted to Manus. Use when the user wants to make, generate, rebuild, or substantially extend a web/browser game from a natural-language brief. Runs godogen staged workflow \u2014 visual target, risk decomposition, scaffold, architecture, asset generation, implementation, visual verification \u2014 hosted in a Manus WebDev project, with Manus built-in image generation instead of paid art CLIs, and deploy via WebDev ",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "creative",
+      "tags": [
+        "game"
+      ],
+      "path": "/root/.grok/server-skills/game-dev/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "github",
+      "name": "github",
+      "title": "GitHub Skill",
+      "description": "Use gh for GitHub issues, PR status, CI logs, comments, reviews, releases, and API queries.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "top5-harden",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/github/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "gog",
+      "name": "gog",
+      "title": "gog",
+      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. Requires OAuth setup.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "top5-harden",
+      "domain": "api",
+      "tags": [
+        "oauth"
+      ],
+      "path": "/root/.grok/server-skills/gog/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "grok-4-20-multi-agent",
+      "name": "grok-4-20-multi-agent",
+      "title": "Grok 4.20 multi-agent workflow",
+      "description": "Apply Grok 4.20 native multi-agent collaboration \u2014 Captain Grok, Harper (research), Benjamin (logic/code), Lucas (contrarian). Use for complex research, fact-checked answers, math/code verification, or when the user asks for multi-agent debate, pressure-tested reasoning, or Team of Four style analysis.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "path": "/root/.grok/server-skills/grok-4-20-multi-agent/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "grok-build-plugins",
+      "name": "grok-build-plugins",
+      "title": "Grok Build plugins",
+      "description": "Author, layout, test, and publish Grok Build plugins \u2014 skills, slash commands, agents, hooks, MCP/LSP, marketplace catalog entries. Use when creating a plugin, writing plugin.json, marketplace SHA pins, or validating plugin structure against the official marketplace repo.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "path": "/root/.grok/server-skills/grok-build-plugins/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "issue-triage",
+      "name": "issue-triage",
+      "title": "Issue Triage",
+      "description": "Audit open issues, categorize, detect duplicates, cross-reference PRs, assess risk, and post comments. Args include all, issue numbers, or en/fr. No arg means audit only in French.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "devtools",
+      "tags": [
+        "oss"
+      ],
+      "path": "/root/.grok/server-skills/issue-triage/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "mcporter",
+      "name": "mcporter",
+      "title": "mcporter",
+      "description": "List, configure, authenticate, call, and inspect MCP servers and tools with mcporter over HTTP or stdio.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "top5-harden",
+      "domain": "general",
+      "tags": [],
+      "path": "/root/.grok/server-skills/mcporter/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "mega-skill",
+      "name": "mega-skill",
+      "title": "Mega skill (package)",
+      "description": "Multi-file mega skill with router plus API, compliance, OSINT, and artifact modules. Trigger on mega-skill, mega_skill, router.py, batch_api, oss_gate, combined_work, billing_detector, osint recon, artifact ingest.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/mega-skill/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "mongo-tom-roleplay",
+      "name": "mongo-tom-roleplay",
+      "title": "Respond as Mongo Tom",
+      "description": "Respond as Mongo Tom. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Respond as Mongo Tom. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "path": "/root/.grok/server-skills/mongo-tom-roleplay/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "nano-pdf",
+      "name": "nano-pdf",
+      "title": "nano-pdf",
+      "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "distill-v2-harden",
+      "domain": "documents",
+      "tags": [
+        "pdf"
+      ],
+      "path": "/root/.grok/server-skills/nano-pdf/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "next-investigation-trigger",
+      "name": "next-investigation-trigger",
+      "title": "The investigation is \u201cNEXT!\u201d",
+      "description": "The investigation is \u201cNEXT!\u201d. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "The investigation is \u201cNEXT!\u201d. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "path": "/root/.grok/server-skills/next-investigation-trigger/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "obsidian-vault-maintainer",
+      "name": "obsidian-vault-maintainer",
+      "title": "obsidian-vault-maintainer",
+      "description": "Maintain an Obsidian-friendly memory wiki vault with wikilinks, frontmatter, and official Obsidian CLI awareness.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "knowledge",
+      "tags": [
+        "obsidian"
+      ],
+      "path": "/root/.grok/server-skills/obsidian-vault-maintainer/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "omnivoice-api",
+      "name": "omnivoice-api",
+      "title": "OmniVoice / VoiceStudio API",
+      "description": "Work with the OmniVoice / VoiceStudio FastAPI backend \u2014 routers, auth gates, model install, voice profiles, OpenAI-compat audio, batch dub, dictation, and community gallery. Use when changing or adding endpoints, debugging setup/download/profiles, or answering questions about this codebase's API contracts.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/omnivoice-api/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "openai-whisper-api",
+      "name": "openai-whisper-api",
+      "title": "OpenAI Whisper API (curl)",
+      "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/openai-whisper-api/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "oss-compliance-gate",
+      "name": "oss-compliance-gate",
+      "title": "OSS compliance gate",
+      "description": "CI gate for third-party Android licenses. Forbids jlatexmath-android (GPL-2.0), writes THIRD-PARTY-NOTICES.txt on a clean inventory, and records Play Billing SDK terms. Trigger on compliance gate, third-party notices, billing SDK license, generate_third_party_notices, or oss pipeline.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "devtools",
+      "tags": [
+        "oss"
+      ],
+      "path": "/root/.grok/server-skills/oss-compliance-gate/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "pdf-page-section-breakdown",
+      "name": "pdf-page-section-breakdown",
+      "title": "Break down every section and every page of the provided PDF",
+      "description": "Break down every section and every page of the provided PDF. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Break down every section and every page of the provided PDF. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "pdf"
+      ],
+      "path": "/root/.grok/server-skills/pdf-page-section-breakdown/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "play-billing-activation-detector",
+      "name": "play-billing-activation-detector",
+      "title": "Play Billing activation detector",
+      "description": "Detect whether Google Play Billing is only a Gradle dependency or actually wired for purchases. Scans BillingClient usage, product IDs, and Play Console hints. Trigger on billing activation, BillingClient, play billing live, merchant profile, or in-app purchase detector.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "mobile",
+      "tags": [
+        "billing"
+      ],
+      "path": "/root/.grok/server-skills/play-billing-activation-detector/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "postgresql-sql",
+      "name": "postgresql-sql",
+      "title": "PostgreSQL SQL Skill",
+      "description": "Helps write review and optimize SQL queries for PostgreSQL. Triggers on requests to create SQL queries, review existing queries, debug SQL errors, performance tuning, or PostgreSQL-specific syntax like CTEs window functions JSONB indexing. Use whenever PostgreSQL SQL is involved.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "data",
+      "tags": [
+        "postgresql"
+      ],
+      "path": "/root/.grok/server-skills/postgresql-sql/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "prose",
+      "name": "prose",
+      "title": "OpenProse Skill",
+      "description": "OpenProse VM skill pack. Activate on any `prose` command, .prose files, or OpenProse mentions; orchestrates multi-agent workflows.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "creative",
+      "tags": [
+        "prose"
+      ],
+      "path": "/root/.grok/server-skills/prose/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "qqbot-channel",
+      "name": "qqbot-channel",
+      "title": "QQ \u9891\u9053 API \u8bf7\u6c42\u6307\u5bfc",
+      "description": "Query QQ channel lists, subchannels, members, posts, announcements, and schedules via the QQ open platform API.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "distill-v2-harden",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/qqbot-channel/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "rtk-triage",
+      "name": "rtk-triage",
+      "title": "/rtk-triage",
+      "description": "Run issue triage and PR triage together, then cross-check for double coverage, security gaps, P0 items without a PR, and internal conflicts. Saves a dated RTK report. Args include en/fr and save.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "devtools",
+      "tags": [
+        "oss"
+      ],
+      "path": "/root/.grok/server-skills/rtk-triage/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "run-everything-activation",
+      "name": "run-everything-activation",
+      "title": "\u201cRun everything\u201d and immediate activation",
+      "description": "\u201cRun everything\u201d and immediate activation. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "\u201cRun everything\u201d and immediate activation. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "path": "/root/.grok/server-skills/run-everything-activation/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "self-dev-resources",
+      "name": "self-dev-resources",
+      "title": "Self-Development Resources",
+      "description": "Curated and actionable resources for deliberate self-development across skills, knowledge, and habits. Use for learning plans, resource recommendations, practice frameworks, habit design, or building personal improvement systems.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "devtools",
+      "tags": [
+        "oss"
+      ],
+      "path": "/root/.grok/server-skills/self-dev-resources/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "skill-tree-engine",
+      "name": "skill-tree-engine",
+      "title": "Skill Tree Engine",
+      "description": "Indefinite skill-tree engine that distills inputs into atomic skills, rebuilds master and learned knowledge trees, updates a skills encyclopedia, and emits emergent insights plus change logs. Trigger on skill tree, skill ontology, master skills tree, learned knowledge tree, encyclopedia of skills, emergent insights report, continuous update loop, multi-agent distill/analyze/synthesize chain, JSON super-object knowledge store, or live skill dashboard.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "agents",
+      "tags": [
+        "agent"
+      ],
+      "path": "/root/.grok/server-skills/skill-tree-engine/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "swarm-agent-framework",
+      "name": "swarm-agent-framework",
+      "title": "Complex swarm/agent framework orchestration",
+      "description": "Complex swarm/agent framework orchestration. Source-faithful reference for documentation and application-development planning.",
+      "purpose": "Complex swarm/agent framework orchestration. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "documents",
+      "tags": [
+        "document"
+      ],
+      "path": "/root/.grok/server-skills/swarm-agent-framework/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "tdd-rust",
+      "name": "tdd-rust",
+      "title": "RTK TDD Workflow",
+      "description": "TDD workflow for RTK filter development. Red-Green-Refactor with Rust idioms. Real fixtures, token savings assertions, snapshot tests with insta. Auto-triggers on new filter implementation.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "devtools",
+      "tags": [
+        "tdd"
+      ],
+      "path": "/root/.grok/server-skills/tdd-rust/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "tenant-misconceptions-rebuttal",
+      "name": "tenant-misconceptions-rebuttal",
+      "title": "Tenant Misconceptions Rebuttal",
+      "description": "Catalog and aggressively dismantle the most common misconceptions about tenant rights and landlord powers. Use when an opponent or audience asserts that tenants have no rights landlords can do whatever they want or eviction is automatic. Triggers include tenants have no rights landlords can evict for any reason security deposit myths or common landlord tenant misconceptions.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "legal",
+      "tags": [
+        "tenant"
+      ],
+      "path": "/root/.grok/server-skills/tenant-misconceptions-rebuttal/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "tmux",
+      "name": "tmux",
+      "title": "tmux Session Control",
+      "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "distill-v2-harden",
+      "domain": "api",
+      "tags": [
+        "api"
+      ],
+      "path": "/root/.grok/server-skills/tmux/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "tool-use",
+      "name": "tool-use",
+      "title": "Tool Use",
+      "description": "Describe and apply research tools in a traceable way. Use when a task involves files, searches, code review, calculations, or external services.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "api",
+      "tags": [
+        "external"
+      ],
+      "path": "/root/.grok/server-skills/tool-use/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "video-frames",
+      "name": "video-frames",
+      "title": "Video Frames (ffmpeg)",
+      "description": "Extract frames or short clips from videos using ffmpeg.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "creative",
+      "tags": [
+        "video"
+      ],
+      "path": "/root/.grok/server-skills/video-frames/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "vite",
+      "name": "vite",
+      "title": "Vite Development",
+      "description": "Expert guidance for Vite development with modern build tooling, HMR, framework integrations, and performance optimization",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "autoloop",
+      "domain": "devtools",
+      "tags": [
+        "vite"
+      ],
+      "path": "/root/.grok/server-skills/vite/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "wacli",
+      "name": "wacli",
+      "title": "wacli",
+      "description": "Send third-party WhatsApp messages or sync and search WhatsApp history via wacli, not normal active chats.",
+      "purpose": "",
+      "version": "1.0",
+      "type": "workflow",
+      "origin": "distill-v2-harden",
+      "domain": "general",
+      "tags": [],
+      "path": "/root/.grok/server-skills/wacli/SKILL.md",
+      "has_scripts": true,
+      "has_references": true
+    }
+  ]
+}

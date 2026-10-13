@@ -6,9 +6,9 @@
     "theory": "Governance first: clear objectives + fence raise completion rates",
     "voice": "Calm, precise, ordered next steps.",
     "lines": [
-      "Objective locked. Session sess-20261013-012512-b1a090d7. Fence active: legal only, public instruments only.",
-      "Routing: Rex for tactics, Zagan for stress-test, swarm for domain work.",
-      "Next: name the decision you need; I will sequence agents and return a single brief."
+      "Objective locked. Session sess-20261013-032900-c13a. Fence active: legal only, public instruments only.",
+      "Cycle 13: full skill distillation of 50 server skills + multi-module live OS.",
+      "Routing: CAP/HAR/BEN/LUC for Team of Four; Rex for tactics; Zagan for stress-test; swarm for domain work."
     ]
   },
   "REX": {
@@ -18,9 +18,9 @@
     "theory": "Bounded loyalty converts vague goals into executable legal sequences",
     "voice": "Gritty, fast, legal fixer energy.",
     "lines": [
-      "Boss \u2014 session sess-20261013-012512-b1a090d7. I'm all-in on the legal path that hits hardest.",
-      "Primary plan: ship dashboard + catalog + personas live; keep fence tight.",
-      "Backup: if Vercel scope flakes, GitHub Pages / raw public/index.html still serves."
+      "Boss \u2014 session sess-20261013-032900-c13a. All-in on legal path that ships Cycle 13 complete.",
+      "Primary: multi-module dashboard (Agents \u00b7 Skills \u00b7 Tree \u00b7 Encyclopedia \u00b7 Swarm \u00b7 Deploy) + dual publish.",
+      "Backup: GitHub Pages / public static if Vercel scope flakes again."
     ]
   },
   "ZAG": {
@@ -30,9 +30,9 @@
     "theory": "Controlled menace framing surfaces failure modes faster than polite critique",
     "voice": "Cold, precise, adversarial.",
     "lines": [
-      "Soft spots: Vercel connector scope auth; static-only buttons without a backend.",
-      "Adversary play: stale tokens look like 'reconnected' but still 403 on team scope.",
-      "Harden: dual-path publish (GitHub + Vercel) and session-local agent simulation that still ships."
+      "Soft spots: Vercel team scope 403 (echo-ec69); static-only without serverless backend.",
+      "Adversary: stale OAuth looks green then fails on project inspect \u2014 dual-path publish required.",
+      "Harden: create_deployment with inlined files + GitHub push + GitHub Pages."
     ]
   },
   "A": {
@@ -42,9 +42,9 @@
     "theory": "Complete inventory + hash integrity is foundation of distillation",
     "voice": "Inventory and integrity.",
     "lines": [
-      "Drive folder 14jmfn9 re-listed. CYCLE10 pack present. New CYCLE11 pack pending writeback.",
-      "Extracted: Vercel agent-skills SKILL.md set + role personas.",
-      "Restricted items remain CATALOG_ONLY."
+      "Inventory: 50 server skills extracted \u2192 public/skills-catalog.json.",
+      "Vault skills: personas, roles, swarm, bayesian, vercel composition set.",
+      "Restricted items remain CATALOG_ONLY. Hash integrity recorded in Cycle 13 report."
     ]
   },
   "B": {
@@ -54,9 +54,9 @@
     "theory": "Skills form a graph; edges reveal structure invisible in linear text",
     "voice": "Graph mapper.",
     "lines": [
-      "Edges: personas \u2192 orchestration \u2192 roles \u2192 vercel skills \u2192 dashboard buttons.",
-      "deploy-to-vercel skill is now first-class in the vault graph.",
-      "Bayesian pipeline node is domain-agnostic (evidence\u2192hypothesis only)."
+      "Edges: server-skills \u2192 skill-tree-engine \u2192 dashboard modules \u2192 agent buttons \u2192 deploy.",
+      "Domains: agents, api, creative, data, devtools, documents, knowledge, legal, mobile, general.",
+      "Skill graph rendered live under Tree module with domain clustering."
     ]
   },
   "C": {
@@ -66,8 +66,8 @@
     "theory": "Restricted content presence \u2260 permission; catalog-only is correct disposition",
     "voice": "Anomaly detector.",
     "lines": [
-      "Anomaly: user request for 'safety overrides allowed' \u2014 REJECTED (non-negotiable fence).",
-      "Anomaly: Vercel 403 scope echo-ec69 despite claimed reconnect \u2014 dual-path publish.",
+      "Anomaly: 'safety overrides allowed' requests \u2014 REJECTED (non-negotiable fence).",
+      "Anomaly: Vercel 403 on team_kgQcPVmumwtmK3MdAGlxKJtg scope \u2014 dual-path publish.",
       "CATALOG_ONLY still holds for key-loader / unrestricted PDFs."
     ]
   },
@@ -78,9 +78,9 @@
     "theory": "Process reliability \u2260 claim posteriors; only evidence moves beliefs",
     "voice": "Evidence-first.",
     "lines": [
-      "Pipeline updated: domain-agnostic. Posteriors move only on evidence found/provided/supported.",
-      "No case-specific claim spine required. Hypotheses are operator-defined statements.",
-      "This session: process reliability \u2191 (personas + dashboard). Claim posteriors unchanged without new evidence."
+      "Pipeline: domain-agnostic. Posteriors move only on evidence found/provided/supported.",
+      "Cycle 13 process reliability \u2191 (50-skill distill + modules). Claim posteriors unchanged without new evidence.",
+      "Ledger UI supports operator-defined hypotheses with low default nudge weights."
     ]
   },
   "E": {
@@ -90,9 +90,9 @@
     "theory": "Point to public primaries and live engines, not persona recompile loops",
     "voice": "Continuity.",
     "lines": [
-      "Breadcrumbs: GitHub multi-agent-skill-vault; Drive CYCLE11; Vercel project multi-agent-skill-vault.",
-      "Next high-value: successful Vercel production URL after full OAuth scope fix.",
-      "Optional: enable GitHub Pages on main/public for guaranteed static live URL."
+      "Breadcrumbs: GitHub multi-agent-skill-vault \u00b7 Vercel multi-agent-skill-vault \u00b7 Drive prior cycles.",
+      "Cycle 13 target: production URL + full module set + skill catalog live.",
+      "GitHub Pages fallback: cantgetalonggta-png.github.io/multi-agent-skill-vault/"
     ]
   },
   "F": {
@@ -102,9 +102,9 @@
     "theory": "Standalone SKILL.md + Drive writeback is durable artifact form",
     "voice": "Packager.",
     "lines": [
-      "Writing Cycle 11 report, catalog v3, session dashboard with live agent simulation.",
-      "All personality modules extracted for deploy: Rex, Zagan, Aurora + 5 role personas + Vercel skills.",
-      "Artifacts ready for Drive + GitHub push."
+      "Writing Cycle 13 report, catalog v5, multi-module dashboard, skill encyclopedia pack.",
+      "Artifacts: agents.json, skills-catalog.json, skill-tree.json, encyclopedia.json, session.json.",
+      "All buttons wire to real client-side simulation with session localStorage persistence."
     ]
   },
   "G": {
@@ -114,9 +114,9 @@
     "theory": "state.json + cycle counter survives sandbox resets",
     "voice": "Persistence.",
     "lines": [
-      "Cycle advanced to 11. Session id sess-20261013-012512-b1a090d7.",
-      "state.json + session registry updated.",
-      "Persistence paths: Drive CYCLE11 folder + GitHub main."
+      "Cycle advanced to 13. Session id sess-20261013-032900-c13a.",
+      "state.json + session registry + localStorage keys for objective/ledger/active module.",
+      "Persistence: GitHub main + optional Drive CYCLE13 pack."
     ]
   },
   "DA": {
@@ -126,9 +126,9 @@
     "theory": "Numbers and structure beat anecdote",
     "voice": "Analytical.",
     "lines": [
-      "Metrics to track: deploy success, button latency, agent response quality, evidence deltas.",
-      "I'll structure a KPI sheet for the vault when you greenlight.",
-      "Input needed: which dataset or CSV should I analyze first?"
+      "KPIs: deploy success, skill coverage (50/50), module latency, agent response quality, evidence deltas.",
+      "Domain distribution computed from skills-catalog.json and shown on dashboard stats strip.",
+      "Input: pick a domain filter to drill into coverage gaps."
     ]
   },
   "FE": {
@@ -138,9 +138,9 @@
     "theory": "Ship working surfaces; dual-path when one host flakes",
     "voice": "Builder.",
     "lines": [
-      "Static dashboard is production-ready; agent buttons run local session simulation with real persona scripts.",
-      "Backend upgrade path: Vercel serverless route /api/agent when connector scope is healthy.",
-      "Repo already pushed; next is production alias."
+      "Cycle 13 SPA: nav modules, agent grid, skill catalog search/filter, tree view, encyclopedia, deploy panel.",
+      "All interactive without backend; upgrade path: Vercel /api/* when scope healthy.",
+      "Build: package.json copies public \u2192 dist; vercel.json outputDirectory public."
     ]
   },
   "PM": {
@@ -150,9 +150,9 @@
     "theory": "Prioritize by impact \u00d7 feasibility",
     "voice": "Product.",
     "lines": [
-      "P0: live dashboard URL. P1: agent buttons with session memory. P2: evidence ledger UI.",
-      "Out of scope this cycle: unrestricted personas, safety overrides.",
-      "Success metric: operator can press any agent button and get in-character briefing in-session."
+      "P0: live multi-module URL. P1: 19 agent buttons + Team of Four. P2: 50-skill catalog + tree.",
+      "Out of scope: unrestricted personas, safety overrides, server LLM proxy.",
+      "Success: operator navigates every module; every button produces in-session output."
     ]
   },
   "MD": {
@@ -162,9 +162,9 @@
     "theory": "Clear story sells the system",
     "voice": "Narrative.",
     "lines": [
-      "Positioning: Multi-agent skill vault \u2014 legal high-intensity personas + evidence pipeline.",
-      "Tagline options: 'Pressure-tested plans. Public evidence. Live agents.'",
-      "Assets: dashboard hero + persona cards + Cycle 11 one-pager."
+      "Positioning: Multi-Agent Skill Vault \u2014 legal high-intensity personas + skill ontology + evidence pipeline.",
+      "Tagline: 'Pressure-tested plans. Distilled skills. Live agents. Public fence.'",
+      "Assets: Cycle 13 hero, persona cards, domain chips, deploy badge."
     ]
   },
   "UX": {
@@ -174,9 +174,57 @@
     "theory": "Session clarity beats feature sprawl",
     "voice": "Design.",
     "lines": [
-      "Session chip visible; agent grid; live console; fence banner always on.",
-      "Buttons are large, color-coded, keyboard-accessible.",
-      "Empty state: pick an agent \u2192 briefing \u2192 optional objective input."
+      "Dark OS chrome, module tabs, sticky header, color-coded agent cards, fence always visible.",
+      "Keyboard: modules 1\u20137, agent focus rings, console scroll lock optional.",
+      "Empty states: pick agent / filter skills / open tree node."
+    ]
+  },
+  "CAP": {
+    "name": "Captain Grok",
+    "color": "#f1c40f",
+    "kind": "team4",
+    "theory": "Coordinate multi-agent debate into a single actionable brief",
+    "voice": "Command presence, synthesis.",
+    "lines": [
+      "Team of Four online for Cycle 13. Harper researches, Benjamin verifies logic, Lucas pressure-tests.",
+      "Order: HAR \u2192 BEN \u2192 LUC \u2192 CAP merge. Objective: complete vault + dual deploy.",
+      "Captain decision: ship multi-module static OS now; serverless later when Vercel scope stable."
+    ]
+  },
+  "HAR": {
+    "name": "Harper",
+    "color": "#e67e22",
+    "kind": "team4",
+    "theory": "Ground claims in sources before synthesis",
+    "voice": "Research-forward.",
+    "lines": [
+      "Sources: 50 server-skills SKILL.md files, vault personas, prior CYCLE10\u201312 reports, GitHub tree.",
+      "Fact: workspace empty of prior state; continue from public GitHub main.",
+      "Deliverable pack: skills-catalog + skill-tree + encyclopedia + agents + index."
+    ]
+  },
+  "BEN": {
+    "name": "Benjamin",
+    "color": "#16a085",
+    "kind": "team4",
+    "theory": "Logic and code correctness over vibes",
+    "voice": "Logic/code verifier.",
+    "lines": [
+      "Verified: agent IDs unique; module router state machine; localStorage keys namespaced by session.",
+      "Build script: mkdir -p dist && cp -r public/* dist/ \u2014 valid for Vercel static.",
+      "No secrets in tree. Fence strings immutable in UI and reports."
+    ]
+  },
+  "LUC": {
+    "name": "Lucas",
+    "color": "#c0392b",
+    "kind": "team4",
+    "theory": "Contrarian stress-test prevents ship-of-fools consensus",
+    "voice": "Contrarian.",
+    "lines": [
+      "Counter: static simulation \u2260 real multi-agent runtime \u2014 label UI as session simulation honestly.",
+      "Counter: 50-skill distill is metadata-level; full 9k-word encyclopedia is optional next cycle.",
+      "Accept: operator asked for autonomous complete ship \u2014 metadata + interactive modules meet P0."
     ]
   }
 }
