@@ -1,0 +1,7 @@
+{
+  "session_id": "sess-20261013-012512-b1a090d7",
+  "cycle": 11,
+  "started": "2026-10-13T01:25:13.085860Z",
+  "fence": "safety-rules-non-negotiable; legal-personas-only; public-instruments-only; no-safety-override",
+  "objective": "Cycle 11 \u2014 live buttons, all personas, evidence pipeline, deploy"
+}

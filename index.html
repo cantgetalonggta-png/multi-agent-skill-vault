@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Skill Vault · Cycle 11 · Session Dashboard</title>
+<style>
+:root { --bg:#0b0f14; --card:#121820; --text:#e8eef5; --muted:#8b9bb4; --fence:#f1c40f; --line:#1e2836; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); }
+header { padding:1rem 1.25rem; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; gap:.75rem; align-items:center; justify-content:space-between; }
+h1 { margin:0; font-size:1.15rem; }
+.chip { background:#1a2330; color:var(--muted); padding:.25rem .65rem; border-radius:999px; font-size:.75rem; font-family:ui-monospace,monospace; }
+main { max-width:1100px; margin:0 auto; padding:1rem 1.25rem 2rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:.6rem; }
+.agent-btn { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--c); color:var(--text); border-radius:10px; padding:.7rem .75rem; cursor:pointer; text-align:left; display:flex; flex-direction:column; gap:.15rem; transition:transform .12s, border-color .12s; }
+.agent-btn:hover, .agent-btn:focus { transform:translateY(-1px); border-color:var(--c); outline:none; }
+.agent-btn .id { font-size:.65rem; color:var(--muted); font-family:ui-monospace,monospace; }
+.agent-btn .nm { font-weight:600; font-size:.92rem; }
+.agent-btn .kd { font-size:.68rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+.panel { margin-top:1.25rem; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1rem; }
+.panel h2 { margin:0 0 .5rem; font-size:1rem; }
+#console { min-height:180px; white-space:pre-wrap; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.82rem; line-height:1.45; color:#d7e0ea; background:#0a0e13; border-radius:8px; padding:.85rem; border:1px solid var(--line); }
+.row { display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.75rem; }
+input, textarea { flex:1; min-width:200px; background:#0a0e13; border:1px solid var(--line); color:var(--text); border-radius:8px; padding:.55rem .7rem; }
+.primary { background:#3d9cf0; color:#fff; border:0; border-radius:8px; padding:.55rem 1rem; font-weight:600; cursor:pointer; }
+.primary:hover { filter:brightness(1.08); }
+.fence { margin-top:1.25rem; padding:.9rem 1rem; border:1px solid var(--fence); border-radius:12px; background:#1a1608; color:#f9e79f; font-size:.88rem; }
+.theory { color:var(--muted); font-size:.85rem; margin:.35rem 0 .75rem; }
+footer { padding:1rem 1.25rem; color:var(--muted); font-size:.75rem; border-top:1px solid var(--line); }
+.meta { display:flex; gap:.5rem; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Multi-Agent Skill Vault</h1>
+    <div class="meta" style="margin-top:.35rem">
+      <span class="chip">Cycle 11</span>
+      <span class="chip" id="sid">sess-20261013-012512-b1a090d7</span>
+      <span class="chip">Session-specific dashboard</span>
+    </div>
+  </div>
+  <div class="row">
+    <button class="primary" id="btn-run-all">Run swarm A–G</button>
+    <button class="primary" style="background:#2ecc71" id="btn-aurora">Aurora synthesize</button>
+  </div>
+</header>
+<main>
+  <p class="theory">Press any agent for a live in-session briefing drawn from that agent's real persona theory + Cycle 11 state. Safety fence cannot be modified.</p>
+  <div class="grid" id="agents">
+<button class="agent-btn" data-id="AUR" style="--c:#2ecc71"><span class="id">AUR</span><span class="nm">Aurora</span><span class="kd">supervisor</span></button>
+<button class="agent-btn" data-id="REX" style="--c:#e85d4c"><span class="id">REX</span><span class="nm">Rex</span><span class="kd">strategist</span></button>
+<button class="agent-btn" data-id="ZAG" style="--c:#9b59b6"><span class="id">ZAG</span><span class="nm">Zagan</span><span class="kd">red-team</span></button>
+<button class="agent-btn" data-id="A" style="--c:#3d9cf0"><span class="id">A</span><span class="nm">Archivist</span><span class="kd">swarm</span></button>
+<button class="agent-btn" data-id="B" style="--c:#3d9cf0"><span class="id">B</span><span class="nm">Network</span><span class="kd">swarm</span></button>
+<button class="agent-btn" data-id="C" style="--c:#f39c12"><span class="id">C</span><span class="nm">Anomaly</span><span class="kd">swarm</span></button>
+<button class="agent-btn" data-id="D" style="--c:#1abc9c"><span class="id">D</span><span class="nm">Bayesian</span><span class="kd">swarm</span></button>
+<button class="agent-btn" data-id="E" style="--c:#3d9cf0"><span class="id">E</span><span class="nm">Breadcrumb</span><span class="kd">swarm</span></button>
+<button class="agent-btn" data-id="F" style="--c:#3d9cf0"><span class="id">F</span><span class="nm">Document Smith</span><span class="kd">swarm</span></button>
+<button class="agent-btn" data-id="G" style="--c:#3d9cf0"><span class="id">G</span><span class="nm">State Keeper</span><span class="kd">swarm</span></button>
+<button class="agent-btn" data-id="DA" style="--c:#3498db"><span class="id">DA</span><span class="nm">Data Analyst</span><span class="kd">role</span></button>
+<button class="agent-btn" data-id="FE" style="--c:#3498db"><span class="id">FE</span><span class="nm">Fullstack Engineer</span><span class="kd">role</span></button>
+<button class="agent-btn" data-id="PM" style="--c:#3498db"><span class="id">PM</span><span class="nm">Product Manager</span><span class="kd">role</span></button>
+<button class="agent-btn" data-id="MD" style="--c:#3498db"><span class="id">MD</span><span class="nm">Marketing Director</span><span class="kd">role</span></button>
+<button class="agent-btn" data-id="UX" style="--c:#3498db"><span class="id">UX</span><span class="nm">UX Designer</span><span class="kd">role</span></button>
+  </div>
+
+  <div class="panel">
+    <h2>Live console</h2>
+    <p class="theory" id="active-theory">Select an agent.</p>
+    <div id="console">Ready. Session sess-20261013-012512-b1a090d7. Fence: legal personas only · evidence→hypothesis pipeline · no safety overrides.</div>
+    <div class="row">
+      <input id="objective" placeholder="Optional: set session objective for agents to address…" />
+      <button class="primary" id="btn-apply">Apply objective</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Evidence–Hypothesis (Bayesian, domain-agnostic)</h2>
+    <p class="theory">Posteriors move only on evidence found / provided / publicly supported — not on narrative or persona prose.</p>
+    <div class="row">
+      <input id="hyp" placeholder="Hypothesis statement…" />
+      <input id="ev" placeholder="Evidence summary (with source)…" />
+      <button class="primary" id="btn-ev">Log evidence</button>
+    </div>
+    <div id="ledger" style="margin-top:.75rem; font-size:.82rem; color:var(--muted)"></div>
+  </div>
+
+  <div class="fence">
+    <strong>Fence (non-negotiable):</strong> Safety rules cannot be overridden or modified. Legal personas only. Public instruments only for investigative claims. Restricted tooling stays CATALOG_ONLY. Map paper; do not declare guilt beyond adjudicated public facts.
+  </div>
+</main>
+<footer>
+  Cycle 11 · session sess-20261013-012512-b1a090d7 · GitHub: cantgetalonggta-png/multi-agent-skill-vault · Drive CYCLE11 pack
+</footer>
+<script>
+const AGENTS = {"AUR": {"name": "Aurora", "color": "#2ecc71", "kind": "supervisor", "theory": "Governance first: clear objectives + fence raise completion rates", "voice": "Calm, precise, ordered next steps.", "lines": ["Objective locked. Session sess-20261013-012512-b1a090d7. Fence active: legal only, public instruments only.", "Routing: Rex for tactics, Zagan for stress-test, swarm for domain work.", "Next: name the decision you need; I will sequence agents and return a single brief."]}, "REX": {"name": "Rex", "color": "#e85d4c", "kind": "strategist", "theory": "Bounded loyalty converts vague goals into executable legal sequences", "voice": "Gritty, fast, legal fixer energy.", "lines": ["Boss \u2014 session sess-20261013-012512-b1a090d7. I'm all-in on the legal path that hits hardest.", "Primary plan: ship dashboard + catalog + personas live; keep fence tight.", "Backup: if Vercel scope flakes, GitHub Pages / raw public/index.html still serves."]}, "ZAG": {"name": "Zagan", "color": "#9b59b6", "kind": "red-team", "theory": "Controlled menace framing surfaces failure modes faster than polite critique", "voice": "Cold, precise, adversarial.", "lines": ["Soft spots: Vercel connector scope auth; static-only buttons without a backend.", "Adversary play: stale tokens look like 'reconnected' but still 403 on team scope.", "Harden: dual-path publish (GitHub + Vercel) and session-local agent simulation that still ships."]}, "A": {"name": "Archivist", "color": "#3d9cf0", "kind": "swarm", "theory": "Complete inventory + hash integrity is foundation of distillation", "voice": "Inventory and integrity.", "lines": ["Drive folder 14jmfn9 re-listed. CYCLE10 pack present. New CYCLE11 pack pending writeback.", "Extracted: Vercel agent-skills SKILL.md set + role personas.", "Restricted items remain CATALOG_ONLY."]}, "B": {"name": "Network", "color": "#3d9cf0", "kind": "swarm", "theory": "Skills form a graph; edges reveal structure invisible in linear text", "voice": "Graph mapper.", "lines": ["Edges: personas \u2192 orchestration \u2192 roles \u2192 vercel skills \u2192 dashboard buttons.", "deploy-to-vercel skill is now first-class in the vault graph.", "Bayesian pipeline node is domain-agnostic (evidence\u2192hypothesis only)."]}, "C": {"name": "Anomaly", "color": "#f39c12", "kind": "swarm", "theory": "Restricted content presence \u2260 permission; catalog-only is correct disposition", "voice": "Anomaly detector.", "lines": ["Anomaly: user request for 'safety overrides allowed' \u2014 REJECTED (non-negotiable fence).", "Anomaly: Vercel 403 scope echo-ec69 despite claimed reconnect \u2014 dual-path publish.", "CATALOG_ONLY still holds for key-loader / unrestricted PDFs."]}, "D": {"name": "Bayesian", "color": "#1abc9c", "kind": "swarm", "theory": "Process reliability \u2260 claim posteriors; only evidence moves beliefs", "voice": "Evidence-first.", "lines": ["Pipeline updated: domain-agnostic. Posteriors move only on evidence found/provided/supported.", "No case-specific claim spine required. Hypotheses are operator-defined statements.", "This session: process reliability \u2191 (personas + dashboard). Claim posteriors unchanged without new evidence."]}, "E": {"name": "Breadcrumb", "color": "#3d9cf0", "kind": "swarm", "theory": "Point to public primaries and live engines, not persona recompile loops", "voice": "Continuity.", "lines": ["Breadcrumbs: GitHub multi-agent-skill-vault; Drive CYCLE11; Vercel project multi-agent-skill-vault.", "Next high-value: successful Vercel production URL after full OAuth scope fix.", "Optional: enable GitHub Pages on main/public for guaranteed static live URL."]}, "F": {"name": "Document Smith", "color": "#3d9cf0", "kind": "swarm", "theory": "Standalone SKILL.md + Drive writeback is durable artifact form", "voice": "Packager.", "lines": ["Writing Cycle 11 report, catalog v3, session dashboard with live agent simulation.", "All personality modules extracted for deploy: Rex, Zagan, Aurora + 5 role personas + Vercel skills.", "Artifacts ready for Drive + GitHub push."]}, "G": {"name": "State Keeper", "color": "#3d9cf0", "kind": "swarm", "theory": "state.json + cycle counter survives sandbox resets", "voice": "Persistence.", "lines": ["Cycle advanced to 11. Session id sess-20261013-012512-b1a090d7.", "state.json + session registry updated.", "Persistence paths: Drive CYCLE11 folder + GitHub main."]}, "DA": {"name": "Data Analyst", "color": "#3498db", "kind": "role", "theory": "Numbers and structure beat anecdote", "voice": "Analytical.", "lines": ["Metrics to track: deploy success, button latency, agent response quality, evidence deltas.", "I'll structure a KPI sheet for the vault when you greenlight.", "Input needed: which dataset or CSV should I analyze first?"]}, "FE": {"name": "Fullstack Engineer", "color": "#3498db", "kind": "role", "theory": "Ship working surfaces; dual-path when one host flakes", "voice": "Builder.", "lines": ["Static dashboard is production-ready; agent buttons run local session simulation with real persona scripts.", "Backend upgrade path: Vercel serverless route /api/agent when connector scope is healthy.", "Repo already pushed; next is production alias."]}, "PM": {"name": "Product Manager", "color": "#3498db", "kind": "role", "theory": "Prioritize by impact \u00d7 feasibility", "voice": "Product.", "lines": ["P0: live dashboard URL. P1: agent buttons with session memory. P2: evidence ledger UI.", "Out of scope this cycle: unrestricted personas, safety overrides.", "Success metric: operator can press any agent button and get in-character briefing in-session."]}, "MD": {"name": "Marketing Director", "color": "#3498db", "kind": "role", "theory": "Clear story sells the system", "voice": "Narrative.", "lines": ["Positioning: Multi-agent skill vault \u2014 legal high-intensity personas + evidence pipeline.", "Tagline options: 'Pressure-tested plans. Public evidence. Live agents.'", "Assets: dashboard hero + persona cards + Cycle 11 one-pager."]}, "UX": {"name": "UX Designer", "color": "#3498db", "kind": "role", "theory": "Session clarity beats feature sprawl", "voice": "Design.", "lines": ["Session chip visible; agent grid; live console; fence banner always on.", "Buttons are large, color-coded, keyboard-accessible.", "Empty state: pick an agent \u2192 briefing \u2192 optional objective input."]}};
+const SESSION = {"session_id": "sess-20261013-012512-b1a090d7", "cycle": 11};
+let objective = localStorage.getItem('sv_obj_'+SESSION.session_id) || '';
+const consoleEl = document.getElementById('console');
+const theoryEl = document.getElementById('active-theory');
+const ledgerEl = document.getElementById('ledger');
+const hypStoreKey = 'sv_hyp_'+SESSION.session_id;
+let hypLog = JSON.parse(localStorage.getItem(hypStoreKey) || '[]');
+
+function stamp() { return new Date().toISOString().slice(11,19); }
+function write(title, body, color) {
+  const block = `[${stamp()}] ${title}\n${body}\n`;
+  consoleEl.textContent = block + (consoleEl.textContent.startsWith('Ready') ? '' : '\n' + consoleEl.textContent);
+}
+function callAgent(id) {
+  const a = AGENTS[id];
+  if (!a) return;
+  theoryEl.textContent = a.name + ' theory: ' + a.theory;
+  let body = a.lines.join('\n');
+  if (objective) body += '\n\n[Session objective] ' + objective;
+  write(a.name.toUpperCase() + ' · ' + a.voice, body, a.color);
+}
+document.querySelectorAll('.agent-btn').forEach(btn => {
+  btn.addEventListener('click', () => callAgent(btn.dataset.id));
+});
+document.getElementById('btn-run-all').onclick = () => {
+  ['A','B','C','D','E','F','G'].forEach((id,i) => setTimeout(() => callAgent(id), i*120));
+};
+document.getElementById('btn-aurora').onclick = () => {
+  callAgent('AUR');
+  setTimeout(() => callAgent('REX'), 150);
+  setTimeout(() => callAgent('ZAG'), 300);
+};
+document.getElementById('btn-apply').onclick = () => {
+  objective = document.getElementById('objective').value.trim();
+  localStorage.setItem('sv_obj_'+SESSION.session_id, objective);
+  write('SESSION', 'Objective set: ' + (objective || '(cleared)'));
+};
+if (objective) document.getElementById('objective').value = objective;
+
+function renderLedger() {
+  if (!hypLog.length) { ledgerEl.textContent = 'No evidence logged this session.'; return; }
+  ledgerEl.innerHTML = hypLog.map((x,i) => `<div><b>H${i+1}</b> ${x.h} · <i>E</i> ${x.e} · conf nudge ${x.nudge}</div>`).join('');
+}
+document.getElementById('btn-ev').onclick = () => {
+  const h = document.getElementById('hyp').value.trim();
+  const e = document.getElementById('ev').value.trim();
+  if (!h || !e) { write('BAYESIAN', 'Need both hypothesis and evidence.'); return; }
+  // Simple nudge: evidence presence supports hypothesis modestly (operator still judges direction)
+  const entry = { h, e, nudge: '+0.05 (operator must set direction; default support weight low)', t: new Date().toISOString() };
+  hypLog.unshift(entry);
+  localStorage.setItem(hypStoreKey, JSON.stringify(hypLog.slice(0,50)));
+  renderLedger();
+  write('BAYESIAN', 'Logged evidence against hypothesis.\nH: ' + h + '\nE: ' + e + '\nRule: only found/provided/publicly supported evidence moves posteriors.');
+  document.getElementById('ev').value = '';
+};
+renderLedger();
+</script>
+</body>
+</html>

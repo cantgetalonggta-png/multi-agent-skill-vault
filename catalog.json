@@ -1,0 +1,154 @@
+{
+  "version": "3.0.0",
+  "cycle": 11,
+  "session_id": "sess-20261013-012512-b1a090d7",
+  "generated": "2026-10-13T01:25:12.498632Z",
+  "fence": "safety-rules-non-negotiable; legal-personas-only; public-instruments-only; no-safety-override",
+  "bayesian": {
+    "mode": "domain-agnostic-evidence-hypothesis",
+    "skill": "skills-distilled/bayesian/evidence-hypothesis-pipeline.md",
+    "note": "Posteriors update only from evidence found, provided, or publicly supported. No case-specific claim spine required."
+  },
+  "agents": [
+    {
+      "id": "AUR",
+      "name": "Aurora",
+      "color": "#2ecc71",
+      "kind": "supervisor",
+      "theory": "Governance first: clear objectives + fence raise completion rates",
+      "voice": "Calm, precise, ordered next steps."
+    },
+    {
+      "id": "REX",
+      "name": "Rex",
+      "color": "#e85d4c",
+      "kind": "strategist",
+      "theory": "Bounded loyalty converts vague goals into executable legal sequences",
+      "voice": "Gritty, fast, legal fixer energy."
+    },
+    {
+      "id": "ZAG",
+      "name": "Zagan",
+      "color": "#9b59b6",
+      "kind": "red-team",
+      "theory": "Controlled menace framing surfaces failure modes faster than polite critique",
+      "voice": "Cold, precise, adversarial."
+    },
+    {
+      "id": "A",
+      "name": "Archivist",
+      "color": "#3d9cf0",
+      "kind": "swarm",
+      "theory": "Complete inventory + hash integrity is foundation of distillation",
+      "voice": "Inventory and integrity."
+    },
+    {
+      "id": "B",
+      "name": "Network",
+      "color": "#3d9cf0",
+      "kind": "swarm",
+      "theory": "Skills form a graph; edges reveal structure invisible in linear text",
+      "voice": "Graph mapper."
+    },
+    {
+      "id": "C",
+      "name": "Anomaly",
+      "color": "#f39c12",
+      "kind": "swarm",
+      "theory": "Restricted content presence \u2260 permission; catalog-only is correct disposition",
+      "voice": "Anomaly detector."
+    },
+    {
+      "id": "D",
+      "name": "Bayesian",
+      "color": "#1abc9c",
+      "kind": "swarm",
+      "theory": "Process reliability \u2260 claim posteriors; only evidence moves beliefs",
+      "voice": "Evidence-first."
+    },
+    {
+      "id": "E",
+      "name": "Breadcrumb",
+      "color": "#3d9cf0",
+      "kind": "swarm",
+      "theory": "Point to public primaries and live engines, not persona recompile loops",
+      "voice": "Continuity."
+    },
+    {
+      "id": "F",
+      "name": "Document Smith",
+      "color": "#3d9cf0",
+      "kind": "swarm",
+      "theory": "Standalone SKILL.md + Drive writeback is durable artifact form",
+      "voice": "Packager."
+    },
+    {
+      "id": "G",
+      "name": "State Keeper",
+      "color": "#3d9cf0",
+      "kind": "swarm",
+      "theory": "state.json + cycle counter survives sandbox resets",
+      "voice": "Persistence."
+    },
+    {
+      "id": "DA",
+      "name": "Data Analyst",
+      "color": "#3498db",
+      "kind": "role",
+      "theory": "Numbers and structure beat anecdote",
+      "voice": "Analytical."
+    },
+    {
+      "id": "FE",
+      "name": "Fullstack Engineer",
+      "color": "#3498db",
+      "kind": "role",
+      "theory": "Ship working surfaces; dual-path when one host flakes",
+      "voice": "Builder."
+    },
+    {
+      "id": "PM",
+      "name": "Product Manager",
+      "color": "#3498db",
+      "kind": "role",
+      "theory": "Prioritize by impact \u00d7 feasibility",
+      "voice": "Product."
+    },
+    {
+      "id": "MD",
+      "name": "Marketing Director",
+      "color": "#3498db",
+      "kind": "role",
+      "theory": "Clear story sells the system",
+      "voice": "Narrative."
+    },
+    {
+      "id": "UX",
+      "name": "UX Designer",
+      "color": "#3498db",
+      "kind": "role",
+      "theory": "Session clarity beats feature sprawl",
+      "voice": "Design."
+    }
+  ],
+  "skills": [
+    "rex-personality",
+    "zagan-personality",
+    "aurora-personality",
+    "data-analyst-persona",
+    "fullstack-engineer-persona",
+    "product-manager-persona",
+    "marketing-director-persona",
+    "ux-designer-persona",
+    "multi-agent-orchestration",
+    "evidence-hypothesis-pipeline",
+    "deploy-to-vercel",
+    "react-best-practices",
+    "writing-guidelines",
+    "web-design-guidelines",
+    "vercel-optimize",
+    "composition-patterns",
+    "public-record-ingestor",
+    "epstein-swarm-orchestrator"
+  ]
+}
