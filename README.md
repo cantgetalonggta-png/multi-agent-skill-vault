@@ -1,18 +1,15 @@
-# Multi-Agent Skill Vault (Cycle 10)
+# Multi-Agent Skill Vault (Cycle 11)
 
-Safe multi-agent skill system with:
+Session-specific live dashboard with **15 agents** (Rex, Zagan, Aurora, A–G swarm, 5 role personas).
 
-- **Rex** — gritty legal strategist
-- **Zagan** — controlled red-team
-- **Aurora** — supervisor / governance
-- **Swarm A–G** — Archivist, Network, Anomaly, Bayesian, Breadcrumb, Document Smith, State Keeper
-
-## Live dashboard
-Open `public/index.html` or the Vercel deployment.
+## Live UI
+Open `public/index.html` — every agent button runs a real in-session briefing from that agent's theory + Cycle 11 state. Session evidence ledger is domain-agnostic (evidence → hypothesis only).
 
 ## Fence
-Public instruments only. Legal personas only. Safety rules cannot be overridden.
+Safety rules **cannot** be overridden. Legal personas only.
+
+## Skills
+See `skills/personas/`, `skills/bayesian/`, `skills/vercel/`, `skills/roles/`.
 
 ## Drive
-Source: https://drive.google.com/drive/folders/14jmfn9Ish5zzkmctgOzZ-_HG7vILi15Q  
-Cycle 10 pack: https://drive.google.com/drive/folders/1snjR4LygBXc0sryqXjG8Cp5yKHhKWasn
+https://drive.google.com/drive/folders/14jmfn9Ish5zzkmctgOzZ-_HG7vILi15Q
