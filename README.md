@@ -1,3 +1,5 @@
+# Multi-Agent Skill Vault · Cycle 14
+
 # Multi-Agent Skill Vault (Cycle 13)
 
 Full multi-module **Skill Vault OS** with:
@@ -28,3 +30,11 @@ npm run build
 
 ## Cycle
 See `reports/CYCLE13.md`.
+
+
+## Cycle 14 live
+- Production: https://multi-agent-skill-vault.vercel.app/
+- Grok Skill Packages: https://multi-agent-skill-vault.vercel.app/grok-skills/
+- M-IFIE: https://strand-osint-mesh.vercel.app/mifie
+
+Honest label: UI agent actions are **session simulations** (not a live multi-agent LLM backend).

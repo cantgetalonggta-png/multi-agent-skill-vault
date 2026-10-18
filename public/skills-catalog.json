@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T03:30:00Z",
+  "generatedAt": "2026-10-18T04:12:42Z",
   "skills": [
     {
       "id": "9000-word-minimum",
@@ -842,6 +842,190 @@
       "path": "/root/.grok/server-skills/wacli/SKILL.md",
       "has_scripts": true,
       "has_references": true
+    },
+    {
+      "id": "osint-scout",
+      "name": "osint-scout",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: osint-scout. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "forensic-ocr",
+      "name": "forensic-ocr",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: forensic-ocr. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "dork-specialist",
+      "name": "dork-specialist",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: dork-specialist. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "archive-recovery",
+      "name": "archive-recovery",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: archive-recovery. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "entity-distill",
+      "name": "entity-distill",
+      "domain": "devtools",
+      "summary": "Cycle 14 registry atom: entity-distill. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "red-team-audit",
+      "name": "red-team-audit",
+      "domain": "devtools",
+      "summary": "Cycle 14 registry atom: red-team-audit. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "dossier-compiler",
+      "name": "dossier-compiler",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: dossier-compiler. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "omni-index",
+      "name": "omni-index",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: omni-index. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "mifie-v6",
+      "name": "mifie-v6",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: mifie-v6. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "strand-mesh",
+      "name": "strand-mesh",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: strand-mesh. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "auto-repair",
+      "name": "auto-repair",
+      "domain": "devtools",
+      "summary": "Cycle 14 registry atom: auto-repair. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "vercel-deploy",
+      "name": "vercel-deploy",
+      "domain": "devtools",
+      "summary": "Cycle 14 registry atom: vercel-deploy. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "github-sync",
+      "name": "github-sync",
+      "domain": "devtools",
+      "summary": "Cycle 14 registry atom: github-sync. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "evidence-chain",
+      "name": "evidence-chain",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: evidence-chain. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "journalist-exception",
+      "name": "journalist-exception",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: journalist-exception. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "pdf-tools",
+      "name": "pdf-tools",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: pdf-tools. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "web-search-operators",
+      "name": "web-search-operators",
+      "domain": "devtools",
+      "summary": "Cycle 14 registry atom: web-search-operators. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "flight-log-ocr",
+      "name": "flight-log-ocr",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: flight-log-ocr. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "npa-recovery",
+      "name": "npa-recovery",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: npa-recovery. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
+    },
+    {
+      "id": "chain-of-custody",
+      "name": "chain-of-custody",
+      "domain": "osint",
+      "summary": "Cycle 14 registry atom: chain-of-custody. Public-record / tooling knowledge only. Session-simulation friendly.",
+      "origin": "grok-skill-packages-app + M-IFIE v6.0 distill",
+      "status": "CATALOG",
+      "cycle": 14
     }
-  ]
+  ],
+  "version": "5.0.0",
+  "cycle": 14,
+  "count": 70,
+  "note": "Cycle 14 additive pack (+20); base 50 server skills retained"
 }

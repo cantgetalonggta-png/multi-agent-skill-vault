@@ -363,6 +363,25 @@
           }
         ]
       }
+    ],
+    "osint": [
+      "osint-scout",
+      "forensic-ocr",
+      "dork-specialist",
+      "archive-recovery",
+      "entity-distill",
+      "red-team-audit",
+      "dossier-compiler",
+      "omni-index",
+      "mifie-v6",
+      "strand-mesh",
+      "auto-repair",
+      "vercel-deploy"
+    ],
+    "deploy": [
+      "vercel-deploy",
+      "github-sync",
+      "auto-repair"
     ]
   },
   "learned": {
@@ -395,6 +414,12 @@
           }
         ]
       }
+    ],
+    "cycle14": [
+      "Vercel write scope 403 \u2192 dual-path GitHub auto-deploy",
+      "Static session simulation must be labeled honestly",
+      "X3 HTTP probe before LIVE claims",
+      "Grok packages hosted under /grok-skills/"
     ]
   },
   "domainCounts": {
@@ -403,10 +428,12 @@
     "general": 4,
     "knowledge": 2,
     "api": 12,
-    "devtools": 7,
+    "devtools": 13,
     "creative": 4,
     "mobile": 1,
     "data": 1,
-    "legal": 1
-  }
+    "legal": 1,
+    "osint": 14
+  },
+  "cycle": 14
 }

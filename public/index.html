@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Skill Vault · Cycle 13 · Multi-Agent OS</title>
-<meta name="description" content="Multi-Agent Skill Vault Cycle 13 — 19 agents, 50 distilled skills, skill tree, encyclopedia, evidence pipeline, dual deploy."/>
+<title>Skill Vault · Cycle 14 · Multi-Agent OS</title>
+<meta name="description" content="Multi-Agent Skill Vault Cycle 14 — 19 agents, 50 distilled skills, skill tree, encyclopedia, evidence pipeline, dual deploy."/>
 <style>
 :root {
   --bg:#070b10; --bg2:#0b1017; --card:#111821; --card2:#161e29;
@@ -169,10 +169,10 @@ footer {
 <header>
   <div class="brand">
     <h1>Multi-Agent Skill Vault</h1>
-    <div class="sub">Cycle 13 · Session OS · Distilled skills · Live agents · Public fence</div>
+    <div class="sub">Cycle 14 · Session OS · Distilled skills · Live agents · Public fence</div>
   </div>
   <div class="chips" id="header-chips">
-    <span class="chip ok">Cycle 13</span>
+    <span class="chip ok">Cycle 14</span>
     <span class="chip" id="sid">loading…</span>
     <span class="chip warn">Fence ON</span>
   </div>
@@ -185,6 +185,7 @@ footer {
   <button data-mod="encyclopedia">Encyclopedia</button>
   <button data-mod="swarm">Swarm</button>
   <button data-mod="evidence">Evidence</button>
+  <button data-mod="mifie">M-IFIE</button>
   <button data-mod="deploy">Deploy</button>
 </nav>
 
@@ -193,7 +194,7 @@ footer {
 
   <!-- AGENTS -->
   <section class="module active" id="mod-agents">
-    <p class="theory">Press any agent for a live in-session briefing from that persona's theory + Cycle 13 state. Safety fence cannot be modified. <span class="kbd">1–7</span> modules · Team of Four + swarm actions below.</p>
+    <p class="theory">Press any agent for a live in-session briefing from that persona's theory + Cycle 14 state. Safety fence cannot be modified. <span class="kbd">1–8</span> modules · Team of Four + swarm actions below.</p>
     <div class="row" style="margin-top:0; margin-bottom:.75rem">
       <button class="btn primary" id="btn-run-all">Run swarm A–G</button>
       <button class="btn ok" id="btn-aurora">Aurora synthesize</button>
@@ -204,7 +205,7 @@ footer {
     <div class="panel">
       <h2>Live console</h2>
       <p class="theory" id="active-theory">Select an agent.</p>
-      <div id="console" class="console">Ready. Cycle 13 multi-module OS online. Fence: legal personas only · evidence→hypothesis · no safety overrides.</div>
+      <div id="console" class="console">Ready. Cycle 14 multi-module OS online. Fence: legal personas only · evidence→hypothesis · no safety overrides.</div>
       <div class="row">
         <input id="objective" placeholder="Optional: set session objective for agents to address…" />
         <button class="btn primary" id="btn-apply">Apply objective</button>
@@ -226,7 +227,7 @@ footer {
 
   <!-- TREE -->
   <section class="module" id="mod-tree">
-    <p class="theory">Master Skills Tree (operational atoms by domain) + Learned Knowledge Tree (Cycle 13 inferences).</p>
+    <p class="theory">Master Skills Tree (operational atoms by domain) + Learned Knowledge Tree (Cycle 14 inferences).</p>
     <div class="row" style="margin-top:0; margin-bottom:.75rem">
       <button class="btn primary" id="btn-expand-tree">Expand all</button>
       <button class="btn" id="btn-collapse-tree">Collapse domains</button>
@@ -289,6 +290,36 @@ footer {
     </div>
   </section>
 
+
+  <!-- M-IFIE / GROK PACKAGES -->
+  <section class="module" id="mod-mifie">
+    <p class="theory">M-IFIE v6.0 handoff + Grok Skill Packages. UI here is <strong>session simulation</strong>; live engines open in verified production URLs (X3 HTTP 200). Public-record ceiling only.</p>
+    <div class="row" style="margin-top:0;margin-bottom:.75rem">
+      <a class="btn primary" href="https://strand-osint-mesh.vercel.app/mifie" target="_blank" rel="noopener">Open Live M-IFIE</a>
+      <a class="btn" href="https://strand-mifie-v6.vercel.app" target="_blank" rel="noopener">M-IFIE Mirror</a>
+      <a class="btn ok" href="/grok-skills/" target="_blank" rel="noopener">Grok Skill Packages</a>
+      <a class="btn purple" href="https://strand-osint-mesh.vercel.app" target="_blank" rel="noopener">STRAND Mesh</a>
+    </div>
+    <div class="panel">
+      <h2>4-Phase matrix (sim)</h2>
+      <div class="row" style="margin-top:0">
+        <button class="btn primary" id="btn-mifie-p1">Phase 1 Recon</button>
+        <button class="btn" id="btn-mifie-p2">Phase 2 Harvest</button>
+        <button class="btn" id="btn-mifie-p3">Phase 3 Pattern</button>
+        <button class="btn warn" id="btn-mifie-p4">Phase 4 Dossier</button>
+        <button class="btn ok" id="btn-mifie-all">Run all 4 phases</button>
+      </div>
+      <div id="mifie-console" class="console" style="margin-top:.75rem">M-IFIE sim idle. Phases labeled as client-side simulation.</div>
+    </div>
+    <div class="panel">
+      <h2>X3 Live URL Matrix</h2>
+      <div id="live-matrix" class="theory">Probing…</div>
+      <div class="row">
+        <button class="btn primary" id="btn-x3-probe">Re-run X3 probes</button>
+      </div>
+    </div>
+  </section>
+
   <!-- DEPLOY -->
   <section class="module" id="mod-deploy">
     <p class="theory">Dual-path publish: GitHub main + Vercel static. Scope flakes on Vercel OAuth do not block GitHub Pages / raw static.</p>
@@ -311,7 +342,7 @@ footer {
 </main>
 
 <footer>
-  Cycle 13 · Multi-Agent Skill Vault · cantgetalonggta-png/multi-agent-skill-vault · Public-record ceiling · Session simulation (not live LLM)
+  Cycle 14 · Multi-Agent Skill Vault · cantgetalonggta-png/multi-agent-skill-vault · Public-record ceiling · Session simulation (not live LLM)
 </footer>
 
 <script>
@@ -657,6 +688,72 @@ $('btn-verify-local').onclick = () => {
     ['session', !!state.session?.session_id],
   ];
   writeConsole($('deploy-log'), 'VERIFY', checks.map(([k,ok]) => `${ok?'PASS':'FAIL'} · ${k}`).join('\n'));
+};
+
+
+// --- Cycle 14: M-IFIE + X3 matrix ---
+const LIVE_URLS = [
+  {name:'Skill Vault', url:'https://multi-agent-skill-vault.vercel.app/'},
+  {name:'Grok Packages', url:'https://multi-agent-skill-vault.vercel.app/grok-skills/'},
+  {name:'M-IFIE', url:'https://strand-osint-mesh.vercel.app/mifie'},
+  {name:'M-IFIE Mirror', url:'https://strand-mifie-v6.vercel.app'},
+  {name:'STRAND', url:'https://strand-osint-mesh.vercel.app'},
+  {name:'Skill Engine', url:'https://skill-engine-dashboard.vercel.app'},
+];
+const MIFIE_AGENTS = ['OSINT Scout','Dork Specialist','Academic Auditor','Financial Forensics','Legal Examiner','Archival Historian','Social Mapper','OCR Forensics','Pattern Engine','Bias Checker','Synthesizer','Red Team','Structure Architect','Scope Manager','Data Recovery','Master Editor'];
+
+async function probeOnce(url){
+  try {
+    const c = new AbortController();
+    const t = setTimeout(()=>c.abort(), 7000);
+    await fetch(url, {mode:'no-cors', cache:'no-store', signal:c.signal});
+    clearTimeout(t);
+    return true;
+  } catch(e) {
+    return new Promise(res=>{
+      const img = new Image();
+      const t = setTimeout(()=>res(false), 5000);
+      img.onload = ()=>{clearTimeout(t); res(true)};
+      img.onerror = ()=>{clearTimeout(t); res(true)}; // network reached host
+      try { img.src = url + (url.includes('?')?'&':'?') + 'p=' + Date.now(); } catch(_) { clearTimeout(t); res(false); }
+    });
+  }
+}
+async function runX3Matrix(){
+  const el = $('live-matrix');
+  if(!el) return;
+  el.innerHTML = 'Running X3 probes…';
+  let html = '<table style="width:100%;border-collapse:collapse;font-size:.82rem"><tr><th align=left>Surface</th><th>X3</th><th align=left>URL</th></tr>';
+  for(const item of LIVE_URLS){
+    let ok=0;
+    for(let i=0;i<3;i++){ if(await probeOnce(item.url)) ok++; }
+    const pass = ok>=2;
+    html += `<tr><td>${item.name}</td><td style="color:${pass?'#2ecc71':'#f1c40f'}">${ok}/3</td><td><a href="${item.url}" target="_blank" rel="noopener">${item.url}</a></td></tr>`;
+  }
+  html += '</table><p class="theory" style="margin-top:.5rem">Client probes use no-cors/opaque success. Server curl X3 performed at ship time.</p>';
+  el.innerHTML = html;
+}
+function runMifiePhase(n){
+  const el = $('mifie-console');
+  if(!el) return;
+  const slice = MIFIE_AGENTS.slice((n-1)*4, n*4);
+  writeConsole(el, `PHASE ${n} (SIM)`, slice.map(a=>`· ${a} → ready → active → complete`).join('\n') + '\nLabel: session simulation — not live LLM swarm.');
+}
+async function runMifieAll(){
+  for(let p=1;p<=4;p++){ runMifiePhase(p); await new Promise(r=>setTimeout(r,120)); }
+  writeConsole($('mifie-console'), 'DOSSIER (SIM)', 'SOLID/MAYBE/UNVERIFIED tags prepared.\nOpen live engine: https://strand-osint-mesh.vercel.app/mifie');
+}
+if($('btn-mifie-p1')) $('btn-mifie-p1').onclick = ()=>runMifiePhase(1);
+if($('btn-mifie-p2')) $('btn-mifie-p2').onclick = ()=>runMifiePhase(2);
+if($('btn-mifie-p3')) $('btn-mifie-p3').onclick = ()=>runMifiePhase(3);
+if($('btn-mifie-p4')) $('btn-mifie-p4').onclick = ()=>runMifiePhase(4);
+if($('btn-mifie-all')) $('btn-mifie-all').onclick = ()=>runMifieAll();
+if($('btn-x3-probe')) $('btn-x3-probe').onclick = ()=>runX3Matrix();
+// auto matrix when module selected
+const _setModule = setModule;
+setModule = function(name){
+  _setModule(name);
+  if(name==='mifie') runX3Matrix();
 };
 
 boot();

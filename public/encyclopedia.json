@@ -1,7 +1,7 @@
 {
-  "version": "5.0.0",
-  "cycle": 13,
-  "generatedAt": "2026-10-13T03:30:00Z",
+  "version": "6.0.0",
+  "cycle": 14,
+  "generatedAt": "2026-10-18T04:12:42Z",
   "entries": [
     {
       "id": "9000-word-minimum",
@@ -452,6 +452,166 @@
       "origin": "distill-v2-harden",
       "has_scripts": true,
       "has_references": true
+    },
+    {
+      "id": "osint-scout",
+      "name": "osint-scout",
+      "domain": "osint",
+      "summary": "osint-scout: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "forensic-ocr",
+      "name": "forensic-ocr",
+      "domain": "osint",
+      "summary": "forensic-ocr: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "dork-specialist",
+      "name": "dork-specialist",
+      "domain": "osint",
+      "summary": "dork-specialist: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "archive-recovery",
+      "name": "archive-recovery",
+      "domain": "osint",
+      "summary": "archive-recovery: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "entity-distill",
+      "name": "entity-distill",
+      "domain": "osint",
+      "summary": "entity-distill: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "red-team-audit",
+      "name": "red-team-audit",
+      "domain": "osint",
+      "summary": "red-team-audit: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "dossier-compiler",
+      "name": "dossier-compiler",
+      "domain": "osint",
+      "summary": "dossier-compiler: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "omni-index",
+      "name": "omni-index",
+      "domain": "osint",
+      "summary": "omni-index: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "mifie-v6",
+      "name": "mifie-v6",
+      "domain": "osint",
+      "summary": "mifie-v6: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "strand-mesh",
+      "name": "strand-mesh",
+      "domain": "osint",
+      "summary": "strand-mesh: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "auto-repair",
+      "name": "auto-repair",
+      "domain": "osint",
+      "summary": "auto-repair: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "vercel-deploy",
+      "name": "vercel-deploy",
+      "domain": "osint",
+      "summary": "vercel-deploy: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "github-sync",
+      "name": "github-sync",
+      "domain": "osint",
+      "summary": "github-sync: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "evidence-chain",
+      "name": "evidence-chain",
+      "domain": "osint",
+      "summary": "evidence-chain: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "journalist-exception",
+      "name": "journalist-exception",
+      "domain": "osint",
+      "summary": "journalist-exception: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "pdf-tools",
+      "name": "pdf-tools",
+      "domain": "osint",
+      "summary": "pdf-tools: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "web-search-operators",
+      "name": "web-search-operators",
+      "domain": "osint",
+      "summary": "web-search-operators: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "flight-log-ocr",
+      "name": "flight-log-ocr",
+      "domain": "osint",
+      "summary": "flight-log-ocr: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "npa-recovery",
+      "name": "npa-recovery",
+      "domain": "osint",
+      "summary": "npa-recovery: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "chain-of-custody",
+      "name": "chain-of-custody",
+      "domain": "osint",
+      "summary": "chain-of-custody: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
     }
   ]
 }

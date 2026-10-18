@@ -1,8 +1,8 @@
 {
   "name": "multi-agent-skill-vault",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "private": true,
-  "description": "Cycle 13 Multi-Agent Skill Vault — 19 agents, 50 distilled skills, multi-module OS dashboard",
+  "description": "Cycle 14 Multi-Agent Skill Vault \u2014 19 agents, 50+ skills, M-IFIE module, Grok packages, X3 live matrix",
   "scripts": {
     "build": "mkdir -p dist && cp -r public/* dist/",
     "start": "npx --yes serve public -l 3000",

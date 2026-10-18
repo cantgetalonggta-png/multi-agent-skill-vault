@@ -1,7 +1,7 @@
 {
-  "version": "5.0.0",
-  "cycle": 13,
-  "session_id": "sess-20261013-032900-c13a",
+  "version": "6.0.0",
+  "cycle": 14,
+  "session_id": "sess-20261018-041100-c14a",
   "fence": "safety-rules-non-negotiable; legal-personas-only; public-instruments-only; no-safety-override",
   "agent_count": 19,
   "skill_count": 50,
@@ -47,11 +47,24 @@
     "encyclopedia",
     "swarm",
     "evidence",
+    "mifie",
     "deploy"
   ],
   "live": {
-    "vercel": "https://multi-agent-skill-vault.vercel.app",
+    "vercel": "https://multi-agent-skill-vault.vercel.app/",
+    "grok_skills": "https://multi-agent-skill-vault.vercel.app/grok-skills/",
+    "mifie": "https://strand-osint-mesh.vercel.app/mifie",
+    "mifie_mirror": "https://strand-mifie-v6.vercel.app",
+    "strand": "https://strand-osint-mesh.vercel.app",
+    "skill_engine": "https://skill-engine-dashboard.vercel.app",
+    "github": "https://github.com/cantgetalonggta-png/multi-agent-skill-vault",
     "github_pages": "https://cantgetalonggta-png.github.io/multi-agent-skill-vault/",
-    "github": "https://github.com/cantgetalonggta-png/multi-agent-skill-vault"
+    "grok_packages_repo": "https://github.com/cantgetalonggta-png/grok-skill-packages-app"
+  },
+  "grok_registry_skills": 82,
+  "honesty": {
+    "ui_runtime": "client-side session simulation \u2014 not a live multi-agent LLM backend",
+    "skill_distill": "metadata-level distillation from SKILL.md; full encyclopedia optional expansion",
+    "deploy_constraint": "Vercel MCP write/create_deployment 403; Git-linked auto-deploy used"
   }
 }

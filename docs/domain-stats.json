@@ -1,0 +1,17 @@
+{
+  "cycle": 14,
+  "domains": {
+    "documents": 12,
+    "agents": 6,
+    "general": 4,
+    "knowledge": 2,
+    "api": 12,
+    "devtools": 13,
+    "creative": 4,
+    "mobile": 1,
+    "data": 1,
+    "legal": 1,
+    "osint": 14
+  },
+  "total": 70
+}

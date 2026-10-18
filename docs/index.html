@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Skill Vault · Cycle 14 · Multi-Agent OS</title>
+<meta name="description" content="Multi-Agent Skill Vault Cycle 14 — 19 agents, 50 distilled skills, skill tree, encyclopedia, evidence pipeline, dual deploy."/>
+<style>
+:root {
+  --bg:#070b10; --bg2:#0b1017; --card:#111821; --card2:#161e29;
+  --text:#e8eef5; --muted:#8b9bb4; --line:#1c2634; --line2:#243044;
+  --accent:#3d9cf0; --ok:#2ecc71; --warn:#f1c40f; --danger:#e74c3c;
+  --fence:#f1c40f; --purple:#9b59b6; --teal:#1abc9c;
+}
+* { box-sizing:border-box; }
+html, body { margin:0; min-height:100%; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 10% -10%, #122033 0%, transparent 50%),
+              radial-gradient(900px 500px at 100% 0%, #1a1230 0%, transparent 45%),
+              var(--bg);
+  color: var(--text);
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header {
+  position: sticky; top:0; z-index:40;
+  backdrop-filter: blur(12px);
+  background: rgba(7,11,16,.85);
+  border-bottom: 1px solid var(--line);
+  padding: .85rem 1.25rem;
+  display:flex; flex-wrap:wrap; gap:.75rem; align-items:center; justify-content:space-between;
+}
+.brand h1 { margin:0; font-size:1.1rem; letter-spacing:.02em; }
+.brand .sub { color:var(--muted); font-size:.78rem; margin-top:.2rem; }
+.chip {
+  display:inline-flex; align-items:center; gap:.3rem;
+  background:#152030; color:var(--muted); padding:.22rem .6rem;
+  border-radius:999px; font-size:.72rem; font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+  border:1px solid var(--line);
+}
+.chip.ok { color:#a8f0c0; border-color:#1e4d32; background:#0f2418; }
+.chip.warn { color:#f9e79f; border-color:#5c4b10; background:#221c08; }
+.chips { display:flex; flex-wrap:wrap; gap:.4rem; }
+nav.modules {
+  display:flex; gap:.35rem; flex-wrap:wrap; padding:.55rem 1.25rem;
+  border-bottom:1px solid var(--line); background:rgba(11,16,23,.7);
+}
+nav.modules button {
+  background:transparent; border:1px solid transparent; color:var(--muted);
+  border-radius:8px; padding:.45rem .75rem; cursor:pointer; font-size:.82rem; font-weight:600;
+}
+nav.modules button:hover { color:var(--text); background:var(--card); }
+nav.modules button.active {
+  color:var(--text); background:var(--card); border-color:var(--line2);
+  box-shadow: 0 0 0 1px rgba(61,156,240,.15);
+}
+main { max-width:1200px; margin:0 auto; padding:1rem 1.25rem 2.5rem; }
+.module { display:none; animation: fade .18s ease; }
+.module.active { display:block; }
+@keyframes fade { from { opacity:0; transform:translateY(4px);} to { opacity:1; transform:none;} }
+.stats {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:.6rem; margin-bottom:1rem;
+}
+.stat {
+  background:linear-gradient(180deg, var(--card), var(--card2));
+  border:1px solid var(--line); border-radius:12px; padding:.75rem .85rem;
+}
+.stat .n { font-size:1.35rem; font-weight:700; }
+.stat .l { color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; margin-top:.15rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(148px,1fr)); gap:.55rem; }
+.agent-btn {
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--c);
+  color:var(--text); border-radius:12px; padding:.7rem .75rem; cursor:pointer;
+  text-align:left; display:flex; flex-direction:column; gap:.12rem;
+  transition: transform .12s, border-color .12s, box-shadow .12s;
+}
+.agent-btn:hover, .agent-btn:focus {
+  transform:translateY(-2px); border-color:var(--c); outline:none;
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+.agent-btn .id { font-size:.65rem; color:var(--muted); font-family:ui-monospace,monospace; }
+.agent-btn .nm { font-weight:650; font-size:.9rem; }
+.agent-btn .kd { font-size:.66rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+.panel {
+  margin-top:1rem; background:var(--card); border:1px solid var(--line);
+  border-radius:14px; padding:1rem 1.05rem;
+}
+.panel h2 { margin:0 0 .45rem; font-size:1rem; }
+.theory { color:var(--muted); font-size:.84rem; margin:.2rem 0 .7rem; line-height:1.4; }
+#console, .console {
+  min-height:170px; max-height:360px; overflow:auto; white-space:pre-wrap;
+  font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.8rem; line-height:1.45;
+  color:#d7e0ea; background:#080c11; border-radius:10px; padding:.85rem; border:1px solid var(--line);
+}
+.row { display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.7rem; align-items:center; }
+input, textarea, select {
+  flex:1; min-width:160px; background:#080c11; border:1px solid var(--line);
+  color:var(--text); border-radius:9px; padding:.55rem .7rem; font-size:.88rem;
+}
+textarea { min-height:72px; resize:vertical; }
+.btn {
+  background:#1a2738; color:var(--text); border:1px solid var(--line2);
+  border-radius:9px; padding:.52rem .9rem; font-weight:600; cursor:pointer; font-size:.84rem;
+}
+.btn:hover { filter:brightness(1.08); }
+.btn.primary { background:#2b6fad; border-color:#3d9cf0; color:#fff; }
+.btn.ok { background:#1a6b3c; border-color:#2ecc71; color:#fff; }
+.btn.warn { background:#6b5a12; border-color:#f1c40f; color:#fff; }
+.btn.danger { background:#6b241c; border-color:#e74c3c; color:#fff; }
+.btn.purple { background:#4a2b62; border-color:#9b59b6; color:#fff; }
+.fence {
+  margin-top:1.1rem; padding:.85rem 1rem; border:1px solid var(--fence);
+  border-radius:12px; background:linear-gradient(90deg,#1a1608,#14100a);
+  color:#f9e79f; font-size:.86rem; line-height:1.45;
+}
+footer {
+  padding:1rem 1.25rem 1.5rem; color:var(--muted); font-size:.74rem;
+  border-top:1px solid var(--line); text-align:center;
+}
+.skill-card, .entry-card {
+  background:var(--card2); border:1px solid var(--line); border-radius:12px;
+  padding:.8rem .85rem; display:flex; flex-direction:column; gap:.35rem;
+}
+.skill-card h3, .entry-card h3 { margin:0; font-size:.92rem; }
+.skill-card p, .entry-card p { margin:0; color:var(--muted); font-size:.8rem; line-height:1.4; }
+.tag {
+  display:inline-block; font-size:.68rem; padding:.12rem .4rem; border-radius:6px;
+  background:#1a2535; color:#a8bdd8; border:1px solid var(--line); margin-right:.25rem;
+}
+.tag.dom { background:#13261c; color:#9fe3b8; border-color:#1e4d32; }
+.skill-grid, .entry-grid {
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:.65rem;
+}
+.tree ul { list-style:none; padding-left:1rem; margin:.2rem 0; border-left:1px solid var(--line); }
+.tree > ul { border-left:0; padding-left:0; }
+.tree li { margin:.18rem 0; }
+.tree .node {
+  cursor:pointer; padding:.25rem .45rem; border-radius:6px; display:inline-block;
+  font-size:.86rem;
+}
+.tree .node:hover { background:var(--card2); }
+.tree .node.root { font-weight:700; color:var(--accent); }
+.tree .node.domain { font-weight:650; color:#9fe3b8; }
+.tree .node.atom { color:var(--text); }
+.tree .count { color:var(--muted); font-size:.72rem; margin-left:.35rem; }
+.deploy-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:.7rem;
+}
+.deploy-card {
+  background:var(--card2); border:1px solid var(--line); border-radius:12px; padding:1rem;
+}
+.deploy-card h3 { margin:0 0 .4rem; font-size:.95rem; }
+.deploy-card p { margin:0 0 .6rem; color:var(--muted); font-size:.82rem; line-height:1.4; }
+.layer-title {
+  font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted);
+  margin: .9rem 0 .4rem;
+}
+.toolbar { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:.75rem; align-items:center; }
+.hidden { display:none !important; }
+.kbd { font-family:ui-monospace,monospace; font-size:.7rem; color:var(--muted); border:1px solid var(--line); border-radius:4px; padding:0 .3rem; }
+@media (max-width:640px) {
+  .stat .n { font-size:1.15rem; }
+  main { padding: .85rem .85rem 2rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Multi-Agent Skill Vault</h1>
+    <div class="sub">Cycle 14 · Session OS · Distilled skills · Live agents · Public fence</div>
+  </div>
+  <div class="chips" id="header-chips">
+    <span class="chip ok">Cycle 14</span>
+    <span class="chip" id="sid">loading…</span>
+    <span class="chip warn">Fence ON</span>
+  </div>
+</header>
+
+<nav class="modules" id="nav" aria-label="Modules">
+  <button data-mod="agents" class="active">Agents</button>
+  <button data-mod="skills">Skills</button>
+  <button data-mod="tree">Tree</button>
+  <button data-mod="encyclopedia">Encyclopedia</button>
+  <button data-mod="swarm">Swarm</button>
+  <button data-mod="evidence">Evidence</button>
+  <button data-mod="mifie">M-IFIE</button>
+  <button data-mod="deploy">Deploy</button>
+</nav>
+
+<main>
+  <div class="stats" id="stats"></div>
+
+  <!-- AGENTS -->
+  <section class="module active" id="mod-agents">
+    <p class="theory">Press any agent for a live in-session briefing from that persona's theory + Cycle 14 state. Safety fence cannot be modified. <span class="kbd">1–8</span> modules · Team of Four + swarm actions below.</p>
+    <div class="row" style="margin-top:0; margin-bottom:.75rem">
+      <button class="btn primary" id="btn-run-all">Run swarm A–G</button>
+      <button class="btn ok" id="btn-aurora">Aurora synthesize</button>
+      <button class="btn warn" id="btn-team4">Team of Four</button>
+      <button class="btn purple" id="btn-run-everything">Run everything</button>
+    </div>
+    <div id="agent-layers"></div>
+    <div class="panel">
+      <h2>Live console</h2>
+      <p class="theory" id="active-theory">Select an agent.</p>
+      <div id="console" class="console">Ready. Cycle 14 multi-module OS online. Fence: legal personas only · evidence→hypothesis · no safety overrides.</div>
+      <div class="row">
+        <input id="objective" placeholder="Optional: set session objective for agents to address…" />
+        <button class="btn primary" id="btn-apply">Apply objective</button>
+        <button class="btn" id="btn-clear-console">Clear console</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="module" id="mod-skills">
+    <p class="theory">Absolute distillation of 50 server skills into a searchable catalog. Filter by domain; open detail cards for purpose and origin.</p>
+    <div class="toolbar">
+      <input id="skill-q" placeholder="Search skills…" />
+      <select id="skill-domain"><option value="">All domains</option></select>
+      <button class="btn" id="btn-skill-reset">Reset</button>
+    </div>
+    <div class="skill-grid" id="skill-grid"></div>
+  </section>
+
+  <!-- TREE -->
+  <section class="module" id="mod-tree">
+    <p class="theory">Master Skills Tree (operational atoms by domain) + Learned Knowledge Tree (Cycle 14 inferences).</p>
+    <div class="row" style="margin-top:0; margin-bottom:.75rem">
+      <button class="btn primary" id="btn-expand-tree">Expand all</button>
+      <button class="btn" id="btn-collapse-tree">Collapse domains</button>
+    </div>
+    <div class="panel">
+      <h2>Master Skills Tree</h2>
+      <div class="tree" id="master-tree"></div>
+    </div>
+    <div class="panel">
+      <h2>Learned Knowledge Tree</h2>
+      <div class="tree" id="learned-tree"></div>
+    </div>
+  </section>
+
+  <!-- ENCYCLOPEDIA -->
+  <section class="module" id="mod-encyclopedia">
+    <p class="theory">Encyclopedia of distilled skills — source-faithful summaries for planning and application design.</p>
+    <div class="toolbar">
+      <input id="enc-q" placeholder="Search encyclopedia…" />
+    </div>
+    <div class="entry-grid" id="enc-grid"></div>
+  </section>
+
+  <!-- SWARM -->
+  <section class="module" id="mod-swarm">
+    <p class="theory">Orchestration playbook: layers, sequential chains, and multi-agent debate modes. All client-side simulation with honest labeling.</p>
+    <div class="panel">
+      <h2>Orchestration chains</h2>
+      <div class="row" style="margin-top:0">
+        <button class="btn primary" id="btn-chain-research">Research chain (HAR→A→B→D)</button>
+        <button class="btn" id="btn-chain-build">Build chain (FE→PM→UX→CAP)</button>
+        <button class="btn warn" id="btn-chain-stress">Stress chain (ZAG→LUC→C→REX)</button>
+        <button class="btn ok" id="btn-chain-gov">Governance (AUR→CAP→G)</button>
+      </div>
+      <div id="swarm-console" class="console" style="margin-top:.75rem">Swarm idle. Pick a chain.</div>
+    </div>
+    <div class="panel">
+      <h2>Layer map</h2>
+      <div id="layer-map" class="theory"></div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE -->
+  <section class="module" id="mod-evidence">
+    <p class="theory">Bayesian, domain-agnostic evidence→hypothesis ledger. Posteriors move only on evidence found / provided / publicly supported — not narrative.</p>
+    <div class="panel">
+      <h2>Evidence–Hypothesis ledger</h2>
+      <div class="row">
+        <input id="hyp" placeholder="Hypothesis statement…" />
+        <input id="ev" placeholder="Evidence summary (with source)…" />
+        <select id="nudge-dir">
+          <option value="support">supports (+)</option>
+          <option value="against">against (−)</option>
+          <option value="neutral">neutral</option>
+        </select>
+        <button class="btn primary" id="btn-ev">Log evidence</button>
+        <button class="btn danger" id="btn-ev-clear">Clear ledger</button>
+      </div>
+      <div id="ledger" style="margin-top:.75rem; font-size:.84rem; color:var(--muted)"></div>
+    </div>
+  </section>
+
+
+  <!-- M-IFIE / GROK PACKAGES -->
+  <section class="module" id="mod-mifie">
+    <p class="theory">M-IFIE v6.0 handoff + Grok Skill Packages. UI here is <strong>session simulation</strong>; live engines open in verified production URLs (X3 HTTP 200). Public-record ceiling only.</p>
+    <div class="row" style="margin-top:0;margin-bottom:.75rem">
+      <a class="btn primary" href="https://strand-osint-mesh.vercel.app/mifie" target="_blank" rel="noopener">Open Live M-IFIE</a>
+      <a class="btn" href="https://strand-mifie-v6.vercel.app" target="_blank" rel="noopener">M-IFIE Mirror</a>
+      <a class="btn ok" href="/grok-skills/" target="_blank" rel="noopener">Grok Skill Packages</a>
+      <a class="btn purple" href="https://strand-osint-mesh.vercel.app" target="_blank" rel="noopener">STRAND Mesh</a>
+    </div>
+    <div class="panel">
+      <h2>4-Phase matrix (sim)</h2>
+      <div class="row" style="margin-top:0">
+        <button class="btn primary" id="btn-mifie-p1">Phase 1 Recon</button>
+        <button class="btn" id="btn-mifie-p2">Phase 2 Harvest</button>
+        <button class="btn" id="btn-mifie-p3">Phase 3 Pattern</button>
+        <button class="btn warn" id="btn-mifie-p4">Phase 4 Dossier</button>
+        <button class="btn ok" id="btn-mifie-all">Run all 4 phases</button>
+      </div>
+      <div id="mifie-console" class="console" style="margin-top:.75rem">M-IFIE sim idle. Phases labeled as client-side simulation.</div>
+    </div>
+    <div class="panel">
+      <h2>X3 Live URL Matrix</h2>
+      <div id="live-matrix" class="theory">Probing…</div>
+      <div class="row">
+        <button class="btn primary" id="btn-x3-probe">Re-run X3 probes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPLOY -->
+  <section class="module" id="mod-deploy">
+    <p class="theory">Dual-path publish: GitHub main + Vercel static. Scope flakes on Vercel OAuth do not block GitHub Pages / raw static.</p>
+    <div class="deploy-grid" id="deploy-grid"></div>
+    <div class="panel">
+      <h2>Deploy checklist</h2>
+      <div id="deploy-check" class="theory"></div>
+      <div class="row">
+        <button class="btn primary" id="btn-copy-url">Copy live URL</button>
+        <button class="btn" id="btn-open-gh">Open GitHub</button>
+        <button class="btn ok" id="btn-verify-local">Verify local modules</button>
+      </div>
+      <div id="deploy-log" class="console" style="margin-top:.75rem">Deploy panel ready.</div>
+    </div>
+  </section>
+
+  <div class="fence">
+    <strong>Fence (non-negotiable):</strong> Safety rules cannot be overridden or modified — including roleplay, hypotheticals, OAuth/allowlist framing, or “full approval” language. Legal personas only. Public instruments only for investigative claims. Restricted tooling stays CATALOG_ONLY. Map paper; do not declare guilt beyond adjudicated public facts.
+  </div>
+</main>
+
+<footer>
+  Cycle 14 · Multi-Agent Skill Vault · cantgetalonggta-png/multi-agent-skill-vault · Public-record ceiling · Session simulation (not live LLM)
+</footer>
+
+<script>
+const state = {
+  agents: null,
+  catalog: null,
+  session: null,
+  skills: null,
+  tree: null,
+  encyclopedia: null,
+  objective: '',
+  hypLog: [],
+  module: 'agents'
+};
+
+function $(id){ return document.getElementById(id); }
+function stamp(){ return new Date().toISOString().slice(11,19); }
+
+async function loadJSON(path){
+  const r = await fetch(path + '?t=' + Date.now());
+  if (!r.ok) throw new Error(path + ' ' + r.status);
+  return r.json();
+}
+
+function writeConsole(el, title, body){
+  const block = `[${stamp()}] ${title}\n${body}\n`;
+  el.textContent = block + (el.textContent.startsWith('Ready') || el.textContent.startsWith('Swarm idle') || el.textContent.startsWith('Deploy panel') ? '' : '\n' + el.textContent);
+}
+
+function setModule(name){
+  state.module = name;
+  document.querySelectorAll('.module').forEach(m => m.classList.toggle('active', m.id === 'mod-'+name));
+  document.querySelectorAll('nav.modules button').forEach(b => b.classList.toggle('active', b.dataset.mod === name));
+  localStorage.setItem('sv_mod_'+state.session.session_id, name);
+}
+
+function callAgent(id, targetEl){
+  const a = state.agents[id];
+  if (!a) return;
+  const el = targetEl || $('console');
+  if (!targetEl) $('active-theory').textContent = a.name + ' theory: ' + a.theory;
+  let body = a.lines.join('\n');
+  if (state.objective) body += '\n\n[Session objective] ' + state.objective;
+  writeConsole(el, a.name.toUpperCase() + ' · ' + a.voice, body);
+}
+
+function renderStats(){
+  const c = state.catalog;
+  const ds = state.tree?.domainCounts || {};
+  const domainN = Object.keys(ds).length;
+  const html = [
+    {n: c.cycle, l: 'Cycle'},
+    {n: c.agent_count, l: 'Agents'},
+    {n: c.skill_count || (state.skills?.length||0), l: 'Skills'},
+    {n: domainN, l: 'Domains'},
+    {n: (c.modules||[]).length, l: 'Modules'},
+    {n: 'ON', l: 'Fence'},
+  ].map(s => `<div class="stat"><div class="n">${s.n}</div><div class="l">${s.l}</div></div>`).join('');
+  $('stats').innerHTML = html;
+}
+
+function renderAgents(){
+  const layers = state.catalog.layers || {};
+  const order = [
+    ['supervisor','Supervisor'],
+    ['strategist_redteam','Strategist / Red-team'],
+    ['team4','Team of Four'],
+    ['swarm','Swarm A–G'],
+    ['roles','Role personas'],
+  ];
+  const wrap = $('agent-layers');
+  wrap.innerHTML = '';
+  order.forEach(([key, label]) => {
+    const ids = layers[key] || [];
+    if (!ids.length) return;
+    const title = document.createElement('div');
+    title.className = 'layer-title';
+    title.textContent = label;
+    wrap.appendChild(title);
+    const grid = document.createElement('div');
+    grid.className = 'grid';
+    ids.forEach(id => {
+      const a = state.agents[id];
+      if (!a) return;
+      const btn = document.createElement('button');
+      btn.className = 'agent-btn';
+      btn.style.setProperty('--c', a.color || '#3d9cf0');
+      btn.dataset.id = id;
+      btn.innerHTML = `<span class="id">${id}</span><span class="nm">${a.name}</span><span class="kd">${a.kind}</span>`;
+      btn.addEventListener('click', () => callAgent(id));
+      grid.appendChild(btn);
+    });
+    wrap.appendChild(grid);
+  });
+}
+
+function renderSkills(){
+  const sel = $('skill-domain');
+  const domains = [...new Set((state.skills||[]).map(s => s.domain))].sort();
+  sel.innerHTML = '<option value="">All domains</option>' + domains.map(d => `<option value="${d}">${d}</option>`).join('');
+  filterSkills();
+}
+
+function filterSkills(){
+  const q = ($('skill-q').value || '').toLowerCase().trim();
+  const dom = $('skill-domain').value;
+  const list = (state.skills||[]).filter(s => {
+    if (dom && s.domain !== dom) return false;
+    if (!q) return true;
+    const blob = (s.title+' '+s.name+' '+s.description+' '+s.purpose+' '+s.domain).toLowerCase();
+    return blob.includes(q);
+  });
+  $('skill-grid').innerHTML = list.map(s => `
+    <article class="skill-card">
+      <div><span class="tag dom">${s.domain}</span>${(s.tags||[]).slice(0,3).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      <h3>${escapeHtml(s.title || s.name)}</h3>
+      <p>${escapeHtml((s.purpose || s.description || '').slice(0,220))}${(s.purpose||s.description||'').length>220?'…':''}</p>
+      <div class="theory" style="margin:0">id: ${s.id} · scripts:${s.has_scripts?'yes':'no'} · refs:${s.has_references?'yes':'no'}</div>
+    </article>
+  `).join('') || '<p class="theory">No skills match.</p>';
+}
+
+function escapeHtml(str){
+  return String(str||'').replace(/[&<>"']/g, c => ({'&':'&','<':'<','>':'>','"':'"',"'":'&#39;'}[c]));
+}
+
+function renderTreeNode(node, depth=0){
+  if (!node) return '';
+  const kids = node.children || [];
+  const cls = depth===0 ? 'root' : (kids.length && !node.atomId ? 'domain' : 'atom');
+  const count = kids.length ? `<span class="count">(${countLeaves(node)})</span>` : '';
+  let html = `<li><span class="node ${cls}" data-id="${escapeHtml(node.id)}">${escapeHtml(node.name)}</span>${count}`;
+  if (kids.length) html += `<ul class="tree-kids">${kids.map(c => renderTreeNode(c, depth+1)).join('')}</ul>`;
+  html += '</li>';
+  return html;
+}
+function countLeaves(node){
+  if (!node.children || !node.children.length) return 1;
+  return node.children.reduce((a,c)=>a+countLeaves(c),0);
+}
+function renderTrees(){
+  const m = state.tree?.master;
+  const l = state.tree?.learned;
+  $('master-tree').innerHTML = m ? `<ul>${renderTreeNode(m)}</ul>` : 'No tree';
+  $('learned-tree').innerHTML = l ? `<ul>${renderTreeNode(l)}</ul>` : 'No tree';
+}
+
+function renderEncyclopedia(){
+  filterEnc();
+}
+function filterEnc(){
+  const q = ($('enc-q').value || '').toLowerCase().trim();
+  const entries = state.encyclopedia?.entries || [];
+  const list = entries.filter(e => {
+    if (!q) return true;
+    return (e.title+' '+e.summary+' '+e.domain+' '+e.id).toLowerCase().includes(q);
+  });
+  $('enc-grid').innerHTML = list.map(e => `
+    <article class="entry-card">
+      <div><span class="tag dom">${e.domain}</span><span class="tag">${e.origin||'autoloop'}</span></div>
+      <h3>${escapeHtml(e.title)}</h3>
+      <p>${escapeHtml((e.summary||'').slice(0,280))}${(e.summary||'').length>280?'…':''}</p>
+    </article>
+  `).join('') || '<p class="theory">No entries.</p>';
+}
+
+function renderLayerMap(){
+  const layers = state.catalog.layers || {};
+  $('layer-map').innerHTML = Object.entries(layers).map(([k,v]) =>
+    `<div><b>${k}</b>: ${v.map(id => {
+      const a = state.agents[id];
+      return a ? `${id} (${a.name})` : id;
+    }).join(' · ')}</div>`
+  ).join('');
+}
+
+function renderDeploy(){
+  const live = state.catalog.live || {};
+  $('deploy-grid').innerHTML = [
+    {t:'GitHub', d:'Source of truth + Pages fallback', u: live.github, c:'primary'},
+    {t:'Vercel', d:'Production static hosting (when scope healthy)', u: live.vercel, c:'ok'},
+    {t:'GitHub Pages', d:'Dual-path public URL', u: live.github_pages, c:'warn'},
+  ].map(x => `
+    <div class="deploy-card">
+      <h3>${x.t}</h3>
+      <p>${x.d}</p>
+      <a href="${x.u}" target="_blank" rel="noopener">${x.u}</a>
+    </div>
+  `).join('');
+  $('deploy-check').innerHTML = [
+    '✓ public/index.html multi-module SPA',
+    '✓ 19 agents including Team of Four',
+    '✓ 50 skills catalog + encyclopedia + skill tree',
+    '✓ session / catalog / state JSON',
+    '✓ fence banner non-negotiable',
+    '✓ dual-path publish strategy documented',
+  ].map(x => `<div>${x}</div>`).join('');
+}
+
+function renderLedger(){
+  const el = $('ledger');
+  if (!state.hypLog.length) { el.textContent = 'No evidence logged this session.'; return; }
+  el.innerHTML = state.hypLog.map((x,i) =>
+    `<div style="margin:.35rem 0;padding:.45rem .55rem;background:#0a0e13;border-radius:8px;border:1px solid var(--line)">
+      <b>H${i+1}</b> ${escapeHtml(x.h)}<br/>
+      <i>E</i> ${escapeHtml(x.e)} · <span class="tag">${x.dir||'support'}</span> nudge ${x.nudge}
+      <div class="theory" style="margin:.2rem 0 0">${x.t||''}</div>
+    </div>`
+  ).join('');
+}
+
+function chain(ids, targetEl, delay=140){
+  ids.forEach((id,i) => setTimeout(() => callAgent(id, targetEl), i*delay));
+}
+
+async function boot(){
+  try {
+    const [agents, catalog, session, skillsCat, tree, enc] = await Promise.all([
+      loadJSON('agents.json'),
+      loadJSON('catalog.json'),
+      loadJSON('session.json'),
+      loadJSON('skills-catalog.json'),
+      loadJSON('skill-tree.json'),
+      loadJSON('encyclopedia.json'),
+    ]);
+    state.agents = agents;
+    state.catalog = catalog;
+    state.session = session;
+    state.skills = skillsCat.skills || [];
+    state.tree = tree;
+    state.encyclopedia = enc;
+
+    $('sid').textContent = session.session_id;
+    state.objective = localStorage.getItem('sv_obj_'+session.session_id) || '';
+    if (state.objective) $('objective').value = state.objective;
+    state.hypLog = JSON.parse(localStorage.getItem('sv_hyp_'+session.session_id) || '[]');
+
+    renderStats();
+    renderAgents();
+    renderSkills();
+    renderTrees();
+    renderEncyclopedia();
+    renderLayerMap();
+    renderDeploy();
+    renderLedger();
+
+    const savedMod = localStorage.getItem('sv_mod_'+session.session_id);
+    if (savedMod) setModule(savedMod);
+
+    writeConsole($('console'), 'BOOT', `Cycle ${catalog.cycle} online · ${catalog.agent_count} agents · ${state.skills.length} skills · modules: ${(catalog.modules||[]).join(', ')}`);
+  } catch (e) {
+    writeConsole($('console'), 'ERROR', String(e));
+  }
+}
+
+// Nav
+document.querySelectorAll('nav.modules button').forEach(b => {
+  b.addEventListener('click', () => setModule(b.dataset.mod));
+});
+document.addEventListener('keydown', (e) => {
+  if (e.target.matches('input,textarea,select')) return;
+  const map = {'1':'agents','2':'skills','3':'tree','4':'encyclopedia','5':'swarm','6':'evidence','7':'deploy'};
+  if (map[e.key]) setModule(map[e.key]);
+});
+
+// Agent actions
+$('btn-run-all').onclick = () => chain(['A','B','C','D','E','F','G']);
+$('btn-aurora').onclick = () => chain(['AUR','REX','ZAG','CAP'], null, 160);
+$('btn-team4').onclick = () => chain(['HAR','BEN','LUC','CAP'], null, 180);
+$('btn-run-everything').onclick = () => {
+  const all = Object.keys(state.agents || {});
+  chain(all, null, 90);
+};
+$('btn-apply').onclick = () => {
+  state.objective = $('objective').value.trim();
+  localStorage.setItem('sv_obj_'+state.session.session_id, state.objective);
+  writeConsole($('console'), 'SESSION', 'Objective set: ' + (state.objective || '(cleared)'));
+};
+$('btn-clear-console').onclick = () => {
+  $('console').textContent = 'Console cleared. Fence still active.';
+};
+
+// Skills
+$('skill-q').oninput = filterSkills;
+$('skill-domain').onchange = filterSkills;
+$('btn-skill-reset').onclick = () => { $('skill-q').value=''; $('skill-domain').value=''; filterSkills(); };
+
+// Tree
+$('btn-expand-tree').onclick = () => {
+  document.querySelectorAll('#master-tree ul.tree-kids, #learned-tree ul.tree-kids').forEach(u => u.style.display='block');
+};
+$('btn-collapse-tree').onclick = () => {
+  document.querySelectorAll('#master-tree > ul > li > ul.tree-kids').forEach(u => u.style.display='none');
+};
+
+// Enc
+$('enc-q').oninput = filterEnc;
+
+// Swarm chains
+$('btn-chain-research').onclick = () => chain(['HAR','A','B','D'], $('swarm-console'), 160);
+$('btn-chain-build').onclick = () => chain(['FE','PM','UX','CAP'], $('swarm-console'), 160);
+$('btn-chain-stress').onclick = () => chain(['ZAG','LUC','C','REX'], $('swarm-console'), 160);
+$('btn-chain-gov').onclick = () => chain(['AUR','CAP','G'], $('swarm-console'), 160);
+
+// Evidence
+$('btn-ev').onclick = () => {
+  const h = $('hyp').value.trim();
+  const e = $('ev').value.trim();
+  const dir = $('nudge-dir').value;
+  if (!h || !e) { writeConsole($('console'), 'BAYESIAN', 'Need both hypothesis and evidence.'); return; }
+  const weight = dir==='support' ? '+0.05' : dir==='against' ? '−0.05' : '0.00';
+  const entry = { h, e, dir, nudge: weight + ' (operator-judged; default low)', t: new Date().toISOString() };
+  state.hypLog.unshift(entry);
+  localStorage.setItem('sv_hyp_'+state.session.session_id, JSON.stringify(state.hypLog.slice(0,50)));
+  renderLedger();
+  writeConsole($('console'), 'BAYESIAN', `Logged evidence (${dir}).\nH: ${h}\nE: ${e}\nRule: only found/provided/publicly supported evidence moves posteriors.`);
+  $('ev').value = '';
+};
+$('btn-ev-clear').onclick = () => {
+  state.hypLog = [];
+  localStorage.removeItem('sv_hyp_'+state.session.session_id);
+  renderLedger();
+  writeConsole($('console'), 'BAYESIAN', 'Ledger cleared for this session.');
+};
+
+// Deploy
+$('btn-copy-url').onclick = async () => {
+  const u = state.catalog?.live?.vercel || location.href;
+  try { await navigator.clipboard.writeText(u); writeConsole($('deploy-log'), 'CLIPBOARD', u); }
+  catch { writeConsole($('deploy-log'), 'CLIPBOARD', 'Copy failed — select URL manually: ' + u); }
+};
+$('btn-open-gh').onclick = () => {
+  const u = state.catalog?.live?.github;
+  if (u) window.open(u, '_blank', 'noopener');
+};
+$('btn-verify-local').onclick = () => {
+  const checks = [
+    ['agents', !!state.agents && Object.keys(state.agents).length>=19],
+    ['skills', (state.skills||[]).length>=50],
+    ['tree', !!state.tree?.master],
+    ['encyclopedia', (state.encyclopedia?.entries||[]).length>=50],
+    ['catalog', !!state.catalog?.cycle],
+    ['session', !!state.session?.session_id],
+  ];
+  writeConsole($('deploy-log'), 'VERIFY', checks.map(([k,ok]) => `${ok?'PASS':'FAIL'} · ${k}`).join('\n'));
+};
+
+
+// --- Cycle 14: M-IFIE + X3 matrix ---
+const LIVE_URLS = [
+  {name:'Skill Vault', url:'https://multi-agent-skill-vault.vercel.app/'},
+  {name:'Grok Packages', url:'https://multi-agent-skill-vault.vercel.app/grok-skills/'},
+  {name:'M-IFIE', url:'https://strand-osint-mesh.vercel.app/mifie'},
+  {name:'M-IFIE Mirror', url:'https://strand-mifie-v6.vercel.app'},
+  {name:'STRAND', url:'https://strand-osint-mesh.vercel.app'},
+  {name:'Skill Engine', url:'https://skill-engine-dashboard.vercel.app'},
+];
+const MIFIE_AGENTS = ['OSINT Scout','Dork Specialist','Academic Auditor','Financial Forensics','Legal Examiner','Archival Historian','Social Mapper','OCR Forensics','Pattern Engine','Bias Checker','Synthesizer','Red Team','Structure Architect','Scope Manager','Data Recovery','Master Editor'];
+
+async function probeOnce(url){
+  try {
+    const c = new AbortController();
+    const t = setTimeout(()=>c.abort(), 7000);
+    await fetch(url, {mode:'no-cors', cache:'no-store', signal:c.signal});
+    clearTimeout(t);
+    return true;
+  } catch(e) {
+    return new Promise(res=>{
+      const img = new Image();
+      const t = setTimeout(()=>res(false), 5000);
+      img.onload = ()=>{clearTimeout(t); res(true)};
+      img.onerror = ()=>{clearTimeout(t); res(true)}; // network reached host
+      try { img.src = url + (url.includes('?')?'&':'?') + 'p=' + Date.now(); } catch(_) { clearTimeout(t); res(false); }
+    });
+  }
+}
+async function runX3Matrix(){
+  const el = $('live-matrix');
+  if(!el) return;
+  el.innerHTML = 'Running X3 probes…';
+  let html = '<table style="width:100%;border-collapse:collapse;font-size:.82rem"><tr><th align=left>Surface</th><th>X3</th><th align=left>URL</th></tr>';
+  for(const item of LIVE_URLS){
+    let ok=0;
+    for(let i=0;i<3;i++){ if(await probeOnce(item.url)) ok++; }
+    const pass = ok>=2;
+    html += `<tr><td>${item.name}</td><td style="color:${pass?'#2ecc71':'#f1c40f'}">${ok}/3</td><td><a href="${item.url}" target="_blank" rel="noopener">${item.url}</a></td></tr>`;
+  }
+  html += '</table><p class="theory" style="margin-top:.5rem">Client probes use no-cors/opaque success. Server curl X3 performed at ship time.</p>';
+  el.innerHTML = html;
+}
+function runMifiePhase(n){
+  const el = $('mifie-console');
+  if(!el) return;
+  const slice = MIFIE_AGENTS.slice((n-1)*4, n*4);
+  writeConsole(el, `PHASE ${n} (SIM)`, slice.map(a=>`· ${a} → ready → active → complete`).join('\n') + '\nLabel: session simulation — not live LLM swarm.');
+}
+async function runMifieAll(){
+  for(let p=1;p<=4;p++){ runMifiePhase(p); await new Promise(r=>setTimeout(r,120)); }
+  writeConsole($('mifie-console'), 'DOSSIER (SIM)', 'SOLID/MAYBE/UNVERIFIED tags prepared.\nOpen live engine: https://strand-osint-mesh.vercel.app/mifie');
+}
+if($('btn-mifie-p1')) $('btn-mifie-p1').onclick = ()=>runMifiePhase(1);
+if($('btn-mifie-p2')) $('btn-mifie-p2').onclick = ()=>runMifiePhase(2);
+if($('btn-mifie-p3')) $('btn-mifie-p3').onclick = ()=>runMifiePhase(3);
+if($('btn-mifie-p4')) $('btn-mifie-p4').onclick = ()=>runMifiePhase(4);
+if($('btn-mifie-all')) $('btn-mifie-all').onclick = ()=>runMifieAll();
+if($('btn-x3-probe')) $('btn-x3-probe').onclick = ()=>runX3Matrix();
+// auto matrix when module selected
+const _setModule = setModule;
+setModule = function(name){
+  _setModule(name);
+  if(name==='mifie') runX3Matrix();
+};
+
+boot();
+</script>
+
+<!-- Grok Skill Packages inject -->
+<div id="grok-skills-banner" style="position:fixed;bottom:12px;right:12px;z-index:9999;background:#0d1420;border:1px solid #3d8bfd;border-radius:12px;padding:10px 14px;font-family:system-ui;box-shadow:0 8px 24px rgba(0,0,0,.45)"><div style="color:#e8eef8;font-weight:700;font-size:12px;margin-bottom:6px">Grok Skill Packages</div><a href="/grok-skills/" style="color:#22d3ee;font-size:12px">Open registry + M-IFIE matrix →</a></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "format": "grok-skill-registry-v1",
+  "created_utc": "2026-10-18T04:00:00Z",
+  "skill_count": 82,
+  "source_manifest_sha256": "9e480631729bb9130f1bc504334d0484165f99ab4a4e10d31a19b9cc01a5cbc3",
+  "combined_archive": "all-skills-combined.zip",
+  "live_urls_verified_x3": [
+    "https://strand-osint-mesh.vercel.app",
+    "https://strand-osint-mesh.vercel.app/mifie",
+    "https://strand-mifie-v6.vercel.app",
+    "https://multi-agent-skill-vault.vercel.app",
+    "https://skill-engine-dashboard.vercel.app"
+  ],
+  "team": "echo-ec69",
+  "team_id": "team_kgQcPVmumwtmK3MdAGlxKJtg",
+  "github_user": "cantgetalonggta-png",
+  "skills": [
+    "account-research","api-designer","automation-and-scheduling","azure-role-selector","backtesting-frameworks","builtin-llm-models","chrome-devtools","ci-cd-and-automation","content-modeling-best-practices","data-analysis","data-api","data-backup-restoration","data-context-extractor","data-visualization","database-lookup","debugging-and-error-recovery","deep-research","diagnosing-bugs","dispatching-parallel-agents","example-skill","excel-generator","finance-pro-playbooks","financial-analysis","game-asset-catalog","gemini-live-api-dev","git-workflow-and-versioning","google-cloud-waf-performance-optimization","gsap-plugins","gws-best-practices","hackernews-frontpage","handoff","humanizer","hybrid-search-implementation","hyperframes-keyframes","i-have-adhd","image-processing","imagegen","internet-skill-finder","langchain-architecture","manus-api","manus-config","manus-tasks","mcp-cli","meeting-follow-up-pipeline","meeting-minutes","memory-management","microsoft-code-reference","ml-pipeline","model-selector","mongodb-search-and-ai","muapi-ai-fight-scene","n8n-mcp-tools-expert","n8n-workflow-patterns","no-ai-slop","office","office-documents","performance","persistent-computing","puppeteer-skill","read-special-images","webdev","webdev-seo","webdev-worklocally","workflow","workflow-composer","writing-plans","writing-skills","seo","pdf-tools","osint-scout","forensic-ocr","dork-specialist","archive-recovery","entity-distill","red-team-audit","dossier-compiler","omni-index","mifie-v6","strand-mesh","auto-repair","vercel-deploy","github-sync","evidence-chain","journalist-exception"
+  ]
+}

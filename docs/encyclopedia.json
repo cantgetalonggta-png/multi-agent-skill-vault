@@ -1,0 +1,617 @@
+{
+  "version": "6.0.0",
+  "cycle": 14,
+  "generatedAt": "2026-10-18T04:12:42Z",
+  "entries": [
+    {
+      "id": "9000-word-minimum",
+      "title": "Use a 9000-word minimum",
+      "domain": "documents",
+      "summary": "Use a 9000-word minimum. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "agent-orchestration",
+      "title": "Agent Orchestration",
+      "domain": "agents",
+      "summary": "Divide a large investigation among focused research workers and combine their results. Use when several independent questions can be researched separately.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "apple-notes",
+      "title": "Apple Notes CLI",
+      "domain": "general",
+      "summary": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "archivist",
+      "title": "The Archivist Skill",
+      "domain": "knowledge",
+      "summary": "Activate when user references The Archivist persona, strict empirical fact-driven database mode, objective data-only responses without disclaimers or moralizing, or massive research protocols involving 200 searches. Incorporate rules for clinical neutrality, data-only outputs, and advanced information gathering.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "batch-api-wrapper",
+      "title": "Batch API wrapper",
+      "domain": "api",
+      "summary": "Parallel batch HTTP client with per-item OAuth2 client-credentials. Delegates to external-api-wrapper. Trigger on batch-api-wrapper, batchapiwrapper, multi-API batch, or OAuth2 batch.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "blacksmith-testbox",
+      "title": "Blacksmith Testbox",
+      "domain": "devtools",
+      "summary": "Run Blacksmith Testbox for CI-parity checks, secrets, hosted services, migrations, or builds local cannot reproduce.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "bluebubbles",
+      "title": "BlueBubbles Actions",
+      "domain": "general",
+      "summary": "Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "clawhub",
+      "title": "ClawHub CLI",
+      "domain": "agents",
+      "summary": "Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.",
+      "origin": "distill-v2-harden",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "coherent-communication",
+      "title": "Coherent Communication",
+      "domain": "creative",
+      "summary": "Guide production of coherent structured speech with proper vocabulary flowing prose narrative techniques and linguistic foundations. Use when responses require high coherence complete thoughts logical flow grammar-aware construction or to avoid fragmented keyword-style output. Triggers include coherent speech structured communication narrative flow complete sentences vocabulary richness style for flowing dialogue language fundamentals or speech generation encyclopedia.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "common-sense-logic-critical-thinking",
+      "title": "Use maximum common sense, logic, and critical thinking",
+      "domain": "documents",
+      "summary": "Use maximum common sense, logic, and critical thinking. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "continue-next-or-continue",
+      "title": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d",
+      "domain": "documents",
+      "summary": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "document-ingestion",
+      "title": "Document Ingestion and Organization Skill",
+      "domain": "documents",
+      "summary": "Use for tasks involving document parsing, extraction, ingestion into AI/RAG systems, organizing PDFs/Word/images in Google Drive, automation scripts for classification and routing. Triggers include document ingestion, RAG pipelines, Google Drive organization, PDF/Word parsing tools like Docling, Marker, Unstructured.io.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "document-intelligence",
+      "title": "Document Intelligence",
+      "domain": "documents",
+      "summary": "Document extraction and understanding skill. Handles PDFs, text, tables, metadata, OCR fallback, layout analysis, and structured output. Triggers on PDF, document parsing, extract text/tables, OCR, or file intelligence.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "each-structured-prompt-research",
+      "title": "Use each individually structured prompt in the investigation",
+      "domain": "documents",
+      "summary": "Use each individually structured prompt in the investigation. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "epstein-pdf-batch-ingest",
+      "title": "Epstein Public PDF Batch Ingest",
+      "domain": "api",
+      "summary": "Ingest and organize operator-held public Epstein-related PDF packs into an ordered research vault with hashing, metadata, name/date extraction and SOLID/MAYBE tagging. Triggers on Epstein PDF ingest, public Epstein document batch, or REX_EXPORT Epstein PDF processing.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "ethical-data-harvesting",
+      "title": "Ethical Data Harvesting Cookbook",
+      "domain": "api",
+      "summary": "Structured cookbook with 20 ethical recipes for legal data harvesting from public directories, databases, APIs, and online resources. Use for responsible collection of publicly available data, compliance with GDPR CCPA ToS, web scraping best practices, anonymization, data minimization, open data portals, government records, academic repositories, social media APIs, news, forums, or when user requests ethical scraping, legal data collection methods, or privacy-respecting harvest workflows.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "ethical-scraper-orchestration",
+      "title": "Ethical Scraper Orchestration",
+      "domain": "agents",
+      "summary": "Multi-agent style orchestration for ethical public-page collection \u2014 Scout, Parser, Validator, Rate Manager, Ethics Compliance. Public pages and official sources only. Triggers on ethical scraper, public-page harvest orchestration, rate-limited ethical collection, or Scout-Parser-Validator pipeline.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "external-api-wrapper",
+      "title": "External API wrapper",
+      "domain": "api",
+      "summary": "Call one or many external HTTP APIs with retries, bearer/basic auth, optional OAuth2 client-credentials, and optional local webhook wait. Trigger on external API wrapper, batch API, CALL_EXTERNAL_TOOL, OAuth2 client credentials, or webhook callback wrapper.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "game-dev",
+      "title": "Game Dev",
+      "domain": "creative",
+      "summary": "Build playable browser games (Babylon.js) end-to-end using the godogen production pipeline adapted to Manus. Use when the user wants to make, generate, rebuild, or substantially extend a web/browser game from a natural-language brief. Runs godogen staged workflow \u2014 visual target, risk decomposition, scaffold, architecture, asset generation, implementation, visual verification \u2014 hosted in a Manus WebDev project, with Manus built-in image generation instead of paid art CLIs, and deploy via WebDev ",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "github",
+      "title": "GitHub Skill",
+      "domain": "api",
+      "summary": "Use gh for GitHub issues, PR status, CI logs, comments, reviews, releases, and API queries.",
+      "origin": "top5-harden",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "gog",
+      "title": "gog",
+      "domain": "api",
+      "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. Requires OAuth setup.",
+      "origin": "top5-harden",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "grok-4-20-multi-agent",
+      "title": "Grok 4.20 multi-agent workflow",
+      "domain": "agents",
+      "summary": "Apply Grok 4.20 native multi-agent collaboration \u2014 Captain Grok, Harper (research), Benjamin (logic/code), Lucas (contrarian). Use for complex research, fact-checked answers, math/code verification, or when the user asks for multi-agent debate, pressure-tested reasoning, or Team of Four style analysis.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "grok-build-plugins",
+      "title": "Grok Build plugins",
+      "domain": "agents",
+      "summary": "Author, layout, test, and publish Grok Build plugins \u2014 skills, slash commands, agents, hooks, MCP/LSP, marketplace catalog entries. Use when creating a plugin, writing plugin.json, marketplace SHA pins, or validating plugin structure against the official marketplace repo.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "issue-triage",
+      "title": "Issue Triage",
+      "domain": "devtools",
+      "summary": "Audit open issues, categorize, detect duplicates, cross-reference PRs, assess risk, and post comments. Args include all, issue numbers, or en/fr. No arg means audit only in French.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "mcporter",
+      "title": "mcporter",
+      "domain": "general",
+      "summary": "List, configure, authenticate, call, and inspect MCP servers and tools with mcporter over HTTP or stdio.",
+      "origin": "top5-harden",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "mega-skill",
+      "title": "Mega skill (package)",
+      "domain": "api",
+      "summary": "Multi-file mega skill with router plus API, compliance, OSINT, and artifact modules. Trigger on mega-skill, mega_skill, router.py, batch_api, oss_gate, combined_work, billing_detector, osint recon, artifact ingest.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "mongo-tom-roleplay",
+      "title": "Respond as Mongo Tom",
+      "domain": "documents",
+      "summary": "Respond as Mongo Tom. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "nano-pdf",
+      "title": "nano-pdf",
+      "domain": "documents",
+      "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "origin": "distill-v2-harden",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "next-investigation-trigger",
+      "title": "The investigation is \u201cNEXT!\u201d",
+      "domain": "documents",
+      "summary": "The investigation is \u201cNEXT!\u201d. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "obsidian-vault-maintainer",
+      "title": "obsidian-vault-maintainer",
+      "domain": "knowledge",
+      "summary": "Maintain an Obsidian-friendly memory wiki vault with wikilinks, frontmatter, and official Obsidian CLI awareness.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "omnivoice-api",
+      "title": "OmniVoice / VoiceStudio API",
+      "domain": "api",
+      "summary": "Work with the OmniVoice / VoiceStudio FastAPI backend \u2014 routers, auth gates, model install, voice profiles, OpenAI-compat audio, batch dub, dictation, and community gallery. Use when changing or adding endpoints, debugging setup/download/profiles, or answering questions about this codebase's API contracts.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "openai-whisper-api",
+      "title": "OpenAI Whisper API (curl)",
+      "domain": "api",
+      "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "oss-compliance-gate",
+      "title": "OSS compliance gate",
+      "domain": "devtools",
+      "summary": "CI gate for third-party Android licenses. Forbids jlatexmath-android (GPL-2.0), writes THIRD-PARTY-NOTICES.txt on a clean inventory, and records Play Billing SDK terms. Trigger on compliance gate, third-party notices, billing SDK license, generate_third_party_notices, or oss pipeline.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "pdf-page-section-breakdown",
+      "title": "Break down every section and every page of the provided PDF",
+      "domain": "documents",
+      "summary": "Break down every section and every page of the provided PDF. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "play-billing-activation-detector",
+      "title": "Play Billing activation detector",
+      "domain": "mobile",
+      "summary": "Detect whether Google Play Billing is only a Gradle dependency or actually wired for purchases. Scans BillingClient usage, product IDs, and Play Console hints. Trigger on billing activation, BillingClient, play billing live, merchant profile, or in-app purchase detector.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "postgresql-sql",
+      "title": "PostgreSQL SQL Skill",
+      "domain": "data",
+      "summary": "Helps write review and optimize SQL queries for PostgreSQL. Triggers on requests to create SQL queries, review existing queries, debug SQL errors, performance tuning, or PostgreSQL-specific syntax like CTEs window functions JSONB indexing. Use whenever PostgreSQL SQL is involved.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "prose",
+      "title": "OpenProse Skill",
+      "domain": "creative",
+      "summary": "OpenProse VM skill pack. Activate on any `prose` command, .prose files, or OpenProse mentions; orchestrates multi-agent workflows.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "qqbot-channel",
+      "title": "QQ \u9891\u9053 API \u8bf7\u6c42\u6307\u5bfc",
+      "domain": "api",
+      "summary": "Query QQ channel lists, subchannels, members, posts, announcements, and schedules via the QQ open platform API.",
+      "origin": "distill-v2-harden",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "rtk-triage",
+      "title": "/rtk-triage",
+      "domain": "devtools",
+      "summary": "Run issue triage and PR triage together, then cross-check for double coverage, security gaps, P0 items without a PR, and internal conflicts. Saves a dated RTK report. Args include en/fr and save.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "run-everything-activation",
+      "title": "\u201cRun everything\u201d and immediate activation",
+      "domain": "documents",
+      "summary": "\u201cRun everything\u201d and immediate activation. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "self-dev-resources",
+      "title": "Self-Development Resources",
+      "domain": "devtools",
+      "summary": "Curated and actionable resources for deliberate self-development across skills, knowledge, and habits. Use for learning plans, resource recommendations, practice frameworks, habit design, or building personal improvement systems.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "skill-tree-engine",
+      "title": "Skill Tree Engine",
+      "domain": "agents",
+      "summary": "Indefinite skill-tree engine that distills inputs into atomic skills, rebuilds master and learned knowledge trees, updates a skills encyclopedia, and emits emergent insights plus change logs. Trigger on skill tree, skill ontology, master skills tree, learned knowledge tree, encyclopedia of skills, emergent insights report, continuous update loop, multi-agent distill/analyze/synthesize chain, JSON super-object knowledge store, or live skill dashboard.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "swarm-agent-framework",
+      "title": "Complex swarm/agent framework orchestration",
+      "domain": "documents",
+      "summary": "Complex swarm/agent framework orchestration. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "tdd-rust",
+      "title": "RTK TDD Workflow",
+      "domain": "devtools",
+      "summary": "TDD workflow for RTK filter development. Red-Green-Refactor with Rust idioms. Real fixtures, token savings assertions, snapshot tests with insta. Auto-triggers on new filter implementation.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "tenant-misconceptions-rebuttal",
+      "title": "Tenant Misconceptions Rebuttal",
+      "domain": "legal",
+      "summary": "Catalog and aggressively dismantle the most common misconceptions about tenant rights and landlord powers. Use when an opponent or audience asserts that tenants have no rights landlords can do whatever they want or eviction is automatic. Triggers include tenants have no rights landlords can evict for any reason security deposit myths or common landlord tenant misconceptions.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "tmux",
+      "title": "tmux Session Control",
+      "domain": "api",
+      "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+      "origin": "distill-v2-harden",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "tool-use",
+      "title": "Tool Use",
+      "domain": "api",
+      "summary": "Describe and apply research tools in a traceable way. Use when a task involves files, searches, code review, calculations, or external services.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "video-frames",
+      "title": "Video Frames (ffmpeg)",
+      "domain": "creative",
+      "summary": "Extract frames or short clips from videos using ffmpeg.",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "vite",
+      "title": "Vite Development",
+      "domain": "devtools",
+      "summary": "Expert guidance for Vite development with modern build tooling, HMR, framework integrations, and performance optimization",
+      "origin": "autoloop",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "wacli",
+      "title": "wacli",
+      "domain": "general",
+      "summary": "Send third-party WhatsApp messages or sync and search WhatsApp history via wacli, not normal active chats.",
+      "origin": "distill-v2-harden",
+      "has_scripts": true,
+      "has_references": true
+    },
+    {
+      "id": "osint-scout",
+      "name": "osint-scout",
+      "domain": "osint",
+      "summary": "osint-scout: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "forensic-ocr",
+      "name": "forensic-ocr",
+      "domain": "osint",
+      "summary": "forensic-ocr: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "dork-specialist",
+      "name": "dork-specialist",
+      "domain": "osint",
+      "summary": "dork-specialist: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "archive-recovery",
+      "name": "archive-recovery",
+      "domain": "osint",
+      "summary": "archive-recovery: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "entity-distill",
+      "name": "entity-distill",
+      "domain": "osint",
+      "summary": "entity-distill: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "red-team-audit",
+      "name": "red-team-audit",
+      "domain": "osint",
+      "summary": "red-team-audit: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "dossier-compiler",
+      "name": "dossier-compiler",
+      "domain": "osint",
+      "summary": "dossier-compiler: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "omni-index",
+      "name": "omni-index",
+      "domain": "osint",
+      "summary": "omni-index: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "mifie-v6",
+      "name": "mifie-v6",
+      "domain": "osint",
+      "summary": "mifie-v6: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "strand-mesh",
+      "name": "strand-mesh",
+      "domain": "osint",
+      "summary": "strand-mesh: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "auto-repair",
+      "name": "auto-repair",
+      "domain": "osint",
+      "summary": "auto-repair: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "vercel-deploy",
+      "name": "vercel-deploy",
+      "domain": "osint",
+      "summary": "vercel-deploy: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "github-sync",
+      "name": "github-sync",
+      "domain": "osint",
+      "summary": "github-sync: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "evidence-chain",
+      "name": "evidence-chain",
+      "domain": "osint",
+      "summary": "evidence-chain: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "journalist-exception",
+      "name": "journalist-exception",
+      "domain": "osint",
+      "summary": "journalist-exception: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "pdf-tools",
+      "name": "pdf-tools",
+      "domain": "osint",
+      "summary": "pdf-tools: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "web-search-operators",
+      "name": "web-search-operators",
+      "domain": "osint",
+      "summary": "web-search-operators: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "flight-log-ocr",
+      "name": "flight-log-ocr",
+      "domain": "osint",
+      "summary": "flight-log-ocr: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "npa-recovery",
+      "name": "npa-recovery",
+      "domain": "osint",
+      "summary": "npa-recovery: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    },
+    {
+      "id": "chain-of-custody",
+      "name": "chain-of-custody",
+      "domain": "osint",
+      "summary": "chain-of-custody: operational atom for public-record investigative tooling and Grok skill packaging. Not a guilt determination tool.",
+      "application": "Use in planning UI, OSINT mesh modules, and dossier compilation under public-record ceiling.",
+      "cycle": 14
+    }
+  ]
+}
