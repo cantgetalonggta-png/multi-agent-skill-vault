@@ -1,0 +1,686 @@
+{
+  "format": "grok-skill-registry-v2-live",
+  "created_utc": "2026-10-18T04:15:33Z",
+  "skill_count": 40,
+  "live": true,
+  "simulation": false,
+  "download_base": "/packages/",
+  "browse_base": "/skills/",
+  "combined": "/packages/all-skills-combined.zip",
+  "individual_bundle": "/packages/all-individual-skill-packages.zip",
+  "manifest": "/packages/BUILD_MANIFEST.json",
+  "skills": [
+    {
+      "id": "academic-paper-review",
+      "name": "academic-paper-review",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: academic-paper-review\ndescription: Use this skill when the user requests to review, analyze, critique, or summarize academic papers, research articles, preprints, or scientific publications. Supports comprehensive structured reviews covering methodology assessment, cont",
+      "path": "skills/academic-paper-review",
+      "zip": "packages/academic-paper-review.zip",
+      "zip_sha256": "fb79a7c00efafb0e5de4c55275f8801f4da04813d6689b632d61e08065c4ec4f",
+      "zip_bytes": 5585
+    },
+    {
+      "id": "ai-music-video-realism",
+      "name": "ai-music-video-realism",
+      "origin": "server-skills",
+      "file_count": 8,
+      "files": [
+        "SKILL.md",
+        "references/quality-gates.md",
+        "references/av-sync-and-effects.md",
+        "references/motion-systems.md",
+        "references/shot-templates.md",
+        "references/tool-matrix.md",
+        "scripts/shot_plan.py",
+        "scripts/validate_clips.py"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: ai-music-video-realism\ndescription: Produce ultra-realistic AI music videos with natural body movement, lip-sync, character consistency, and beat-locked edits. Use when the user wants an AI music video, performance video, dance clip, lip-synced artist video, cinematic M",
+      "path": "skills/ai-music-video-realism",
+      "zip": "packages/ai-music-video-realism.zip",
+      "zip_sha256": "dce22c1d701bde89e6783c4cf5dd85afa0d0677f5be04fdbf09aa7764443ce21",
+      "zip_bytes": 10611
+    },
+    {
+      "id": "ai-video-production-pipeline",
+      "name": "ai-video-production-pipeline",
+      "origin": "server-skills",
+      "file_count": 6,
+      "files": [
+        "SKILL.md",
+        "references/process-checklist.md",
+        "references/platform-specs.md",
+        "references/example-workflows.md",
+        "references/tool-matrix.md",
+        "scripts/inspect_media.py"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: ai-video-production-pipeline\ndescription: End-to-end AI video production skill covering concept to delivery including music-bed handoff. Use for AI-generated videos, avatar videos, social media Reels and Shorts, cinematic storytelling, marketing videos, voiceovers, prof",
+      "path": "skills/ai-video-production-pipeline",
+      "zip": "packages/ai-video-production-pipeline.zip",
+      "zip_sha256": "b0918620bc8f5196ac1bf685d032fa66fa8411a1cffc83e91f7995126b6e9c09",
+      "zip_bytes": 5763
+    },
+    {
+      "id": "auto-research-grok",
+      "name": "auto-research-grok",
+      "origin": "auto-research-grok",
+      "file_count": 12,
+      "files": [
+        "SKILL.md",
+        "references/vercel-connect-auth.md",
+        "references/api-keys-ops.md",
+        "references/auto-research-system.md",
+        "references/xai-sdk-wiring.md",
+        "references/runtime-inventory.md",
+        "references/vercel-connect-tokens.md",
+        "references/user-sketch-notes.md",
+        "scripts/api_keys_driver.py",
+        "scripts/auto_research_driver.py",
+        "scripts/connect_token_notes.py",
+        "scripts/connect_grok_token.ts"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: auto-research-grok\ndescription: Autonomous research loop with knowledge-gap detection, xAI SDK wiring, tool install gates, multi-agent chain Researcher-Analyst-Synthesizer-Verifier, and skill registry updates. Use when the user invokes AutoResearchGrok, AUTO_RESEARCH, a",
+      "path": "skills/auto-research-grok",
+      "zip": "packages/auto-research-grok.zip",
+      "zip_sha256": "78cd30d97910b571d1e4bf7b03596611e9981ec43d4a571f41c7c5b9bba4cb7c",
+      "zip_bytes": 11427
+    },
+    {
+      "id": "blocking-io-guard",
+      "name": "blocking-io-guard",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: blocking-io-guard\ndescription: Ensure async-path backend code that could block the asyncio event loop is protected by a teeth-verified runtime anchor in tests/blocking_io/. Use when changing backend Python under app/, packages/harness/deerflow/, or scripts/, when runnin",
+      "path": "skills/blocking-io-guard",
+      "zip": "packages/blocking-io-guard.zip",
+      "zip_sha256": "c4ff76c905e191437b6f1f7a375b2e6fef7a795948691619b675ed864579e312",
+      "zip_bytes": 3864
+    },
+    {
+      "id": "bootstrap",
+      "name": "bootstrap",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: bootstrap\ndescription: >-\n  Generate a personalized SOUL.md through a warm, adaptive onboarding conversation.\n  Trigger when the user wants to create, set up, or initialize their AI partner's\n  identity \u2014 e.g., \"create my SOUL.md\", \"bootstrap my agent\", \"set up my AI\n  ",
+      "path": "skills/bootstrap",
+      "zip": "packages/bootstrap.zip",
+      "zip_sha256": "d3b872b193c90a2e8792846df4025cdb2308617f1540474de9c71fee4c2df95c",
+      "zip_bytes": 2589
+    },
+    {
+      "id": "catalog-navigator",
+      "name": "catalog-navigator",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: catalog-navigator\ndescription: Navigate and search the 4344-skill catalog.json by category, completeness, and keywords. Use when user asks to find a skill in the catalog, list categories, or install candidates.\n---",
+      "path": "skills/catalog-navigator",
+      "zip": "packages/catalog-navigator.zip",
+      "zip_sha256": "5e0a1a2c1092af63ee21caac30c7616ef4cc138798c0835a515726d5a7317f86",
+      "zip_bytes": 762
+    },
+    {
+      "id": "chart-visualization",
+      "name": "chart-visualization",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: chart-visualization\ndescription: This skill should be used when the user wants to visualize data. It intelligently selects the most suitable chart type from 26 available options, extracts parameters based on detailed specifications, and generates a chart image using a J",
+      "path": "skills/chart-visualization",
+      "zip": "packages/chart-visualization.zip",
+      "zip_sha256": "be4e378ba2b0528ba96538707a6b92abd00c3630d7f1a1e1815e9fb6d6481b2d",
+      "zip_bytes": 2031
+    },
+    {
+      "id": "claude-to-deerflow",
+      "name": "claude-to-deerflow",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: claude-to-deerflow\ndescription: \"Interact with DeerFlow AI agent platform via its HTTP API. Use this skill when the user wants to send messages or questions to DeerFlow for research/analysis, start a DeerFlow conversation thread, check DeerFlow status or health, list av",
+      "path": "skills/claude-to-deerflow",
+      "zip": "packages/claude-to-deerflow.zip",
+      "zip_sha256": "a248a3c9a3a84e8985ff230c5c2f0db648454b81655f0532ddc1ee3107bfeb40",
+      "zip_bytes": 3267
+    },
+    {
+      "id": "code-documentation",
+      "name": "code-documentation",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: code-documentation\ndescription: Use this skill when the user requests to generate, create, or improve documentation for code, APIs, libraries, repositories, or software projects. Supports README generation, API reference documentation, inline code comments, architecture",
+      "path": "skills/code-documentation",
+      "zip": "packages/code-documentation.zip",
+      "zip_sha256": "ca97b7f085c6c5c8afc936569843972879f825e822575a5c5774fbe8295118e8",
+      "zip_bytes": 6114
+    },
+    {
+      "id": "consulting-analysis",
+      "name": "consulting-analysis",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: consulting-analysis\ndescription: Use this skill when the user requests to generate, create, or write professional research reports including but not limited to market analysis, consumer insights, brand analysis, financial analysis, industry research, competitive intelli",
+      "path": "skills/consulting-analysis",
+      "zip": "packages/consulting-analysis.zip",
+      "zip_sha256": "0fcfd63cccd510e11925e7cc42089bddf615ae0b724911b46d6caf916f91c186",
+      "zip_bytes": 11994
+    },
+    {
+      "id": "content-marketing-orchestrator",
+      "name": "content-marketing-orchestrator",
+      "origin": "server-skills",
+      "file_count": 3,
+      "files": [
+        "SKILL.md",
+        "references/handoff-checklist.md",
+        "references/campaign-brief-template.md"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: content-marketing-orchestrator\ndescription: Thin orchestrator that sequences specialized skills for end-to-end content marketing campaigns. Use when the user wants a full content package involving keyword research, blog or long-form content, AI video production, and mus",
+      "path": "skills/content-marketing-orchestrator",
+      "zip": "packages/content-marketing-orchestrator.zip",
+      "zip_sha256": "78a99636072467e3613bf3cdc900103c545ee8e9a450bac7c04596965845bed7",
+      "zip_bytes": 2352
+    },
+    {
+      "id": "data-analysis",
+      "name": "data-analysis",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: data-analysis\ndescription: Use this skill when the user uploads Excel (.xlsx/.xls) or CSV files and wants to perform data analysis, generate statistics, create summaries, pivot tables, SQL queries, or any form of structured data exploration. Supports multi-sheet Excel w",
+      "path": "skills/data-analysis",
+      "zip": "packages/data-analysis.zip",
+      "zip_sha256": "3376ab67e98bfbdb67031e3c5b31300e7f3396709d9603c86af55452bd543712",
+      "zip_bytes": 3871
+    },
+    {
+      "id": "deep-research",
+      "name": "deep-research",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: deep-research\ndescription: Use this skill instead of WebSearch for ANY question requiring web research. Trigger on queries like \"what is X\", \"explain X\", \"compare X and Y\", \"research X\", or before content generation tasks. Provides systematic multi-angle research method",
+      "path": "skills/deep-research",
+      "zip": "packages/deep-research.zip",
+      "zip_sha256": "aa6bc751f4ba048b1631f445e735e5fbbe12c576f711f8289cd7e3e6dd8dfc10",
+      "zip_bytes": 3929
+    },
+    {
+      "id": "deerflow-maintainer-orchestrator",
+      "name": "deerflow-maintainer-orchestrator",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: deerflow-maintainer-orchestrator\ndescription: \"Use when a DeerFlow maintainer needs comment-only GitHub issue or PR handling: resolve issue/PR scopes with gh, analyze issues, post or draft issue comments, perform PR review comments, review PR or issue batches, compare c",
+      "path": "skills/deerflow-maintainer-orchestrator",
+      "zip": "packages/deerflow-maintainer-orchestrator.zip",
+      "zip_sha256": "adad48ad6921c359d16f6df5e59b2763bed9d58aa84807f641129d2756837694",
+      "zip_bytes": 8951
+    },
+    {
+      "id": "deerflow-workspace-builder",
+      "name": "deerflow-workspace-builder",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: deerflow-workspace-builder\ndescription: Rebuild ROOT_WORKSPACE skill trees, ontology, and encyclopedias from a DeerFlow monorepo extract. Trigger on FULL_LOGIC_CHAIN, ingest deer-flow zip, or rebuild skill engine.\n---",
+      "path": "skills/deerflow-workspace-builder",
+      "zip": "packages/deerflow-workspace-builder.zip",
+      "zip_sha256": "0c07f6aafdf5e422731c56a54ac61fdc6af3bcf351cdab88c13cdcda943872db",
+      "zip_bytes": 902
+    },
+    {
+      "id": "engineer-system-change",
+      "name": "engineer-system-change",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: engineer-system-change\ndescription: Evaluate and carry out non-trivial software-system changes from first principles. Use when assessing RFCs, issues, designs, features, refactors, migrations, dependency changes, or proposed fields, events, APIs, modules, and services w",
+      "path": "skills/engineer-system-change",
+      "zip": "packages/engineer-system-change.zip",
+      "zip_sha256": "b6fee82e9197e63d780f9e45476a98affcc7919f089389e586667d9dc49c0c46",
+      "zip_bytes": 4751
+    },
+    {
+      "id": "find-skills",
+      "name": "find-skills",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: find-skills\ndescription: Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking f",
+      "path": "skills/find-skills",
+      "zip": "packages/find-skills.zip",
+      "zip_sha256": "15bf663f8215d5eebab3221edb37e798a3034861435b077da2350bc59b6a36fc",
+      "zip_bytes": 2500
+    },
+    {
+      "id": "free-render",
+      "name": "free-render",
+      "origin": "video-skills-distillery/skills/free-render",
+      "file_count": 1,
+      "files": [
+        "SKILL.md"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: free-render\ndescription: >\n  Prefer free open-source video render paths (ffmpeg, HyperFrames CLI Apache-2.0, Motion Canvas,\n  fframes, html-video) before paid HeyGen MCP render_video. Triggers on free render, open source\n  video render, no paid credits, local MP4, Hyper",
+      "path": "skills/free-render",
+      "zip": "packages/free-render.zip",
+      "zip_sha256": "e4050147453b5ef55e55472db660d3f665beabb589ee9571b29ab89a2592f86a",
+      "zip_bytes": 525
+    },
+    {
+      "id": "frontend-design",
+      "name": "frontend-design",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: frontend-design\ndescription: Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, R",
+      "path": "skills/frontend-design",
+      "zip": "packages/frontend-design.zip",
+      "zip_sha256": "70a7c9e2284a249e454af0c281a05fa493fb6a064148ff4122948e80653fa84e",
+      "zip_bytes": 3995
+    },
+    {
+      "id": "gateway-health-smoke",
+      "name": "gateway-health-smoke",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: gateway-health-smoke\ndescription: Smoke-test DeerFlow Gateway/Frontend/Nginx health endpoints. Use when verifying local or docker stack readiness.\n---",
+      "path": "skills/gateway-health-smoke",
+      "zip": "packages/gateway-health-smoke.zip",
+      "zip_sha256": "8b4b40d9ec0730e0f191e291c4262687ecce2ae7e59bdcfbbdc8d8713a9d8420",
+      "zip_bytes": 681
+    },
+    {
+      "id": "github-deep-research",
+      "name": "github-deep-research",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: github-deep-research\ndescription: Conduct multi-round deep research on any GitHub Repo. Use when users request comprehensive analysis, timeline reconstruction, competitive analysis, or in-depth investigation of GitHub. Produces structured markdown reports with executive",
+      "path": "skills/github-deep-research",
+      "zip": "packages/github-deep-research.zip",
+      "zip_sha256": "e81781b37bd57f2f9d227b775439dc453252464d0651bb0f2b91d11f2d796286",
+      "zip_bytes": 3031
+    },
+    {
+      "id": "image-generation",
+      "name": "image-generation",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: image-generation\ndescription: Use this skill when the user requests to generate, create, imagine, or visualize images including characters, scenes, products, or any visual content. Supports structured prompts and reference images for guided generation.\n---",
+      "path": "skills/image-generation",
+      "zip": "packages/image-generation.zip",
+      "zip_sha256": "fc9a13fb1cde8a3294b08627a454d3dec9419a690003d8dce12e538c74ac3572",
+      "zip_bytes": 5123
+    },
+    {
+      "id": "keyword-research-pro",
+      "name": "keyword-research-pro",
+      "origin": "server-skills",
+      "file_count": 3,
+      "files": [
+        "SKILL.md",
+        "references/report-template.md",
+        "scripts/export_keywords_csv.py"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: keyword-research-pro\ndescription: Local-first and API-assisted keyword research skill with exportable clustered reports. Use for keyword discovery, clustering, search volume analysis, competitor terms, content gap identification, and handoff to content-marketing-orchest",
+      "path": "skills/keyword-research-pro",
+      "zip": "packages/keyword-research-pro.zip",
+      "zip_sha256": "519efd22325c60327af8f31b4c196ac34acf9c610c1c39316ca36053e4ac0a35",
+      "zip_bytes": 2527
+    },
+    {
+      "id": "local-music-generation",
+      "name": "local-music-generation",
+      "origin": "server-skills",
+      "file_count": 16,
+      "files": [
+        "SKILL.md",
+        "references/ai-vocal-mastering-era.md",
+        "references/quality-presets.md",
+        "references/process-checklist.md",
+        "references/architecture.md",
+        "references/lyrics-structure-planning.md",
+        "references/lora-custom-styles.md",
+        "references/export-targets.md",
+        "references/vocal-mastering-chains.md",
+        "references/example-prompts.md",
+        "scripts/generate_report.py",
+        "scripts/validate_export.py",
+        "scripts/batch_export.py",
+        "scripts/analyze_track.py",
+        "scripts/simple_validate.py",
+        "scripts/normalize_loudness.py"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: local-music-generation\ndescription: Local GPU music production skill for generating full songs, instrumentals, covers, section edits, vocal mastering, and loudness-normalized exports from text prompts or existing stems. Use when the user asks to make music, generate a s",
+      "path": "skills/local-music-generation",
+      "zip": "packages/local-music-generation.zip",
+      "zip_sha256": "856e1f6834689a031f81faba4cbedf514be73d8b50c30ba72414dc2872f2e5dc",
+      "zip_bytes": 18064
+    },
+    {
+      "id": "music-generation",
+      "name": "music-generation",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: music-generation\ndescription: Use this skill when the user requests to generate, create, compose, or produce music or songs \u2014 background music, theme songs, jingles, or instrumental tracks. Generates a song from a style/mood prompt and optional lyrics via the MiniMax mu",
+      "path": "skills/music-generation",
+      "zip": "packages/music-generation.zip",
+      "zip_sha256": "1ea6bce8c6efca758f09fdba2a5d2bb5aed3e5bbfd35780beb31e0a3f610ae41",
+      "zip_bytes": 1952
+    },
+    {
+      "id": "newsletter-generation",
+      "name": "newsletter-generation",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: newsletter-generation\ndescription: Use this skill when the user requests to generate, create, write, or draft a newsletter, email digest, weekly roundup, industry briefing, or curated content summary. Supports topic-based research, content curation from multiple sources",
+      "path": "skills/newsletter-generation",
+      "zip": "packages/newsletter-generation.zip",
+      "zip_sha256": "0ad65de64f82189ab247a8c6fb69685e8f62e19f2a4eb3835f4890d164dbd65a",
+      "zip_bytes": 5957
+    },
+    {
+      "id": "podcast-generation",
+      "name": "podcast-generation",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: podcast-generation\ndescription: Use this skill when the user requests to generate, create, or produce podcasts from text content. Converts written content into a two-host conversational podcast audio format with natural dialogue.\n---",
+      "path": "skills/podcast-generation",
+      "zip": "packages/podcast-generation.zip",
+      "zip_sha256": "9b649defdd9db6875d800b0a7f052dd7ed0ec6ad1f9bd74f1f7c29c3a898b249",
+      "zip_bytes": 3934
+    },
+    {
+      "id": "ppt-generation",
+      "name": "ppt-generation",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: ppt-generation\ndescription: Use this skill when the user requests to generate, create, or make presentations (PPT/PPTX). Creates visually rich slides by generating images for each slide and composing them into a PowerPoint file.\n---",
+      "path": "skills/ppt-generation",
+      "zip": "packages/ppt-generation.zip",
+      "zip_sha256": "406d71df3fa68aa652899e4a9418764e831fa7c1f30fe7d27e4db380e0de994d",
+      "zip_bytes": 9688
+    },
+    {
+      "id": "skill-creator",
+      "name": "skill-creator",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: skill-creator\ndescription: Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance",
+      "path": "skills/skill-creator",
+      "zip": "packages/skill-creator.zip",
+      "zip_sha256": "485bedf321512882cc47d317a8c827ba3cbff7875c6677e4132d9123fb88d9b6",
+      "zip_bytes": 14492
+    },
+    {
+      "id": "skill-distiller",
+      "name": "skill-distiller",
+      "origin": "video-skills-distillery/skills/skill-distiller",
+      "file_count": 1,
+      "files": [
+        "SKILL.md"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: skill-distiller\ndescription: Distill multiple SKILL.md and docs into one master skill + atomic knowledge atoms. Triggers on /SKILL-DISTILLER, distill skills, merge skills, video master skill.\nmetadata:\n  version: \"1.0\"\n---\n# Skill Distiller",
+      "path": "skills/skill-distiller",
+      "zip": "packages/skill-distiller.zip",
+      "zip_sha256": "15745800bdaef5dde4516a83333c37e3e52a298f2b94c3d8e23695b347bf7ae0",
+      "zip_bytes": 759
+    },
+    {
+      "id": "skill-reviewer",
+      "name": "skill-reviewer",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: skill-reviewer\ndescription: Reviews DeerFlow skill packages for readiness, triggers, safety boundaries, resources, and evidence. Invoke when users ask to audit, grade, or production-check an existing skill.\nallowed-tools:\n  - review_skill_package\n---",
+      "path": "skills/skill-reviewer",
+      "zip": "packages/skill-reviewer.zip",
+      "zip_sha256": "7f662e9abeb59f10000356cafd6f88ee0279bb011c7a17ddcba1f87676bb0f16",
+      "zip_bytes": 2806
+    },
+    {
+      "id": "skill-seekers",
+      "name": "skill-seekers",
+      "origin": "video-skills-distillery/skills/skill-seekers",
+      "file_count": 1,
+      "files": [
+        "SKILL.md"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: skill-seekers\ndescription: Discover, fetch, and inventory agent skills from GitHub, skills.md registries, and Drive. Triggers on /SKILL-SEEKERS, find skills, skill search, video skills list.\nmetadata:\n  version: \"1.0\"\n---\n# Skill Seekers",
+      "path": "skills/skill-seekers",
+      "zip": "packages/skill-seekers.zip",
+      "zip_sha256": "5f5e322b63caa9e02d7e67deff500c665463962ca64bf14c4a921f17a9aec76b",
+      "zip_bytes": 820
+    },
+    {
+      "id": "smoke-test",
+      "name": "smoke-test",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: smoke-test\ndescription: End-to-end smoke test skill for DeerFlow. Guides through: 1) Pulling latest code, 2) Docker OR Local installation and deployment (user preference, default to Local if Docker network issues), 3) Service availability verification, 4) Health check, ",
+      "path": "skills/smoke-test",
+      "zip": "packages/smoke-test.zip",
+      "zip_sha256": "ec3caf01dde869f7398294e6b0fb7b6aeaafc2da19557208290eca934bdafafb",
+      "zip_bytes": 4050
+    },
+    {
+      "id": "surprise-me",
+      "name": "surprise-me",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: surprise-me\ndescription: Create a delightful, unexpected \"wow\" experience for the user by dynamically discovering and creatively combining other enabled skills. Triggers when the user says \"surprise me\" or any request expressing a desire for an unexpected creative showc",
+      "path": "skills/surprise-me",
+      "zip": "packages/surprise-me.zip",
+      "zip_sha256": "183c73ff014dc61ca8f2a4f48f0d3b23ddea3661edff24200b601f347a933b13",
+      "zip_bytes": 1855
+    },
+    {
+      "id": "systematic-literature-review",
+      "name": "systematic-literature-review",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: systematic-literature-review\ndescription: Use this skill when the user wants a systematic literature review, survey, or synthesis across multiple academic papers on a topic. Also covers annotated bibliographies and cross-paper comparisons. Searches arXiv and outputs rep",
+      "path": "skills/systematic-literature-review",
+      "zip": "packages/systematic-literature-review.zip",
+      "zip_sha256": "43ae71553320b7e4df106b95c3b0d0cbc2a01e1bc6c3a2a317a976953d9d2733",
+      "zip_bytes": 7493
+    },
+    {
+      "id": "vercel-deploy",
+      "name": "vercel-deploy",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: vercel-deploy\ndescription: Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as \"Deploy my app\", \"Deploy this to production\", \"Create a preview deployment\", \"Deploy and give me the link\", or \"Push this live\". No au",
+      "path": "skills/vercel-deploy",
+      "zip": "packages/vercel-deploy.zip",
+      "zip_sha256": "7af713576f754caca837ee5dcc8a1cef08f4f5fc22c61b23d0d8ae3cb499b5d5",
+      "zip_bytes": 1982
+    },
+    {
+      "id": "video-generation",
+      "name": "video-generation",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: video-generation\ndescription: Use this skill when the user requests to generate, create, or imagine videos. Supports structured prompts and reference image for guided generation.\n---",
+      "path": "skills/video-generation",
+      "zip": "packages/video-generation.zip",
+      "zip_sha256": "e313d54b48669e3144015194525850bb12586b9828dcfb7d8d233f8d3e67c08c",
+      "zip_bytes": 2761
+    },
+    {
+      "id": "video-master",
+      "name": "video-master",
+      "origin": "video-skills-distillery/skills/video-master",
+      "file_count": 1,
+      "files": [
+        "SKILL.md"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: video-master\ndescription: >\n  Master video skill distilled from video-use, product-launch-video, and marketing video skills.\n  Triggers on make a video, edit video, product launch video, HyperFrames, Remotion, AI video,\n  captions, storyboard, B-roll, avatar video, dist",
+      "path": "skills/video-master",
+      "zip": "packages/video-master.zip",
+      "zip_sha256": "f92de5968199db7a8b96e20083cff2ec50ed21ccb8c1b8d033fe0916955552b0",
+      "zip_bytes": 1208
+    },
+    {
+      "id": "web-design-guidelines",
+      "name": "web-design-guidelines",
+      "origin": "deer-flow-workspace/deer-flow-cycle1/skills",
+      "file_count": 2,
+      "files": [
+        "SKILL.md",
+        "META.json"
+      ],
+      "has_skill_md": true,
+      "summary": "---\nname: web-design-guidelines\ndescription: Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".\nmetadata:\n  author: vercel\n  version: \"1.0.0\"\n  ar",
+      "path": "skills/web-design-guidelines",
+      "zip": "packages/web-design-guidelines.zip",
+      "zip_sha256": "91f01f25be1a28f9262231c715b1e8884ba7cb5be015d26aba59ffb000c590e8",
+      "zip_bytes": 1125
+    }
+  ]
+}

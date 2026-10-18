@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Grok Skill Packages · LIVE</title>
+<meta name="description" content="Live extracted skill packages with real downloadable zips, SKILL.md browse, BUILD_MANIFEST, combined archive."/>
+<style>
+:root{--bg:#070b10;--card:#111821;--line:#1c2634;--text:#e8eef5;--muted:#8b9bb4;--accent:#3d9cf0;--ok:#2ecc71}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--text)}
+header{padding:1.25rem 1.5rem;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(7,11,16,.92);backdrop-filter:blur(8px);z-index:10}
+h1{margin:0;font-size:1.25rem} .sub{color:var(--muted);font-size:.85rem;margin-top:.35rem}
+.badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.badge{font-size:.72rem;padding:.2rem .55rem;border-radius:999px;border:1px solid var(--line);background:#0f1722}
+.badge.ok{color:#a8f0c0;border-color:#1e4d32;background:#0f2418}
+main{max-width:1100px;margin:0 auto;padding:1.25rem 1.5rem 3rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem;margin-bottom:1rem}
+.row{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}
+a.btn,button.btn{display:inline-flex;align-items:center;gap:.35rem;background:var(--accent);color:#fff;border:0;padding:.55rem .9rem;border-radius:10px;font-weight:600;text-decoration:none;cursor:pointer;font-size:.85rem}
+a.btn.ghost,button.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+input{width:100%;padding:.65rem .75rem;border-radius:10px;border:1px solid var(--line);background:#0a101a;color:var(--text);margin:.4rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.75rem}
+.card{background:#0a101a;border:1px solid var(--line);border-radius:12px;padding:.8rem}
+.card h3{margin:0 0 .35rem;font-size:.95rem}
+.meta{color:var(--muted);font-size:.72rem;line-height:1.4}
+.actions{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.55rem}
+.actions a{font-size:.75rem;color:var(--accent)}
+pre{background:#05080d;border:1px solid var(--line);border-radius:10px;padding:.75rem;overflow:auto;font-size:.72rem;max-height:280px}
+footer{max-width:1100px;margin:0 auto;padding:1rem 1.5rem 2rem;color:var(--muted);font-size:.75rem}
+code{font-family:ui-monospace,Menlo,monospace}
+</style>
+</head>
+<body>
+<header>
+  <h1>Grok Skill Packages · LIVE EXTRACTION</h1>
+  <div class="sub">Real files · real ZIP downloads · production host · not a sandbox-only sim</div>
+  <div class="badges">
+    <span class="badge ok" id="count-badge">loading…</span>
+    <span class="badge ok">LIVE downloads</span>
+    <span class="badge">BUILD_MANIFEST</span>
+    <span class="badge">SHA256 verified packages</span>
+  </div>
+</header>
+<main>
+  <div class="panel">
+    <h2 style="margin:.2rem 0 .6rem;font-size:1rem">Bulk archives</h2>
+    <div class="row">
+      <a class="btn" href="/packages/all-skills-combined.zip">Download all-skills-combined.zip</a>
+      <a class="btn ghost" href="/packages/all-individual-skill-packages.zip">all-individual-skill-packages.zip</a>
+      <a class="btn ghost" href="/packages/grok_skills_filesystem_encyclopedia.zip">encyclopedia.zip</a>
+      <a class="btn ghost" href="/packages/BUILD_MANIFEST.json">BUILD_MANIFEST.json</a>
+      <a class="btn ghost" href="/data/skills-registry.json">skills-registry.json</a>
+    </div>
+    <p class="meta" id="manifest-meta">Loading manifest…</p>
+  </div>
+  <div class="panel">
+    <h2 style="margin:.2rem 0 .6rem;font-size:1rem">Skill browser</h2>
+    <input id="q" placeholder="Filter skills…"/>
+    <div class="grid" id="grid"></div>
+  </div>
+  <div class="panel">
+    <h2 style="margin:.2rem 0 .6rem;font-size:1rem">Integrity note</h2>
+    <p class="meta">Original chat attachments (<code>GROK_BUILD.zip</code> ~75MB etc.) were <strong>not present</strong> in this sandbox filesystem after session reset. This live pack is rebuilt from recoverable GitHub skill trees + Grok server-skills. Each package is a real extracted directory with <code>SKILL.md</code> (and scripts/references when present) and a downloadable zip.</p>
+  </div>
+</main>
+<footer>
+  Hosted on multi-agent-skill-vault + grok-skill-packages-app · Public skill packages · <a href="https://github.com/cantgetalonggta-png/multi-agent-skill-vault" style="color:#3d9cf0">GitHub</a>
+</footer>
+<script>
+async function boot(){
+  const reg = await (await fetch('/data/skills-registry.json?t='+Date.now())).json();
+  document.getElementById('count-badge').textContent = reg.skill_count + ' skills LIVE';
+  try {
+    const man = await (await fetch('/packages/BUILD_MANIFEST.json?t='+Date.now())).json();
+    document.getElementById('manifest-meta').textContent =
+      `skills=${man.skill_count} · combined=${man.combined_archive.bytes}B sha=${man.combined_archive.sha256.slice(0,16)}… · created ${man.created_utc}`;
+  } catch(e){ document.getElementById('manifest-meta').textContent = 'manifest load failed'; }
+  const grid = document.getElementById('grid');
+  function render(filter=''){
+    const f=filter.toLowerCase();
+    const list=(reg.skills||[]).filter(s=>!f || s.id.includes(f) || (s.origin||'').includes(f) || (s.summary||'').toLowerCase().includes(f));
+    grid.innerHTML = list.map(s=>`
+      <div class="card">
+        <h3>${s.id}</h3>
+        <div class="meta">origin: ${s.origin||'?'} · files: ${s.file_count} · ${(s.zip_bytes||0)} B</div>
+        <div class="meta" style="margin-top:.35rem">${(s.summary||'').replace(/</g,'<').slice(0,180)}</div>
+        <div class="actions">
+          <a href="/packages/${s.id}.zip">zip</a>
+          <a href="/skills/${s.id}/SKILL.md">SKILL.md</a>
+          <a href="/skills/${s.id}/">browse</a>
+        </div>
+      </div>`).join('') || '<p class="meta">No matches</p>';
+  }
+  document.getElementById('q').oninput = e=>render(e.target.value);
+  render();
+}
+boot();
+</script>
+</body>
+</html>

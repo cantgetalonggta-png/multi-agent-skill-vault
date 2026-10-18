@@ -1,8 +1,8 @@
 {
   "name": "multi-agent-skill-vault",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "private": true,
-  "description": "Cycle 14 Multi-Agent Skill Vault \u2014 19 agents, 50+ skills, M-IFIE module, Grok packages, X3 live matrix",
+  "description": "Cycle 14+ LIVE skill packages extraction with real ZIP downloads",
   "scripts": {
     "build": "mkdir -p dist && cp -r public/* dist/",
     "start": "npx --yes serve public -l 3000",
